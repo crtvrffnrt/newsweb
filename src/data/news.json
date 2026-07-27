@@ -1,0 +1,51 @@
+[
+  {
+    "id": "thn-sourtrade-malvertising-2026-07-25",
+    "title": "Malvertising Sends Malware in Pieces, Then Makes the Browser Build the Executable",
+    "source": "The Hacker News",
+    "sourceDomain": "thehackernews.com",
+    "url": "https://thehackernews.com/2026/07/malvertising-sends-malware-in-pieces.html",
+    "publishedAt": "2026-07-25",
+    "category": "Malvertising",
+    "tags": ["SourTrade", "Bun", "Windows"],
+    "severity": "high",
+    "summary": "A malvertising operation dubbed SourTrade is making victims' browsers build the final Windows executable themselves, using a legitimate Bun runtime as its base instead of serving one complete malicious file from a fixed URL. Confiant, which detailed the campaign on July 23, 2026, said it has operated since late 2024 and impersonated TradingView, Solana, and Luno to target retail traders and"
+  },
+  {
+    "id": "checkpoint-smartconsole-cve-2026-16232",
+    "title": "SmartConsole authentication bypass exploited against exposed management servers",
+    "source": "Check Point",
+    "sourceDomain": "blog.checkpoint.com",
+    "url": "https://blog.checkpoint.com/security/security-advisory-action-required-active-exploitation-of-check-point-smartconsole-authentication-bypass-cve-2026-16232/",
+    "publishedAt": "2026-07-22",
+    "category": "CVE",
+    "tags": ["SmartConsole", "Authentication Bypass"],
+    "severity": "critical",
+    "cve": "CVE-2026-16232",
+    "summary": "Check Point confirmed in-the-wild exploitation of a SmartConsole login flaw that can let an unauthenticated remote attacker obtain an application token and authenticate with full administrative privileges. The exposed control plane can be used to modify security policies and management configuration."
+  },
+  {
+    "id": "chaos-ransomware-msarat",
+    "title": "Chaos ransomware hides RAT command-and-control inside Chrome and Edge traffic",
+    "source": "Cisco Talos",
+    "sourceDomain": "helpnetsecurity.com",
+    "url": "https://www.helpnetsecurity.com/2026/07/23/cisco-talos-chaos-ransomware-msarat/",
+    "publishedAt": "2026-07-23",
+    "category": "Ransomware",
+    "tags": ["Chaos", "msaRAT", "WebRTC"],
+    "severity": "high",
+    "summary": "Cisco Talos identified a Rust-based RAT that launches Chrome or Edge and controls it through the Chrome DevTools Protocol. Command-and-control traffic then leaves through legitimate browser processes using Cloudflare-hosted infrastructure, Google STUN and Twilio TURN over WebRTC."
+  },
+  {
+    "id": "origin-energy-data-breach",
+    "title": "Origin Energy confirms unauthorized access and disclosure of customer data",
+    "source": "Origin Energy",
+    "sourceDomain": "originenergy.com.au",
+    "url": "https://www.originenergy.com.au/about/investors-media/update-on-data-security-incident/",
+    "publishedAt": "2026-07-23",
+    "category": "Incident Response",
+    "tags": ["Data Breach", "Customer Data"],
+    "severity": "high",
+    "summary": "Origin Energy confirmed that customer records were accessed and disclosed without authorization. Potentially affected fields include names, addresses, dates of birth, phone numbers, account information and partial credit-card or bank-account digits."
+  }
+]
