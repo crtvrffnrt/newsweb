@@ -1,4 +1,4 @@
-import news from "./data/news.json";
+import news from "./data/news.json" with { type: "json" };
 import { clientScript } from "./client.js";
 import { styles } from "./styles.js";
 import { renderPage } from "./template.js";
@@ -7,6 +7,7 @@ const ASSETS = {
   "/assets/news.css": { body: styles, type: "text/css; charset=utf-8" },
   "/assets/news.js": { body: clientScript, type: "application/javascript; charset=utf-8" },
 };
+const KALI_TERMINAL_URL = "https://www.patrick-binder.de/kali_terminal";
 
 const securityHeaders = {
   "Cache-Control": "public, max-age=300, s-maxage=300",
@@ -22,6 +23,14 @@ export default {
     }
 
     const { pathname } = new URL(request.url);
+    if (pathname === "/kali_terminal") {
+      const upstream = await fetch(KALI_TERMINAL_URL);
+      const headers = new Headers(upstream.headers);
+      headers.delete("X-Frame-Options");
+      headers.delete("Content-Security-Policy");
+      headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
+      return new Response(request.method === "HEAD" ? null : upstream.body, { status: upstream.status, headers });
+    }
     const asset = ASSETS[pathname];
     if (asset) {
       return new Response(request.method === "HEAD" ? null : asset.body, {
