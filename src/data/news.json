@@ -51,5 +51,45 @@
     "tags": ["Data Breach", "Customer Data"],
     "severity": "high",
     "summary": "Origin Energy confirmed that customer records were accessed and disclosed without authorization. Potentially affected fields include names, addresses, dates of birth, phone numbers, account information and partial credit-card or bank-account digits."
+  },
+  {
+    "id": "mcbs-pear-ransomware-data-breach",
+    "title": "MCBS breach exposes sensitive healthcare data of 1.2 million people",
+    "source": "SecurityWeek",
+    "sourceDomain": "securityweek.com",
+    "url": "https://www.securityweek.com/mcbs-data-breach-affects-1-2-million-individuals/",
+    "publishedAt": "2026-07-27",
+    "addedAt": "2026-07-27T08:02:00Z",
+    "category": "Incident Response",
+    "tags": ["MCBS", "PEAR", "Healthcare", "Data Breach"],
+    "severity": "high",
+    "summary": "Medical Computer Business Services disclosed that a 2025 intrusion affects 1,261,464 individuals across multiple healthcare organizations. Potentially stolen data includes Social Security numbers, insurance details, medical information, payment data and emails, while the PEAR ransomware group claims 3 TB of exfiltrated files. Healthcare providers and partners should prepare for targeted phishing, identity fraud and downstream notification obligations."
+  },
+  {
+    "id": "rockwell-arena-memory-corruption-2026",
+    "title": "Rockwell patches four Arena Simulation flaws enabling arbitrary code execution",
+    "source": "Rockwell Automation",
+    "sourceDomain": "rockwellautomation.com",
+    "url": "https://www.rockwellautomation.com/es-es/trust-center/security-advisories/advisory.SD1784.html",
+    "publishedAt": "2026-07-25",
+    "addedAt": "2026-07-27T08:02:01Z",
+    "category": "Vulnerability",
+    "tags": ["Rockwell", "Arena Simulation", "ICS", "Code Execution"],
+    "severity": "high",
+    "cve": "CVE-2026-8085",
+    "summary": "Rockwell Automation fixed four high-severity memory corruption vulnerabilities in Arena Simulation 17.00.00 and earlier. Malicious project files can trigger out-of-bounds writes and execute code in the current user's context, creating a practical phishing or supply-chain path into engineering environments. Organizations using Arena should upgrade to 17.00.01 and restrict untrusted simulation files."
+  },
+  {
+    "id": "github-pypi-time-based-supply-chain-defenses",
+    "title": "GitHub and PyPI introduce time-based controls against package supply-chain attacks",
+    "source": "BleepingComputer",
+    "sourceDomain": "bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/github-pypi-add-time-absed-defenses-against-supply-chain-attacks/",
+    "publishedAt": "2026-07-26",
+    "addedAt": "2026-07-27T08:02:02Z",
+    "category": "General Intel",
+    "tags": ["GitHub", "PyPI", "Dependabot", "Supply Chain"],
+    "severity": "medium",
+    "summary": "GitHub now applies a default three-day cooldown to Dependabot version updates, while PyPI blocks maintainers from adding new files to releases older than 14 days. The controls reduce exposure to newly published malicious packages and poisoned trusted releases, but do not replace lockfiles, scoped tokens or installation-script restrictions in CI pipelines."
   }
 ]
