@@ -1,6 +1,6 @@
 # PBI Security News
 
-Cloudflare Worker for `news.patrick-binder.de`. It renders a curated, terminal-style security news listing with the PBI navigation, without external runtime dependencies or upstream fetches.
+Cloudflare Worker for `news.patrick-binder.de`. It renders a curated, terminal-style security news listing with the PBI navigation. The public news page may be embedded from any origin.
 
 ## Architecture
 
@@ -8,6 +8,7 @@ Cloudflare Worker for `news.patrick-binder.de`. It renders a curated, terminal-s
 - `src/template.js` renders sorted, de-duplicated semantic HTML. `/kali_terminal` streams the existing interactive terminal same-origin so its two tabs can be framed despite the upstream frame policy.
 - `src/styles.js` and `src/client.js` keep presentation and delayed-summary interaction separate from the Worker handler.
 - `scripts/validate-news.js` rejects malformed entries, duplicates, invalid dates/URLs, and unsupported categories.
+- `cloudflare/security-rules.md` contains the required Free-tier Bot Fight Mode, WAF and rate-limiting configuration for the Cloudflare zone.
 
 ## Local preview and checks
 
@@ -30,6 +31,10 @@ npm run deploy
 ```
 
 The configured custom domain is retained in `wrangler.jsonc`; deployment is intentionally not performed by local validation.
+
+## Caching and embedding
+
+The news document uses `Cache-Control: no-store`, so a deployment containing new articles is visible immediately. Static CSS/JS and the proxied Kali terminal are cached separately. The response uses `frame-ancestors *` and does not send `X-Frame-Options`, allowing it to be embedded in an iframe by any origin. Apply the edge protections in [`cloudflare/security-rules.md`](cloudflare/security-rules.md) after deployment.
 
 ## Automated news updates
 
