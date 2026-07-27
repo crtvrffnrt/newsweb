@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A concise operational cybersecurity news feed curated for incident response, SOC, pentesting and cloud security teams.">
+  <meta name="theme-color" content="#090d12">
+  <meta property="og:title" content="PB Security Feed">
+  <meta property="og:description" content="Three operational cybersecurity developments that matter now.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://news.patrick-binder.de/">
+  <link rel="canonical" href="https://news.patrick-binder.de/">
+  <title>PB Security Feed</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080b10;
+      --panel: #0f141b;
+      --panel-2: #121923;
+      --line: #263141;
+      --text: #f4f7fb;
+      --muted: #9aa8ba;
+      --accent: #78e2c4;
+      --critical: #ff6b6b;
+      --high: #ffb454;
+      --max: 1120px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 15% -10%, rgba(120,226,196,.11), transparent 34rem),
+        radial-gradient(circle at 95% 15%, rgba(98,127,255,.10), transparent 31rem),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    .shell { width: min(calc(100% - 36px), var(--max)); margin: 0 auto; }
+    header { padding: 42px 0 26px; }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 760; letter-spacing: -.02em; }
+    .mark {
+      width: 34px; height: 34px; display: grid; place-items: center;
+      background: var(--text); color: var(--bg); font-size: 12px; font-weight: 900;
+    }
+    .status { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 13px; }
+    .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 5px rgba(120,226,196,.10); }
+    .hero { padding: 62px 0 44px; border-bottom: 1px solid var(--line); }
+    .eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: .16em; font-size: 12px; font-weight: 800; }
+    h1 { max-width: 820px; margin: 17px 0 20px; font-size: clamp(44px, 8vw, 88px); line-height: .96; letter-spacing: -.062em; }
+    .intro { max-width: 720px; margin: 0; color: var(--muted); font-size: clamp(17px, 2.3vw, 21px); line-height: 1.55; }
+    .hero-grid { display: grid; grid-template-columns: 1fr auto; gap: 30px; align-items: end; }
+    .snapshot { min-width: 235px; padding: 18px; border: 1px solid var(--line); background: rgba(15,20,27,.72); }
+    .snapshot-label { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .13em; }
+    .snapshot strong { display: block; margin-top: 8px; font-size: 16px; }
+    main { padding: 26px 0 72px; }
+    .feed-head { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding: 18px 0 24px; }
+    .feed-head h2 { margin: 0; font-size: 14px; letter-spacing: .12em; text-transform: uppercase; }
+    .feed-head span { color: var(--muted); font-size: 13px; }
+    .feed { display: grid; gap: 16px; }
+    .story {
+      position: relative;
+      padding: clamp(22px, 4vw, 38px);
+      border: 1px solid var(--line);
+      background: linear-gradient(145deg, rgba(18,25,35,.96), rgba(12,17,24,.98));
+      overflow: hidden;
+      transition: transform .2s ease, border-color .2s ease;
+    }
+    .story:hover { transform: translateY(-2px); border-color: #3d4b60; }
+    .story::after {
+      content: ""; position: absolute; inset: 0 auto 0 0; width: 3px;
+      background: var(--accent); opacity: .72;
+    }
+    .story-meta { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+    .meta-left { display: flex; align-items: center; gap: 12px; }
+    .rank { color: #66758a; font: 700 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .badge { padding: 6px 9px; border: 1px solid currentColor; font-size: 10px; font-weight: 850; letter-spacing: .11em; text-transform: uppercase; }
+    .badge.critical { color: var(--critical); background: rgba(255,107,107,.08); }
+    .badge.high { color: var(--high); background: rgba(255,180,84,.08); }
+    time { color: var(--muted); font: 500 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .story-source { margin-top: 25px; color: var(--accent); font-size: 12px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+    .story-source span { color: #536174; padding: 0 6px; }
+    .story h2 { max-width: 890px; margin: 13px 0 16px; font-size: clamp(25px, 4vw, 38px); line-height: 1.12; letter-spacing: -.035em; }
+    .summary { max-width: 880px; margin: 0; color: #c0cad7; line-height: 1.72; font-size: 16px; }
+    .action-block { margin: 24px 0; padding: 16px 18px; border-left: 2px solid #536174; background: rgba(255,255,255,.025); }
+    .action-block span { display: block; color: var(--muted); font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .action-block p { margin: 7px 0 0; color: #d9e1eb; line-height: 1.58; font-size: 14px; }
+    .source-link { display: inline-flex; align-items: center; gap: 9px; color: var(--text); font-size: 13px; font-weight: 760; text-decoration: none; border-bottom: 1px solid #5b687a; padding-bottom: 4px; }
+    .source-link:hover { color: var(--accent); border-color: var(--accent); }
+    footer { border-top: 1px solid var(--line); padding: 26px 0 42px; color: var(--muted); font-size: 12px; }
+    .footer-row { display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    @media (max-width: 760px) {
+      header { padding-top: 24px; }
+      .hero { padding-top: 44px; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .snapshot { min-width: 0; }
+      .status span:last-child { display: none; }
+      .story-meta { align-items: flex-start; }
+      .story-source { line-height: 1.6; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .story { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="shell nav">
+      <div class="brand"><span class="mark">PB</span><span>Security Feed</span></div>
+      <div class="status"><span class="pulse"></span><span>Operational intelligence</span></div>
+    </div>
+    <section class="shell hero">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Incident response · attack surface · cloud security</div>
+          <h1>Three signals that matter now.</h1>
+          <p class="intro">A concise operational feed for defenders, pentesters and security leaders. No noise, no generic CVE dump — just current developments with a clear next action.</p>
+        </div>
+        <aside class="snapshot" aria-label="Feed snapshot">
+          <div class="snapshot-label">Latest edition</div>
+          <strong>25 July 2026</strong>
+          <div class="snapshot-label" style="margin-top:14px">Focus</div>
+          <strong>Edge access · covert C2 · customer data</strong>
+        </aside>
+      </div>
+    </section>
+  </header>
+  <main class="shell">
+    <div class="feed-head"><h2>Latest intelligence</h2><span>3 selected items</span></div>
+    <section class="feed" aria-label="Cybersecurity news feed">
+    <article class="story" id="checkpoint-smartconsole-cve-2026-16232">
+      <div class="story-meta">
+        <div class="meta-left">
+          <span class="rank">01</span>
+          <span class="badge critical">Critical</span>
+        </div>
+        <time datetime="2026-07-22">2026-07-22</time>
+      </div>
+      <div class="story-source">Check Point <span>/</span> CVE-2026-16232 · SmartConsole</div>
+      <h2>SmartConsole authentication bypass exploited against exposed management servers</h2>
+      <p class="summary">Check Point confirmed in-the-wild exploitation of a SmartConsole login flaw that can let an unauthenticated remote attacker obtain an application token and authenticate with full administrative privileges. The exposed control plane can be used to modify security policies and management configuration.</p>
+      <div class="action-block">
+        <span>Recommended action</span>
+        <p>Install the latest Jumbo Hotfix, restrict Trusted Clients and management access to approved IP ranges, and review the published source IP indicators and recent administrative changes.</p>
+      </div>
+      <a class="source-link" href="https://blog.checkpoint.com/security/security-advisory-action-required-active-exploitation-of-check-point-smartconsole-authentication-bypass-cve-2026-16232/" target="_blank" rel="noopener noreferrer">
+        Check Point advisory
+        <span aria-hidden="true">↗</span>
+      </a>
+    </article>
+
+    <article class="story" id="chaos-ransomware-msarat">
+      <div class="story-meta">
+        <div class="meta-left">
+          <span class="rank">02</span>
+          <span class="badge high">High</span>
+        </div>
+        <time datetime="2026-07-23">2026-07-23</time>
+      </div>
+      <div class="story-source">Cisco Talos / Chaos <span>/</span> msaRAT · Browser-mediated C2</div>
+      <h2>Chaos ransomware hides RAT command-and-control inside Chrome and Edge traffic</h2>
+      <p class="summary">Cisco Talos identified a Rust-based RAT that launches Chrome or Edge and controls it through the Chrome DevTools Protocol. Command-and-control traffic then leaves through legitimate browser processes using Cloudflare-hosted infrastructure, Google STUN and Twilio TURN over WebRTC.</p>
+      <div class="action-block">
+        <span>Recommended action</span>
+        <p>Hunt for unusual browser launches with remote-debugging behavior, loopback-only malware communication, unexpected WebRTC sessions and browser traffic to newly observed Cloudflare developer domains.</p>
+      </div>
+      <a class="source-link" href="https://www.helpnetsecurity.com/2026/07/23/cisco-talos-chaos-ransomware-msarat/" target="_blank" rel="noopener noreferrer">
+        Technical overview
+        <span aria-hidden="true">↗</span>
+      </a>
+    </article>
+
+    <article class="story" id="origin-energy-data-breach">
+      <div class="story-meta">
+        <div class="meta-left">
+          <span class="rank">03</span>
+          <span class="badge high">High</span>
+        </div>
+        <time datetime="2026-07-23">2026-07-23</time>
+      </div>
+      <div class="story-source">Origin Energy <span>/</span> Customer data breach</div>
+      <h2>Origin Energy confirms unauthorized access and disclosure of customer data</h2>
+      <p class="summary">Origin Energy confirmed that customer records were accessed and disclosed without authorization. Potentially affected fields include names, addresses, dates of birth, phone numbers, account information and partial credit-card or bank-account digits.</p>
+      <div class="action-block">
+        <span>Recommended action</span>
+        <p>Prepare targeted phishing and identity-abuse monitoring, notify affected users through verified channels, and watch for credential stuffing or impersonation attempts using exposed account context.</p>
+      </div>
+      <a class="source-link" href="https://www.originenergy.com.au/about/investors-media/update-on-data-security-incident/" target="_blank" rel="noopener noreferrer">
+        Origin Energy update
+        <span aria-hidden="true">↗</span>
+      </a>
+    </article>
+    </section>
+  </main>
+  <footer>
+    <div class="shell footer-row">
+      <span>Curated for operational security review.</span>
+      <span class="mono">news.patrick-binder.de</span>
+    </div>
+  </footer>
+</body>
+</html>

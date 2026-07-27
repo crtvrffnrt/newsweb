@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "patrick-binder-security-news",
+  "main": "src/index.js",
+  "compatibility_date": "2026-07-25",
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "news.patrick-binder.de",
+      "custom_domain": true
+    }
+  ],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  }
+}
