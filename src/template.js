@@ -54,7 +54,7 @@ function renderEntry(article) {
       <button class="summary-toggle" type="button" aria-expanded="false" aria-controls="summary-${escapeHtml(article.id)}" aria-label="Show summary for ${escapeHtml(article.title)}"><span aria-hidden="true">⌄</span></button>
       <span class="risk">${escapeHtml(article.severity ?? article.cve ?? "intel")}</span>
       <time datetime="${escapeHtml(article.publishedAt)}">${formatDate(article.publishedAt)}</time>
-      <span class="headline">${escapeHtml(article.title)} <b aria-hidden="true">↗</b></span>
+      <span class="headline"><span class="headline-text">${escapeHtml(article.title)}</span><b aria-hidden="true">↗</b></span>
     </div>
     <p class="entry-summary" id="summary-${escapeHtml(article.id)}">${escapeHtml(article.summary)}</p>
   </article>`;

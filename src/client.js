@@ -26,7 +26,7 @@ export const clientScript = `(() => {
     if (window.sessionStorage.getItem(storageKey) !== main.dataset.recentKey) {
       document.querySelectorAll(".recent-entry").forEach((entry) => entry.classList.add("new-entry-glow"));
       window.sessionStorage.setItem(storageKey, main.dataset.recentKey);
-      window.setTimeout(() => document.querySelectorAll(".new-entry-glow").forEach((entry) => entry.classList.remove("new-entry-glow")), 3750);
+      window.setTimeout(() => document.querySelectorAll(".new-entry-glow").forEach((entry) => entry.classList.remove("new-entry-glow")), 1650);
     }
   } catch { /* Storage can be unavailable in strict privacy modes. */ }
 })();`;
