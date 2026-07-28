@@ -19,12 +19,9 @@ export const clientScript = `(() => {
   const expandButton = document.querySelector(".news-expand-toggle");
   if (expandButton) {
     const additionalNews = [...document.querySelectorAll("#news-panel .additional-news")];
-    const expandText = expandButton.querySelector(".expand-text");
     expandButton.addEventListener("click", () => {
-      const expanded = expandButton.getAttribute("aria-expanded") === "true";
-      additionalNews.forEach((entry) => { entry.hidden = expanded; });
-      expandButton.setAttribute("aria-expanded", String(!expanded));
-      expandText.textContent = expanded ? \`\${additionalNews.length} more news\` : "Show fewer news";
+      additionalNews.forEach((entry) => { entry.hidden = false; });
+      expandButton.remove();
     });
   }
 
