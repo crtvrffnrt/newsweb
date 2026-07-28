@@ -10,7 +10,7 @@ const ASSETS = {
 const KALI_TERMINAL_URL = "https://www.patrick-binder.de/kali_terminal";
 
 const securityHeaders = {
-  "Content-Security-Policy": "default-src 'none'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; base-uri 'none'; frame-ancestors *",
+  "Content-Security-Policy": "default-src 'none'; img-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; base-uri 'none'; frame-ancestors *",
   "Cross-Origin-Resource-Policy": "cross-origin",
   "Permissions-Policy": "camera=(), geolocation=(), microphone=(), payment=(), usb=()",
   "Referrer-Policy": "strict-origin-when-cross-origin",

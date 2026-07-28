@@ -3,6 +3,9 @@
   "name": "patrick-binder-security-news",
   "main": "src/index.js",
   "compatibility_date": "2026-07-25",
+  "assets": {
+    "directory": "./public"
+  },
   "workers_dev": false,
   "routes": [
     {

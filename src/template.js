@@ -35,28 +35,29 @@ function renderHeader() {
   return `<nav><div class="nav-content">
     <a class="nav-brand" href="https://www.patrick-binder.de/">PBI | Offensive &amp; Defensive Security | Pentest | Detection | Response</a>
     <div class="nav-actions" aria-label="Profile links">
-      <a class="nav-icon-link github-icon" href="https://github.com/crtvrffnrt" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><span aria-hidden="true">GH</span></a>
-      <a class="nav-icon-link linkedin-icon" href="https://www.linkedin.com/in/patrick-binder-601021199/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span aria-hidden="true">in</span></a>
+      <a class="nav-icon-link" href="https://github.com/crtvrffnrt" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="/GitHub_Invertocat_White.png" alt=""></a>
+      <a class="nav-icon-link" href="https://www.linkedin.com/in/patrick-binder-601021199/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="/InBug-White.png" alt=""></a>
       <details class="projects-menu"><summary class="nav-icon-link projects-icon" aria-label="Open projects menu"></summary><div class="projects-menu-panel" role="menu" aria-label="Projects"><span class="projects-menu-title">Project Launchpad</span>${projectLinks}</div></details>
     </div>
   </div></nav>`;
 }
 
-function renderEntry(article) {
+function renderEntry(article, panelId, isAdditional = false) {
   const severity = article.severity ?? "intel";
-  return `<article class="news-entry severity-${escapeHtml(severity)}${article.isRecent ? " recent-entry" : ""}">
+  const summaryId = `summary-${panelId}-${article.id}`;
+  return `<article class="news-entry severity-${escapeHtml(severity)}${article.isRecent ? " recent-entry" : ""}${isAdditional ? " additional-news" : ""}"${isAdditional ? " hidden" : ""}>
     <div class="article-row">
-      <a class="article-link" href="${escapeHtml(article.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open article: ${escapeHtml(article.title)}" aria-describedby="summary-${escapeHtml(article.id)}"></a>
+      <a class="article-link" href="${escapeHtml(article.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open article: ${escapeHtml(article.title)}" aria-describedby="${escapeHtml(summaryId)}"></a>
       <span class="permissions" aria-hidden="true">-rw-r--r--</span>
       <span class="links" aria-hidden="true">1</span>
       <span class="source">${escapeHtml(article.source)}</span>
       <span class="category">${escapeHtml(article.category)}</span>
-      <button class="summary-toggle" type="button" aria-expanded="false" aria-controls="summary-${escapeHtml(article.id)}" aria-label="Show summary for ${escapeHtml(article.title)}"><span aria-hidden="true">⌄</span></button>
+      <button class="summary-toggle" type="button" aria-expanded="false" aria-controls="${escapeHtml(summaryId)}" aria-label="Show summary for ${escapeHtml(article.title)}"><span aria-hidden="true">⌄</span></button>
       <span class="risk">${escapeHtml(article.severity ?? article.cve ?? "intel")}</span>
       <time datetime="${escapeHtml(article.publishedAt)}">${formatDate(article.publishedAt)}</time>
       <span class="headline"><span class="headline-text">${escapeHtml(article.title)}</span><b aria-hidden="true">↗</b></span>
     </div>
-    <p class="entry-summary" id="summary-${escapeHtml(article.id)}">${escapeHtml(article.summary)}</p>
+    <p class="entry-summary" id="${escapeHtml(summaryId)}">${escapeHtml(article.summary)}</p>
   </article>`;
 }
 
@@ -70,6 +71,16 @@ export function renderPage(rawNews) {
   const recentIds = new Set([...articles].sort((left, right) => right.addedAt.localeCompare(left.addedAt)).slice(0, 3).map((article) => article.id));
   const renderedArticles = articles.map((article) => ({ ...article, isRecent: recentIds.has(article.id) }));
   const recentKey = [...recentIds].sort().join("|");
+  const visibleArticleCount = 5;
+  const hiddenArticleCount = Math.max(0, renderedArticles.length - visibleArticleCount);
+  const categories = [...new Set(renderedArticles.map((article) => article.category))].sort((left, right) => left.localeCompare(right, "en"));
+  const categoryTabs = categories.map((category, index) => `<button class="terminal-tab category-tab" type="button" role="tab" aria-selected="false" aria-controls="category-panel-${index}" id="category-tab-${index}">${escapeHtml(category)}</button>`).join("");
+  const categoryPanels = categories.map((category, index) => {
+    const categoryArticles = renderedArticles.filter((article) => article.category === category);
+    return `<div class="terminal-panel news-panel" id="category-panel-${index}" role="tabpanel" aria-labelledby="category-tab-${index}" hidden><div class="terminal-body"><p class="prompt"><span>root@news</span>:<b>~/news/${escapeHtml(category)}</b>$ ls -lah</p>
+    <section class="listing" aria-label="${escapeHtml(category)} news articles">${categoryArticles.map((article) => renderEntry(article, `category-${index}`)).join("")}</section>
+    </div></div>`;
+  }).join("");
 
   return `<!doctype html><html lang="en"><head>
     <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -78,11 +89,11 @@ export function renderPage(rawNews) {
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/news.css"><script src="/assets/news.js" defer></script><title>PBI // Security News</title>
   </head><body>${renderHeader()}<main data-recent-key="${escapeHtml(recentKey)}"><section class="terminal" aria-label="Security news terminal">
-    <div class="terminal-header"><div class="header-left"><span class="terminal-mark" aria-hidden="true">K</span><div class="tab-strip" role="tablist" aria-label="Terminal sessions"><button class="terminal-tab blue active" type="button" role="tab" aria-selected="true" aria-controls="news-panel" id="news-tab">news</button><button class="terminal-tab red" type="button" role="tab" aria-selected="false" aria-controls="kali-blue-panel" id="kali-blue-tab">blue</button><button class="terminal-tab llm" type="button" role="tab" aria-selected="false" aria-controls="kali-red-panel" id="kali-red-tab">red</button></div></div><span class="terminal-title">Terminal</span><span class="terminal-dot" aria-hidden="true"></span></div>
+    <div class="terminal-header"><div class="header-left"><span class="terminal-mark" aria-hidden="true">K</span><div class="tab-strip" role="tablist" aria-label="News filters"><button class="terminal-tab active" type="button" role="tab" aria-selected="true" aria-controls="news-panel" id="news-tab">news</button>${categoryTabs}</div></div><span class="terminal-title">Terminal</span><span class="terminal-dot" aria-hidden="true"></span></div>
     <div class="terminal-panel news-panel" id="news-panel" role="tabpanel" aria-labelledby="news-tab"><div class="terminal-body"><p class="prompt"><span>root@news</span>:<b>~/news</b>$ ls -lah news/</p>
-    <section class="listing" aria-label="Security news articles">${renderedArticles.map(renderEntry).join("")}</section>
+    <section class="listing" aria-label="Security news articles">${renderedArticles.map((article, index) => renderEntry(article, "news", index >= visibleArticleCount)).join("")}</section>
+    ${hiddenArticleCount > 0 ? `<button class="news-expand-toggle" type="button" aria-expanded="false"><span class="expand-line" aria-hidden="true"></span><span class="expand-label"><span class="expand-chevron" aria-hidden="true">⌄</span><span class="expand-text">${hiddenArticleCount} more news</span></span><span class="expand-line" aria-hidden="true"></span></button>` : ""}
     </div></div>
-    <div class="terminal-panel kali-panel" id="kali-blue-panel" role="tabpanel" aria-labelledby="kali-blue-tab" hidden><iframe title="Kali Terminal blue session" data-src="/kali_terminal"></iframe></div>
-    <div class="terminal-panel kali-panel" id="kali-red-panel" role="tabpanel" aria-labelledby="kali-red-tab" hidden><iframe title="Kali Terminal red session" data-src="/kali_terminal"></iframe></div>
+    ${categoryPanels}
   </section></main></body></html>`;
 }

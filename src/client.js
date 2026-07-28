@@ -5,9 +5,6 @@ export const clientScript = `(() => {
   tabs.forEach((tab) => tab.addEventListener("click", () => {
     tabs.forEach((item) => item.setAttribute("aria-selected", String(item === tab)));
     panels.forEach((panel) => { panel.hidden = panel.id !== tab.getAttribute("aria-controls"); });
-    const panel = document.getElementById(tab.getAttribute("aria-controls"));
-    const frame = panel.querySelector("iframe[data-src]");
-    if (frame && !frame.getAttribute("src")) frame.src = frame.dataset.src;
   }));
 
   document.querySelectorAll(".news-entry").forEach((entry) => {
@@ -18,6 +15,18 @@ export const clientScript = `(() => {
       button.setAttribute("aria-expanded", String(visible));
     });
   });
+
+  const expandButton = document.querySelector(".news-expand-toggle");
+  if (expandButton) {
+    const additionalNews = [...document.querySelectorAll("#news-panel .additional-news")];
+    const expandText = expandButton.querySelector(".expand-text");
+    expandButton.addEventListener("click", () => {
+      const expanded = expandButton.getAttribute("aria-expanded") === "true";
+      additionalNews.forEach((entry) => { entry.hidden = expanded; });
+      expandButton.setAttribute("aria-expanded", String(!expanded));
+      expandText.textContent = expanded ? \`\${additionalNews.length} more news\` : "Show fewer news";
+    });
+  }
 
   const main = document.querySelector("main[data-recent-key]");
   if (!main || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
