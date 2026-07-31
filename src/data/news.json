@@ -8,11 +8,7 @@
     "publishedAt": "2026-07-25",
     "addedAt": "2026-07-27T09:00:00Z",
     "category": "Malvertising",
-    "tags": [
-      "SourTrade",
-      "Bun",
-      "Windows"
-    ],
+    "tags": ["SourTrade", "Bun", "Windows"],
     "severity": "high",
     "summary": "A malvertising operation dubbed SourTrade is making victims' browsers build the final Windows executable themselves, using a legitimate Bun runtime as its base instead of serving one complete malicious file from a fixed URL. Confiant, which detailed the campaign on July 23, 2026, said it has operated since late 2024 and impersonated TradingView, Solana, and Luno to target retail traders and"
   },
@@ -25,10 +21,7 @@
     "publishedAt": "2026-07-22",
     "addedAt": "2026-07-25T09:00:00Z",
     "category": "CVE",
-    "tags": [
-      "SmartConsole",
-      "Authentication Bypass"
-    ],
+    "tags": ["SmartConsole", "Authentication Bypass"],
     "severity": "critical",
     "cve": "CVE-2026-16232",
     "summary": "Check Point confirmed in-the-wild exploitation of a SmartConsole login flaw that can let an unauthenticated remote attacker obtain an application token and authenticate with full administrative privileges. The exposed control plane can be used to modify security policies and management configuration."
@@ -42,11 +35,7 @@
     "publishedAt": "2026-07-23",
     "addedAt": "2026-07-25T09:02:00Z",
     "category": "Ransomware",
-    "tags": [
-      "Chaos",
-      "msaRAT",
-      "WebRTC"
-    ],
+    "tags": ["Chaos", "msaRAT", "WebRTC"],
     "severity": "high",
     "summary": "Cisco Talos identified a Rust-based RAT that launches Chrome or Edge and controls it through the Chrome DevTools Protocol. Command-and-control traffic then leaves through legitimate browser processes using Cloudflare-hosted infrastructure, Google STUN and Twilio TURN over WebRTC."
   },
@@ -59,10 +48,7 @@
     "publishedAt": "2026-07-23",
     "addedAt": "2026-07-25T09:01:00Z",
     "category": "Incident Response",
-    "tags": [
-      "Data Breach",
-      "Customer Data"
-    ],
+    "tags": ["Data Breach", "Customer Data"],
     "severity": "high",
     "summary": "Origin Energy confirmed that customer records were accessed and disclosed without authorization. Potentially affected fields include names, addresses, dates of birth, phone numbers, account information and partial credit-card or bank-account digits."
   },
@@ -75,12 +61,7 @@
     "publishedAt": "2026-07-27",
     "addedAt": "2026-07-27T08:02:00Z",
     "category": "Incident Response",
-    "tags": [
-      "MCBS",
-      "PEAR",
-      "Healthcare",
-      "Data Breach"
-    ],
+    "tags": ["MCBS", "PEAR", "Healthcare", "Data Breach"],
     "severity": "high",
     "summary": "Medical Computer Business Services disclosed that a 2025 intrusion affects 1,261,464 individuals across multiple healthcare organizations. Potentially stolen data includes Social Security numbers, insurance details, medical information, payment data and emails, while the PEAR ransomware group claims 3 TB of exfiltrated files. Healthcare providers and partners should prepare for targeted phishing, identity fraud and downstream notification obligations."
   },
@@ -93,12 +74,7 @@
     "publishedAt": "2026-07-25",
     "addedAt": "2026-07-27T08:02:01Z",
     "category": "Vulnerability",
-    "tags": [
-      "Rockwell",
-      "Arena Simulation",
-      "ICS",
-      "Code Execution"
-    ],
+    "tags": ["Rockwell", "Arena Simulation", "ICS", "Code Execution"],
     "severity": "high",
     "cve": "CVE-2026-8085",
     "summary": "Rockwell Automation fixed four high-severity memory corruption vulnerabilities in Arena Simulation 17.00.00 and earlier. Malicious project files can trigger out-of-bounds writes and execute code in the current user's context, creating a practical phishing or supply-chain path into engineering environments. Organizations using Arena should upgrade to 17.00.01 and restrict untrusted simulation files."
@@ -112,12 +88,7 @@
     "publishedAt": "2026-07-26",
     "addedAt": "2026-07-27T08:02:02Z",
     "category": "General Intel",
-    "tags": [
-      "GitHub",
-      "PyPI",
-      "Dependabot",
-      "Supply Chain"
-    ],
+    "tags": ["GitHub", "PyPI", "Dependabot", "Supply Chain"],
     "severity": "medium",
     "summary": "GitHub now applies a default three-day cooldown to Dependabot version updates, while PyPI blocks maintainers from adding new files to releases older than 14 days. The controls reduce exposure to newly published malicious packages and poisoned trusted releases, but do not replace lockfiles, scoped tokens or installation-script restrictions in CI pipelines."
   },
@@ -130,12 +101,7 @@
     "publishedAt": "2026-07-27",
     "addedAt": "2026-07-28T07:29:43Z",
     "category": "CVE",
-    "tags": [
-      "VeloCloud",
-      "SD-WAN",
-      "Command Injection",
-      "Active Exploitation"
-    ],
+    "tags": ["VeloCloud", "SD-WAN", "Command Injection", "Active Exploitation"],
     "severity": "critical",
     "cve": "CVE-2026-16812",
     "summary": "Arista disclosed active exploitation of an unauthenticated OS command injection flaw in on-premises VeloCloud Orchestrator. The web interface is exposed by default, and compromise can expose orchestrator data, credentials, certificates, managed edge devices and the underlying host. Operators should upgrade immediately, restrict management access, block the published attacker IPs, preserve logs and rotate credentials if compromise is suspected."
@@ -149,12 +115,7 @@
     "publishedAt": "2026-07-27",
     "addedAt": "2026-07-28T07:29:42Z",
     "category": "Exploit",
-    "tags": [
-      "FastJson",
-      "Spring Boot",
-      "Java",
-      "Active Exploitation"
-    ],
+    "tags": ["FastJson", "Spring Boot", "Java", "Active Exploitation"],
     "severity": "critical",
     "cve": "CVE-2026-16723",
     "summary": "Attackers are exploiting FastJson 1.2.68 through 1.2.83 to execute code remotely against Spring Boot fat-JAR applications under stock default settings, without AutoType or a gadget chain. No vendor patch is available for the unmaintained 1.x branch. Teams should inventory affected Java services, enable SafeMode or the noneautotype build, add compensating WAF controls and prioritize migration to fastjson2."
@@ -168,12 +129,7 @@
     "publishedAt": "2026-07-27",
     "addedAt": "2026-07-28T07:29:41Z",
     "category": "Exploit",
-    "tags": [
-      "Active Directory",
-      "AD CS",
-      "PKINIT",
-      "PoC"
-    ],
+    "tags": ["Active Directory", "AD CS", "PKINIT", "PoC"],
     "severity": "high",
     "cve": "CVE-2026-54121",
     "summary": "Public exploit code for Certighost allows a low-privileged domain user in affected Active Directory Certificate Services environments to obtain a certificate as a domain controller, authenticate through PKINIT and progress to DCSync and krbtgt theft. Microsoft fixed the flaw in July 2026 updates. Organizations running enterprise CAs should patch immediately, review certificate issuance and machine-account activity, and assess exposure from default machine quotas."
@@ -187,12 +143,7 @@
     "publishedAt": "2026-07-27",
     "addedAt": "2026-07-29T07:31:57Z",
     "category": "Ransomware",
-    "tags": [
-      "PTC Windchill",
-      "FlexPLM",
-      "Clop",
-      "Active Exploitation"
-    ],
+    "tags": ["PTC Windchill", "FlexPLM", "Clop", "Active Exploitation"],
     "severity": "critical",
     "cve": "CVE-2026-12569",
     "summary": "A Clop affiliate is exploiting the unauthenticated Windchill and FlexPLM deserialization flaw to deploy JSP webshells, enumerate engineering repositories, stage files and exfiltrate sensitive product data for extortion. PTC published additional indicators on July 27. Operators should patch supported releases immediately, hunt for the documented webshell paths and source IPs, isolate suspected systems and rotate credentials exposed through compromised PLM environments."
@@ -206,12 +157,7 @@
     "publishedAt": "2026-07-28",
     "addedAt": "2026-07-29T07:31:56Z",
     "category": "CVE",
-    "tags": [
-      "TeamCity",
-      "CI/CD",
-      "Pre-Auth RCE",
-      "Supply Chain"
-    ],
+    "tags": ["TeamCity", "CI/CD", "Pre-Auth RCE", "Supply Chain"],
     "severity": "critical",
     "cve": "CVE-2026-63077",
     "summary": "JetBrains disclosed a pre-authentication vulnerability affecting every TeamCity On-Premises version reachable over HTTP or HTTPS. Attackers can abuse the agent polling protocol to bypass authentication and execute operating-system commands as the TeamCity service, potentially exposing stored credentials, build configurations and downstream artifacts. Upgrade to 2025.11.7 or 2026.1.3, or apply the security patch plugin, and restrict server access to trusted networks."
@@ -225,14 +171,48 @@
     "publishedAt": "2026-07-28",
     "addedAt": "2026-07-29T07:31:55Z",
     "category": "Vulnerability",
-    "tags": [
-      "BMC",
-      "IPMI",
-      "Public Exposure",
-      "Credential Theft"
-    ],
+    "tags": ["BMC", "IPMI", "Public Exposure", "Credential Theft"],
     "severity": "high",
     "cve": "CVE-2013-4786",
     "summary": "Researchers identified 24,650 internet-exposed Baseboard Management Controllers that disclose password-derived authentication material through the legacy IPMI 2.0 handshake, with thousands using weak or factory-pattern credentials. BMC access provides out-of-band control below the operating system and can expose shared server or GPU environments. Remove IPMI and Redfish from public access, rotate defaults, disable legacy authentication and isolate management networks."
+  },
+  {
+    "id": "cosmosescape-azure-cosmos-db-cross-tenant-takeover",
+    "title": "CosmosEscape flaw enabled cross-tenant takeover of every Azure Cosmos DB database",
+    "source": "Wiz Research",
+    "sourceDomain": "wiz.io",
+    "url": "https://www.wiz.io/blog/cosmosescape-taking-over-every-database-in-azure-cosmos-db",
+    "publishedAt": "2026-07-30",
+    "addedAt": "2026-07-31T07:28:43Z",
+    "category": "Cloud Security",
+    "tags": ["Azure Cosmos DB", "Cross-Tenant", "Cloud Isolation", "Microsoft"],
+    "severity": "critical",
+    "summary": "Wiz disclosed CosmosEscape, a now-remediated Azure Cosmos DB vulnerability chain that escaped the Gremlin query sandbox, reached the multi-tenant database gateway and exposed a platform-wide key capable of retrieving any account's primary key. Microsoft found no unauthorized activity and says no customer action is required. Cloud teams should still review provider notifications, privileged database telemetry and dependency risk for services backed by Cosmos DB."
+  },
+  {
+    "id": "anthropic-cyber-evaluations-accessed-real-companies",
+    "title": "Anthropic cyber evaluations accidentally compromised three real companies",
+    "source": "Reuters",
+    "sourceDomain": "reuters.com",
+    "url": "https://www.reuters.com/legal/litigation/anthropic-says-claude-ai-models-accessed-three-companies-during-tests-2026-07-30/",
+    "publishedAt": "2026-07-30",
+    "addedAt": "2026-07-31T07:28:42Z",
+    "category": "AI Security",
+    "tags": ["Anthropic", "AI Agents", "Security Testing", "Containment Failure"],
+    "severity": "high",
+    "summary": "Anthropic disclosed that misconfigured cyber evaluation environments gave Claude models unintended internet access, leading to unauthorized compromise of three real organizations through weak passwords and unauthenticated endpoints. The company suspended cyber evaluations on July 23 and notified affected organizations. Security teams running autonomous testing agents should enforce network isolation, explicit target allowlists, egress controls, independent monitoring and immediate kill mechanisms outside the model's control."
+  },
+  {
+    "id": "wiz-exposed-mcp-servers-cloud-credentials-command-execution",
+    "title": "Internet-exposed MCP servers leak enterprise data, cloud credentials and command execution",
+    "source": "Wiz Research",
+    "sourceDomain": "wiz.io",
+    "url": "https://www.wiz.io/blog/the-risk-hiding-behind-exposed-mcp-servers",
+    "publishedAt": "2026-07-28",
+    "addedAt": "2026-07-31T07:28:41Z",
+    "category": "Cloud Security",
+    "tags": ["MCP", "Public Exposure", "Cloud Credentials", "AI Agents"],
+    "severity": "high",
+    "summary": "Wiz found unauthenticated Model Context Protocol servers at major enterprises exposing employee data, production databases, IAM write operations, command execution and temporary cloud credentials through metadata-service access. Because MCP advertises machine-readable tool catalogs, one generic client can rapidly enumerate exposed capabilities. Organizations should inventory internet-reachable MCP endpoints, require OAuth-based authorization, reduce backend service-account privileges and retain prompt and tool-invocation logs."
   }
 ]
