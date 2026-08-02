@@ -253,5 +253,44 @@
     "tags": ["ExfilSquad", "UK Government", "Data Theft", "Credential Exposure"],
     "severity": "high",
     "summary": "A newly identified extortion group stole more than 600,000 help-desk records from the UK Department for Education and roughly 135,000 records from the Police National Legal Database. Exposed data includes contact details, organizational affiliations and PNLD access passwords. Affected organizations should force password resets, investigate credential reuse, monitor targeted phishing and validate whether shared service portals expose broader administrative access."
+  },
+  {
+    "id": "stac474-teams-vishing-chaos-ransomware",
+    "title": "Microsoft Teams vishing campaign reaches Chaos ransomware in under 17 hours",
+    "source": "ITPro",
+    "sourceDomain": "itpro.com",
+    "url": "https://www.itpro.com/security/phishing/a-new-vishing-campaign-is-targeting-microsoft-teams-heres-what-users-need-to-know",
+    "publishedAt": "2026-07-29",
+    "addedAt": "2026-08-02T07:30:17Z",
+    "category": "Phishing",
+    "tags": ["Microsoft Teams", "Vishing", "Chaos Ransomware", "Remote Access"],
+    "severity": "high",
+    "summary": "Sophos linked the STAC474 campaign to Microsoft Teams calls and chats impersonating internal IT support, followed by remote-access tooling, PowerShell execution, persistence and Golang implants. At least three compromises ended in Chaos ransomware, with one organization moving from initial contact to encryption in under 17 hours. Teams should restrict external Teams communication, control remote-management tools, monitor user-writable execution paths and rehearse rapid containment for help-desk impersonation."
+  },
+  {
+    "id": "ey-shinyhunters-supply-chain-data-breach",
+    "title": "ShinyHunters claims EY breach exposed tax data and access to Jira, GitHub and Azure",
+    "source": "BleepingComputer",
+    "sourceDomain": "bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/ernst-and-young-data-breach-claimed-by-shinyhunters-extortion-gang/",
+    "publishedAt": "2026-07-27",
+    "addedAt": "2026-08-02T07:30:16Z",
+    "category": "Incident Response",
+    "tags": ["Ernst & Young", "ShinyHunters", "Supply Chain", "Data Theft"],
+    "severity": "high",
+    "summary": "Ernst & Young disclosed that attackers compromised a third-party IT support platform and downloaded documents that may contain client tax, personal and financial information. ShinyHunters claims stolen vendor credentials also enabled access to EY Jira, GitHub and Azure environments, although those claims remain unverified. Organizations should review support-platform trust relationships, rotate exposed integration credentials, inspect cloud and developer telemetry, and prepare for targeted fraud using tax records."
+  },
+  {
+    "id": "coca-cola-fairlife-anubis-ransomware-data-theft",
+    "title": "Coca-Cola confirms Fairlife ransomware data theft after production disruption",
+    "source": "BleepingComputer",
+    "sourceDomain": "bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/coca-cola-confirms-data-theft-in-fairlife-ransomware-attack/",
+    "publishedAt": "2026-07-27",
+    "addedAt": "2026-08-02T07:30:15Z",
+    "category": "Ransomware",
+    "tags": ["Coca-Cola", "Fairlife", "Anubis", "Operational Disruption"],
+    "severity": "high",
+    "summary": "Coca-Cola confirmed that the Fairlife ransomware incident involved unauthorized access, theft of data and a temporary suspension of U.S. production. The Anubis group claimed one terabyte of stolen files and later released data after its deadline expired. Manufacturing and food-sector operators should isolate production networks, validate Nutanix recovery paths, investigate data staging and egress, and plan continuity measures that do not depend on extortion negotiations."
   }
 ]
