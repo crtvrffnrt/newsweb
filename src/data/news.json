@@ -292,5 +292,46 @@
     "tags": ["Coca-Cola", "Fairlife", "Anubis", "Operational Disruption"],
     "severity": "high",
     "summary": "Coca-Cola confirmed that the Fairlife ransomware incident involved unauthorized access, theft of data and a temporary suspension of U.S. production. The Anubis group claimed one terabyte of stolen files and later released data after its deadline expired. Manufacturing and food-sector operators should isolate production networks, validate Nutanix recovery paths, investigate data staging and egress, and plan continuity measures that do not depend on extortion negotiations."
+  },
+  {
+    "id": "hugging-face-diffusers-trust-remote-code-bypass",
+    "title": "Hugging Face Diffusers flaws let malicious model repositories execute arbitrary code",
+    "source": "Infosecurity Magazine",
+    "sourceDomain": "infosecurity-magazine.com",
+    "url": "https://www.infosecurity-magazine.com/news/hugging-face-diffusers-trust/",
+    "publishedAt": "2026-07-28",
+    "addedAt": "2026-08-03T07:28:23Z",
+    "category": "Vulnerability",
+    "tags": ["Hugging Face", "AI Supply Chain", "Remote Code Execution", "Model Repositories"],
+    "severity": "high",
+    "cve": "CVE-2026-44827",
+    "summary": "Three high-severity flaws in vulnerable Hugging Face Diffusers releases bypass the trust_remote_code safeguard and allow crafted model repositories to execute arbitrary code during model loading. The library is widely embedded in AI pipelines, CI/CD systems and containers, making malicious model content a practical software-supply-chain vector. Teams should upgrade to Diffusers 0.38.0 or later, restrict repository trust, isolate model-loading workloads and remove cloud credentials from build environments."
+  },
+  {
+    "id": "linux-net-sched-cve-2026-53264-root-privilege-escalation",
+    "title": "Linux net/sched race condition enables local privilege escalation to root",
+    "source": "Infosecurity Magazine",
+    "sourceDomain": "infosecurity-magazine.com",
+    "url": "https://www.infosecurity-magazine.com/news/ai-linux-kernel-zero-day-net-sched/",
+    "publishedAt": "2026-07-28",
+    "addedAt": "2026-08-03T07:28:22Z",
+    "category": "CVE",
+    "tags": ["Linux Kernel", "net/sched", "Privilege Escalation", "Use-After-Free"],
+    "severity": "high",
+    "cve": "CVE-2026-53264",
+    "summary": "A race condition in the Linux kernel net/sched subsystem can produce a use-after-free and allow a local unprivileged user to gain root when unprivileged user namespaces and supporting kernel options are enabled. Researchers reduced reliable exploitation time to roughly five seconds, increasing post-compromise value on exposed multi-user systems. Administrators should deploy distribution kernels containing the upstream RCU fix and review whether unprivileged user namespaces are necessary."
+  },
+  {
+    "id": "ransomware-edr-kill-techniques-q2-2026",
+    "title": "Ransomware groups standardize EDR-kill techniques and compress response windows",
+    "source": "Infosecurity Magazine",
+    "sourceDomain": "infosecurity-magazine.com",
+    "url": "https://www.infosecurity-magazine.com/news/ransomware-q2-2026-edr-kill/",
+    "publishedAt": "2026-07-27",
+    "addedAt": "2026-08-03T07:28:21Z",
+    "category": "Ransomware",
+    "tags": ["EDR Kill", "Ransomware", "Defense Evasion", "Rapid Encryption"],
+    "severity": "high",
+    "summary": "Halcyon reports that disabling EDR and antivirus tooling before encryption has become standard practice across leading ransomware operations, while some groups now move from initial access to deployment in under an hour. Enterprise edge vulnerabilities remain common entry points and AI-assisted operations are increasing automation. Defenders should harden security-tool tamper protection, centralize off-host telemetry, detect vulnerable-driver abuse and rehearse containment actions that do not depend on endpoint agents remaining functional."
   }
 ]
