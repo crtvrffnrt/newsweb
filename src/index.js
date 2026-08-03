@@ -26,6 +26,34 @@ const securityHeaders = {
   "X-Content-Type-Options": "nosniff",
 };
 
+function renderUpdateStatus(articles) {
+  const latestAddedAt = articles.reduce((latest, article) => {
+    if (typeof article.addedAt !== "string") return latest;
+    return article.addedAt > latest ? article.addedAt : latest;
+  }, "");
+
+  const parsed = new Date(latestAddedAt);
+  const formatted = Number.isNaN(parsed.getTime())
+    ? "Unknown"
+    : new Intl.DateTimeFormat("en-GB", {
+        year: "numeric",
+        month: "short",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        hourCycle: "h23",
+        timeZone: "Europe/Berlin",
+        timeZoneName: "short",
+      }).format(parsed);
+
+  return `<div class="update-status" role="status" aria-label="Last content update">
+    <span class="update-status-dot" aria-hidden="true"></span>
+    <span class="update-status-label">Last content update</span>
+    <time datetime="${latestAddedAt}">${formatted}</time>
+    <span class="update-status-source">GitHub / main</span>
+  </div>`;
+}
+
 export default {
   async fetch(request) {
     if (request.method !== "GET" && request.method !== "HEAD") {
@@ -51,7 +79,8 @@ export default {
     }
     if (pathname !== "/") return new Response("Not Found", { status: 404 });
 
-    return new Response(request.method === "HEAD" ? null : renderPage(news), {
+    const page = renderPage(news).replace("</main>", `${renderUpdateStatus(news)}</main>`);
+    return new Response(request.method === "HEAD" ? null : page, {
       headers: { ...securityHeaders, "Cache-Control": "no-store, max-age=0", "Content-Type": "text/html; charset=utf-8" },
     });
   },
