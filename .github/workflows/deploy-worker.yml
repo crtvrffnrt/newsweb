@@ -1,4 +1,4 @@
-name: Deploy security news Worker
+name: Validate security news
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     paths:
       - "src/data/news.json"
       - "src/**"
-      - "wrangler.jsonc"
+      - "scripts/validate-news.js"
       - "package.json"
       - ".github/workflows/deploy-worker.yml"
   workflow_dispatch:
@@ -16,13 +16,13 @@ permissions:
   contents: read
 
 concurrency:
-  group: deploy-security-news-production
+  group: validate-security-news
   cancel-in-progress: true
 
 jobs:
-  validate-and-deploy:
+  validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
 
     steps:
       - name: Check out repository
@@ -33,31 +33,21 @@ jobs:
         with:
           node-version: 24
 
-      - name: Validate news data and Worker source
+      - name: Validate news data and source code
         run: npm test
 
-      - name: Deploy Worker to Cloudflare
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy --minify
-
-      - name: Verify newest article is live
+      - name: Confirm newest news records
         shell: bash
         run: |
-          newest_id="$(node --input-type=module -e "import news from './src/data/news.json' with { type: 'json' }; console.log([...news].sort((a, b) => b.addedAt.localeCompare(a.addedAt))[0].id)")"
-          live_url="https://news.patrick-binder.de/?deployment=${GITHUB_SHA}"
+          node --input-type=module <<'NODE'
+          import news from './src/data/news.json' with { type: 'json' };
 
-          for attempt in {1..12}; do
-            if curl --fail --silent --show-error "$live_url" | grep --fixed-strings --quiet "$newest_id"; then
-              echo "Verified live article: $newest_id"
-              exit 0
-            fi
+          const newest = [...news]
+            .sort((a, b) => b.addedAt.localeCompare(a.addedAt))
+            .slice(0, 3);
 
-            echo "Live deployment not visible yet (attempt $attempt/12)."
-            sleep 10
-          done
-
-          echo "The Worker deployed, but the newest article was not found on the live domain."
-          exit 1
+          console.log('Newest records committed to GitHub:');
+          for (const article of newest) {
+            console.log(`- ${article.id}: ${article.title}`);
+          }
+          NODE
