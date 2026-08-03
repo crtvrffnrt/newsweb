@@ -1,0 +1,63 @@
+name: Deploy security news Worker
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "src/data/news.json"
+      - "src/**"
+      - "wrangler.jsonc"
+      - "package.json"
+      - ".github/workflows/deploy-worker.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-security-news-production
+  cancel-in-progress: true
+
+jobs:
+  validate-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Validate news data and Worker source
+        run: npm test
+
+      - name: Deploy Worker to Cloudflare
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy --minify
+
+      - name: Verify newest article is live
+        shell: bash
+        run: |
+          newest_id="$(node --input-type=module -e "import news from './src/data/news.json' with { type: 'json' }; console.log([...news].sort((a, b) => b.addedAt.localeCompare(a.addedAt))[0].id)")"
+          live_url="https://news.patrick-binder.de/?deployment=${GITHUB_SHA}"
+
+          for attempt in {1..12}; do
+            if curl --fail --silent --show-error "$live_url" | grep --fixed-strings --quiet "$newest_id"; then
+              echo "Verified live article: $newest_id"
+              exit 0
+            fi
+
+            echo "Live deployment not visible yet (attempt $attempt/12)."
+            sleep 10
+          done
+
+          echo "The Worker deployed, but the newest article was not found on the live domain."
+          exit 1
