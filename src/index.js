@@ -3,8 +3,17 @@ import { clientScript } from "./client.js";
 import { styles } from "./styles.js";
 import { renderPage } from "./template.js";
 
+const updateStatusStyles = `
+.update-status { display:flex; align-items:center; justify-content:flex-end; flex-wrap:wrap; gap:8px; padding:12px 4px 0; color:#8f9aa3; font:700 .68rem/1.4 var(--mono); letter-spacing:.06em; text-transform:uppercase; }
+.update-status-dot { width:7px; height:7px; flex:none; border-radius:50%; background:#35d07f; box-shadow:0 0 12px rgb(53 208 127 / 70%); }
+.update-status-label { color:#b9c2c9; }
+.update-status time { color:#dff7ff; letter-spacing:.02em; text-transform:none; }
+.update-status-source { padding-left:8px; border-left:1px solid rgb(255 255 255 / 14%); color:#6f7a82; }
+@media (max-width:620px) { .update-status { justify-content:center; padding-top:10px; font-size:.62rem; } .update-status-source { display:none; } }
+`;
+
 const ASSETS = {
-  "/assets/news.css": { body: styles, type: "text/css; charset=utf-8" },
+  "/assets/news.css": { body: `${styles}\n${updateStatusStyles}`, type: "text/css; charset=utf-8" },
   "/assets/news.js": { body: clientScript, type: "application/javascript; charset=utf-8" },
 };
 const KALI_TERMINAL_URL = "https://www.patrick-binder.de/kali_terminal";
