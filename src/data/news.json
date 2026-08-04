@@ -333,5 +333,44 @@
     "tags": ["EDR Kill", "Ransomware", "Defense Evasion", "Rapid Encryption"],
     "severity": "high",
     "summary": "Halcyon reports that disabling EDR and antivirus tooling before encryption has become standard practice across leading ransomware operations, while some groups now move from initial access to deployment in under an hour. Enterprise edge vulnerabilities remain common entry points and AI-assisted operations are increasing automation. Defenders should harden security-tool tamper protection, centralize off-host telemetry, detect vulnerable-driver abuse and rehearse containment actions that do not depend on endpoint agents remaining functional."
+  },
+  {
+    "id": "liechtenstein-beneficial-owner-register-cyberattack",
+    "title": "Cyberattack exposes 31,000 records in Liechtenstein beneficial-owner register",
+    "source": "Associated Press",
+    "sourceDomain": "apnews.com",
+    "url": "https://apnews.com/article/liechtenstein-cyberattack-data-register-ce499c6c1d87c3c952058dc86f31d6ff",
+    "publishedAt": "2026-08-03",
+    "addedAt": "2026-08-04T07:32:59Z",
+    "category": "Incident Response",
+    "tags": ["Liechtenstein", "Data Breach", "Beneficial Ownership", "Financial Sector"],
+    "severity": "high",
+    "summary": "Attackers accessed Liechtenstein’s register of economic beneficiaries, exposing records tied to roughly 31,000 people associated with companies, foundations and trusteeships. Authorities detected the intrusion, secured the data, took the system offline and formed a crisis unit; no alteration or deletion has been identified. Financial-sector organizations should review privileged access, monitor misuse of exposed corporate-ownership data and prepare for targeted fraud or extortion."
+  },
+  {
+    "id": "hasbro-cyberattack-sap-business-continuity-lessons",
+    "title": "Hasbro cyberattack postmortem shows value of rapid SAP isolation and manual continuity",
+    "source": "The Wall Street Journal",
+    "sourceDomain": "wsj.com",
+    "url": "https://www.wsj.com/cfo-journal/something-was-wrong-hasbros-lessons-from-a-cyberattack-3fd08584",
+    "publishedAt": "2026-08-04",
+    "addedAt": "2026-08-04T07:32:58Z",
+    "category": "Incident Response",
+    "tags": ["Hasbro", "SAP", "Business Continuity", "Incident Response"],
+    "severity": "high",
+    "summary": "Hasbro detailed how an early-2026 cyberattack forced it to disable SAP systems supporting finance and human resources during a critical product-launch period. Manual processes and rapid containment limited estimated revenue impact to about $25 million, below initial forecasts. Incident-response leaders should validate ERP isolation procedures, offline operating playbooks, executive decision thresholds and recovery dependencies before a disruptive attack removes core business systems."
+  },
+  {
+    "id": "microsoft-project-perception-public-preview-agentic-security",
+    "title": "Microsoft opens Project Perception agentic security platform to public preview",
+    "source": "Microsoft",
+    "sourceDomain": "blogs.microsoft.com",
+    "url": "https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/",
+    "publishedAt": "2026-07-27",
+    "addedAt": "2026-08-04T07:32:57Z",
+    "category": "AI Security",
+    "tags": ["Microsoft Security", "Project Perception", "Agentic Security", "Vulnerability Management"],
+    "severity": "medium",
+    "summary": "Microsoft made Project Perception available in public preview on August 3, combining security agents with its MAI-Cyber-1-Flash model for vulnerability-management and future defensive workflows. The platform signals a shift toward autonomous discovery and remediation across enterprise environments. Security teams evaluating it should require scoped identities, approval gates, auditable actions, isolated testing and rollback controls before granting agents production privileges."
   }
 ]
