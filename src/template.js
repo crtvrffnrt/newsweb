@@ -1,6 +1,6 @@
 import { renderSearchControl } from "./search.js";
 
-const assetVersion = "20260920-category-search-v1";
+const assetVersion = "20260920-visible-search-v2";
 
 const projects = [
   ["AGENTS.md - Agent Instructions", "https://github.com/crtvrffnrt/AGENTS.md"],
@@ -131,7 +131,7 @@ export function renderPage(rawNews) {
     <meta name="description" content="Curated operational cybersecurity news from PBI."><meta name="theme-color" content="#05060a">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/news.css?v=${assetVersion}"><script src="/assets/news.js?v=${assetVersion}" defer></script><title>PBI // Security News</title>
+    <link rel="stylesheet" href="/assets/news.css?v=${assetVersion}"><script src="/assets/news.js?v=${assetVersion}" defer></script><script src="/assets/search.js?v=${assetVersion}" defer></script><title>PBI // Security News</title>
   </head><body>${renderHeader()}<main data-recent-key="${escapeHtml(recentKey)}">
     <section class="terminal" aria-label="Security news terminal">
       <div class="terminal-header">

@@ -2,10 +2,14 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { Script } from "node:vm";
 import { readFileSync } from "node:fs";
-import { normalizeSearchText, parseSearchQuery, matchesSearch, searchClient, searchStyles, renderSearchControl } from "../src/search.js";
+import { searchSource, searchClient, searchStyles, renderSearchControl } from "../src/search.js";
 import { renderPage } from "../src/template.js";
 import { clientScript } from "../src/client.js";
 
+// Exercise the exact source shipped to the browser, not a server-side duplicate.
+const { normalizeSearchText, parseSearchQuery, matchesSearch } = new Script(
+  "(() => {\n" + searchSource + "\nreturn { normalizeSearchText, parseSearchQuery, matchesSearch }; })()",
+).runInThisContext();
 const match = (query, fields) => matchesSearch(fields.map(normalizeSearchText), parseSearchQuery(query));
 const sample = {
   id: "search-test", title: "Azure credential exposure", summary: "Investigate token theft.",
@@ -46,8 +50,13 @@ test("input is bounded and query characters are never evaluated as regex or code
   assert.ok(match(".*", ["literal .* text"]));
   assert.doesNotThrow(() => parseSearchQuery('<script>alert(1)</script> [ ('));
 });
-test("search icon is collapsed initially and the form submits with Enter", () => {
+test("search control is visible in server HTML before any JavaScript executes", () => {
   const html = renderSearchControl();
+  const button = html.match(/<button[^>]*id="news-search-toggle"[^>]*>/)?.[0];
+  assert.ok(button);
+  assert.doesNotMatch(button, /\shidden(?:\s|=|>)/);
+  assert.match(html, /class="news-search-label">Search</);
+  assert.match(html, /stroke="currentColor"/);
   assert.match(html, /type="search"/);
   assert.match(html, /enterkeyhint="search"/);
   assert.match(html, /id="news-search-form"[^>]*hidden/);
@@ -76,14 +85,17 @@ test("hidden articles, panels and buttons override desktop and mobile display ru
   assert.match(searchStyles, /\.news-panel\[hidden\]/);
   assert.match(searchStyles, /display:none!important/);
 });
-test("both browser scripts parse and worker serves search through existing asset URLs", () => {
-  assert.doesNotThrow(() => new Script(clientScript + "\n" + searchClient));
+test("search is served separately from legacy JavaScript using versioned same-origin assets", () => {
+  assert.doesNotThrow(() => new Script(clientScript));
+  assert.doesNotThrow(() => new Script(searchClient));
   const worker = readFileSync(new URL("../src/index.js", import.meta.url), "utf8");
-  assert.ok(worker.includes('${clientScript}\\n${searchClient}'));
+  assert.ok(worker.includes('"/assets/news.js": { body: clientScript'));
+  assert.ok(worker.includes('"/assets/search.js": { body: searchClient'));
   assert.ok(worker.includes('${styles}\\n${updateStatusStyles}\\n${searchStyles}'));
-  assert.match(renderPage([sample]), /news\.js\?v=20260920-category-search-v1/);
+  const html = renderPage([sample]);
+  assert.match(html, /search\.js\?v=20260920-visible-search-v2/);
+  assert.ok(html.indexOf('src="/assets/news.js') < html.indexOf('src="/assets/search.js'));
 });
-
 test("short acronyms and complete indicators do not match larger words or identifiers", () => {
   assert.equal(match("rce", ["source control"]), false);
   assert.equal(match("ai", ["supply chain"]), false);
@@ -93,4 +105,42 @@ test("short acronyms and complete indicators do not match larger words or identi
   assert.equal(match("T1528", ["T15280"]), false);
   assert.equal(match("192.0.2.1", ["192.0.2.10"]), false);
   assert.ok(match("conduc", ["Orkes Conductor"]));
+});
+test("browser source has no dependency on function serialization or Worker helpers", () => {
+  const source = readFileSync(new URL("../src/search.js", import.meta.url), "utf8");
+  assert.doesNotMatch(source, /\.toString\s*\(/);
+  assert.doesNotMatch(searchClient, /\b(?:__name|__pow|eval)\s*\(/);
+  // Function serialization is unavailable in this simulated build environment.
+  const moduleSource = source.replace(/^export /gm, "");
+  const result = new Script(
+    'Function.prototype.toString = function () { throw new Error("serialization forbidden"); };\n'
+    + moduleSource + '\nsearchClient;',
+  ).runInNewContext();
+  assert.equal(result, searchClient);
+});
+test("search waits for the DOM when loaded early", () => {
+  let registered = false;
+  new Script(searchClient).runInNewContext({
+    document: {
+      readyState: "loading",
+      addEventListener(event, callback, options) {
+        assert.equal(event, "DOMContentLoaded");
+        assert.equal(typeof callback, "function");
+        assert.equal(options.once, true);
+        registered = true;
+      },
+    },
+  });
+  assert.ok(registered);
+});
+test("search initializes immediately after document loading without external helpers", () => {
+  let queried = false;
+  new Script(searchClient).runInNewContext({
+    document: {
+      readyState: "interactive",
+      querySelector() { queried = true; return null; },
+      getElementById() { return null; },
+    },
+  });
+  assert.ok(queried);
 });

@@ -15,7 +15,8 @@ const updateStatusStyles = `
 
 const ASSETS = {
   "/assets/news.css": { body: `${styles}\n${updateStatusStyles}\n${searchStyles}`, type: "text/css; charset=utf-8" },
-  "/assets/news.js": { body: `${clientScript}\n${searchClient}`, type: "application/javascript; charset=utf-8" },
+  "/assets/news.js": { body: clientScript, type: "application/javascript; charset=utf-8" },
+  "/assets/search.js": { body: searchClient, type: "application/javascript; charset=utf-8" },
 };
 const KALI_TERMINAL_URL = "https://www.patrick-binder.de/kali_terminal";
 
