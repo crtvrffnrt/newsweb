@@ -18,7 +18,15 @@ export const clientScript = `(() => {
   document.querySelectorAll(".news-expand-toggle").forEach((expandButton) => {
     expandButton.addEventListener("click", () => {
       const panel = expandButton.closest(".news-panel");
-      panel?.querySelectorAll(".additional-news").forEach((entry) => { entry.hidden = false; });
+      if (!panel) return;
+
+      const additionalNews = [...panel.querySelectorAll(".additional-news")];
+      additionalNews.forEach((entry) => {
+        entry.hidden = false;
+        entry.removeAttribute("hidden");
+      });
+
+      expandButton.setAttribute("aria-expanded", "true");
       expandButton.remove();
     });
   });

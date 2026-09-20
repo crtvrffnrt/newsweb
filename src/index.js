@@ -74,7 +74,7 @@ export default {
     const asset = ASSETS[pathname];
     if (asset) {
       return new Response(request.method === "HEAD" ? null : asset.body, {
-        headers: { ...securityHeaders, "Cache-Control": "public, max-age=86400, s-maxage=86400", "Content-Type": asset.type },
+        headers: { ...securityHeaders, "Cache-Control": "public, max-age=300, s-maxage=300, must-revalidate", "Content-Type": asset.type },
       });
     }
     if (pathname !== "/") return new Response("Not Found", { status: 404 });
