@@ -87,12 +87,10 @@ function renderPanel(articles, panelId, category = "") {
 
 export function renderPage(rawNews) {
   const ids = new Set();
-  const urls = new Set();
   const articles = rawNews
     .filter((article) => {
-      if (ids.has(article.id) || urls.has(article.url)) return false;
+      if (ids.has(article.id)) return false;
       ids.add(article.id);
-      urls.add(article.url);
       return true;
     })
     .sort((left, right) => right.publishedAt.localeCompare(left.publishedAt) || right.addedAt.localeCompare(left.addedAt));
