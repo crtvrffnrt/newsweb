@@ -1,4 +1,6 @@
-const assetVersion = "20260920-more-news-fix";
+import { renderSearchControl } from "./search.js";
+
+const assetVersion = "20260920-category-search-v1";
 
 const projects = [
   ["AGENTS.md - Agent Instructions", "https://github.com/crtvrffnrt/AGENTS.md"],
@@ -42,8 +44,9 @@ function renderHeader() {
     .map(([label, url]) => `<a class="project-link" role="menuitem" href="${url}" target="_blank" rel="noopener noreferrer">${label}</a>`)
     .join("");
 
-  return `<nav><div class="nav-content">
+  return `<nav class="site-header"><div class="nav-content">
     <a class="nav-brand" href="https://www.patrick-binder.de/">PBI // SECURITY NEWS</a>
+    ${renderSearchControl()}
     <div class="nav-actions" aria-label="Profile links">
       <a class="nav-icon-link" href="https://github.com/crtvrffnrt" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="/GitHub_Invertocat_White.png" alt=""></a>
       <a class="nav-icon-link" href="https://www.linkedin.com/in/patrick-binder-601021199/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="/InBug-White.png" alt=""></a>
@@ -56,7 +59,7 @@ function renderEntry(article, isAdditional = false) {
   const severity = article.severity ?? "intel";
   const cve = article.cve ? `<span class="meta-cve">${escapeHtml(article.cve)}</span>` : "";
 
-  return `<article class="news-entry severity-${escapeHtml(severity)}${article.isRecent ? " recent-entry" : ""}${isAdditional ? " additional-news" : ""}"${isAdditional ? " hidden" : ""}>
+  return `<article class="news-entry severity-${escapeHtml(severity)}${article.isRecent ? " recent-entry" : ""}${isAdditional ? " additional-news" : ""}" data-search-tags="${escapeHtml(JSON.stringify(Array.isArray(article.tags) ? article.tags : []))}"${isAdditional ? " hidden" : ""}>
     <time class="stream-date" datetime="${escapeHtml(article.publishedAt)}">${formatDate(article.publishedAt)}</time>
     <div class="stream-content">
       <div class="entry-meta">

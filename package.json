@@ -6,7 +6,7 @@
   "scripts": {
     "check": "node --check src/index.js",
     "validate:news": "node scripts/validate-news.js",
-    "test": "npm run validate:news && npm run check",
+    "test": "npm run validate:news && npm run check && node --test tests/search.test.js",
     "dev": "npx wrangler@latest dev",
     "deploy": "npx wrangler@latest deploy --minify"
   }
