@@ -1,3 +1,4 @@
+// News Worker entrypoint.
 import news from "./data/news.json" with { type: "json" };
 import { clientScript } from "./client.js";
 import { styles } from "./styles.js";
