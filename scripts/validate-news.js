@@ -4,6 +4,7 @@ const requiredFields = ["id", "title", "source", "sourceDomain", "url", "publish
 const categories = new Set(["CVE", "Vulnerability", "Exploit", "Ransomware", "Malware", "Malvertising", "APT", "Threat Actor", "Phishing", "Cloud Security", "AI Security", "Incident Response", "General Intel"]);
 const data = JSON.parse(await readFile(new URL("../src/data/news.json", import.meta.url), "utf8"));
 const ids = new Set();
+const urls = new Set();
 const errors = [];
 
 for (const [index, article] of data.entries()) {
@@ -15,6 +16,8 @@ for (const [index, article] of data.entries()) {
   try {
     const url = new URL(article.url);
     if (!['http:', 'https:'].includes(url.protocol)) errors.push(`${label}: URL must use http or https`);
+    if (urls.has(article.url)) errors.push(`${label}: duplicate url ${article.url}`);
+    urls.add(article.url);
   } catch {
     errors.push(`${label}: invalid URL`);
   }
@@ -28,4 +31,4 @@ if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
-console.log(`Validated ${data.length} news entries: unique IDs, valid URLs, dates, and categories.`);
+console.log(`Validated ${data.length} news entries: unique IDs and URLs, valid dates, and categories.`);
