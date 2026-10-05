@@ -5,9 +5,10 @@ on:
     branches:
       - main
     paths:
-      - "src/data/news.json"
+      - "src/data/news/**"
       - "src/**"
       - "scripts/validate-news.js"
+      - "scripts/validate-news-append.js"
       - "package.json"
       - ".github/workflows/deploy-worker.yml"
   workflow_dispatch:
@@ -16,8 +17,8 @@ permissions:
   contents: read
 
 concurrency:
-  group: validate-security-news
-  cancel-in-progress: true
+  group: validate-security-news-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   validate:
@@ -27,24 +28,30 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
+        with:
+          fetch-depth: 2
 
       - name: Set up Node.js
         uses: actions/setup-node@v6
         with:
           node-version: 24
 
-      - name: Validate news data and source code
+      - name: Validate chunked news data and source code
         run: npm test
+
+      - name: Enforce append-only scheduled news commits
+        if: github.event_name == 'push' && github.event.before != '0000000000000000000000000000000000000000'
+        run: node scripts/validate-news-append.js "${{ github.event.before }}" "${{ github.sha }}"
 
       - name: Confirm newest news records
         shell: bash
         run: |
           node --input-type=module <<'NODE'
-          import news from './src/data/news.json' with { type: 'json' };
+          import news from './src/data/news/index.js';
 
           const newest = [...news]
             .sort((a, b) => b.addedAt.localeCompare(a.addedAt))
-            .slice(0, 3);
+            .slice(0, 4);
 
           console.log('Newest records committed to GitHub:');
           for (const article of newest) {
