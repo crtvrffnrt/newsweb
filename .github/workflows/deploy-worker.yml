@@ -11,6 +11,16 @@ on:
       - "scripts/validate-news-append.js"
       - "package.json"
       - ".github/workflows/deploy-worker.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "src/data/news/**"
+      - "src/**"
+      - "scripts/validate-news.js"
+      - "scripts/validate-news-append.js"
+      - "package.json"
+      - ".github/workflows/deploy-worker.yml"
   workflow_dispatch:
 
 permissions:
