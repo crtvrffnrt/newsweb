@@ -1,5 +1,5 @@
 // News Worker entrypoint.
-import news from "./data/news.json" with { type: "json" };
+import news from "./data/news/index.js";
 import { clientScript } from "./client.js";
 import { styles } from "./styles.js";
 import { searchClient, searchStyles } from "./search.js";
