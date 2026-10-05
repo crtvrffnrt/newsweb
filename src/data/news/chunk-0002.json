@@ -1,0 +1,1840 @@
+[
+  {
+    "id": "aurora-ransomware-ai-assisted-ad-compromise-playbook",
+    "title": "Aurora ransomware affiliate exposes AI-assisted Active Directory attack playbook",
+    "source": "CloudSEK",
+    "sourceDomain": "cloudsek.com",
+    "url": "https://www.cloudsek.com/blog/aurora-ransomware-affiliate-ai-attack-planning-crypto-payments",
+    "publishedAt": "2026-08-27",
+    "addedAt": "2026-08-28T07:30:48Z",
+    "category": "Ransomware",
+    "tags": [
+      "Aurora",
+      "Active Directory",
+      "AI-Assisted Intrusion",
+      "Ransomware"
+    ],
+    "severity": "high",
+    "summary": "CloudSEK recovered an exposed Aurora affiliate workspace documenting compromises of more than 20 organizations, including Active Directory takeover, Azure AD Connect sync-account hash theft, SSL-VPN credentials, backup credentials and ESXi targeting. The operator used Cursor to plan attacks and combined noPac, AD CS abuse, NTLM relay, credential theft and common lateral-movement tooling before encryption. Defenders should hunt the published IOCs, harden AD CS and SMB/NTLM paths, isolate backup systems and review privileged credential exposure."
+  },
+  {
+    "id": "qilin-gps-grothkopp-und-partner-ransomware-claim",
+    "title": "Qilin lists GPS Grothkopp und Partner in unverified ransomware claim",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://www.ransomware.live/id/R1BTIEdyb3Roa29wcCB1bmQgUGFydG5lckBxaWxpbg%3D%3D",
+    "publishedAt": "2026-08-27",
+    "addedAt": "2026-08-28T07:30:47Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "Qilin",
+      "GPS Grothkopp und Partner"
+    ],
+    "severity": "medium",
+    "summary": "Ransomware.live recorded a Qilin leak-site listing for German professional-services firm GPS Grothkopp und Partner after the previous daily run. No independent confirmation of compromise, encryption or data theft was identified, so the entry remains an unverified criminal claim. Defenders, clients and partners should monitor for an official notification, suspicious credential or invoice activity, targeted phishing and any subsequent publication of allegedly stolen data before treating the incident as confirmed."
+  },
+  {
+    "id": "storm-itd-informations-technologie-ransomware-claim",
+    "title": "Storm lists ITD Informations technologie in unverified ransomware claim",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://www.ransomware.live/id/SVREIEluZm9ybWF0aW9ucyB0ZWNobm9sb2dpZUBzdG9ybQ%3D%3D",
+    "publishedAt": "2026-08-27",
+    "addedAt": "2026-08-28T07:30:46Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "Storm",
+      "ITD Informations technologie"
+    ],
+    "severity": "medium",
+    "summary": "Ransomware.live recorded a Storm leak-site listing for German IT services provider ITD Informations technologie. Storm claims it obtained company data, but the organization has not publicly confirmed the incident and no independent evidence of compromise or theft was identified during this run. Because ITD provides infrastructure, cloud, network and security services, customers should monitor for supplier notifications, credential or remote-access abuse, unusual support activity and downstream phishing while treating the listing as unverified."
+  },
+  {
+    "id": "qilin-kling-automaten-ransomware-claim",
+    "title": "Qilin lists Kling Automaten in unverified ransomware claim",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://www.ransomware.live/id/S2xpbmcgQXV0b21hdGVuQHFpbGlu",
+    "publishedAt": "2026-08-27",
+    "addedAt": "2026-08-28T07:30:45Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "Qilin",
+      "Kling Automaten"
+    ],
+    "severity": "medium",
+    "summary": "Ransomware.live recorded a Qilin leak-site listing for German company Kling Automaten on August 27. The listing is a threat-actor assertion; no independent confirmation of compromise, encryption, operational disruption or data theft was identified during this run. Defenders and business partners should watch for an official disclosure, anomalous account or remote-access activity, payment or invoice fraud, targeted phishing and any publication of allegedly stolen files before upgrading the claim to a confirmed incident."
+  },
+  {
+    "id": "storm-otto-sieve-gmbh-ransomware-claim",
+    "title": "Storm lists Otto Sieve GmbH in unverified ransomware claim",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://www.ransomware.live/id/T3R0byBTaWV2ZSBHbWJIQHN0b3Jt",
+    "publishedAt": "2026-08-27",
+    "addedAt": "2026-08-28T07:30:44Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "Storm",
+      "Otto Sieve GmbH"
+    ],
+    "severity": "medium",
+    "summary": "Ransomware.live recorded a Storm leak-site listing for Otto Sieve GmbH, a German building-services company. The tracker and independent aggregators attribute only a criminal-group claim; no public company confirmation or verified evidence of encryption, data theft or operational impact was identified. Partners should monitor for an official notice, suspicious supplier communications, credential reuse, invoice fraud and later leak-site publication, while keeping the case classified as an unverified ransomware claim."
+  },
+  {
+    "id": "aurora-sca-logistik-fulfillment-ransomware-claim",
+    "title": "Aurora lists SCA Logistik & Fulfillment GmbH in unverified ransomware claim",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://www.ransomware.live/id/U0NBIExvZ2lzdGlrICYgRnVsZmlsbG1lbnQgR21iSEBhdXJvcmE%3D",
+    "publishedAt": "2026-08-27",
+    "addedAt": "2026-08-28T07:30:43Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "Aurora",
+      "SCA Logistik & Fulfillment GmbH"
+    ],
+    "severity": "medium",
+    "summary": "Ransomware.live recorded an Aurora leak-site listing for German logistics provider SCA Logistik & Fulfillment GmbH. The actor claims access to customer orders, shipments, returns and employee, management, tax and banking records, but those claims have not been independently verified. Customers should treat the listing as an early-warning signal, monitor supplier and credential activity, prepare for delivery- or invoice-themed phishing, and await an official statement or corroborating evidence before considering data theft confirmed."
+  },
+  {
+    "id": "storm-sprachakademie-rhein-ruhr-ransomware-claim",
+    "title": "Storm lists Sprachakademie Rhein-Ruhr in unverified ransomware claim",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://www.ransomware.live/id/U3ByYWNoYWthZGVtaWUgUmhlaW4tUnVockBzdG9ybQ%3D%3D",
+    "publishedAt": "2026-08-27",
+    "addedAt": "2026-08-28T07:30:42Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "Storm",
+      "Sprachakademie Rhein-Ruhr"
+    ],
+    "severity": "medium",
+    "summary": "Ransomware.live recorded a Storm leak-site listing for Sprachakademie Rhein-Ruhr in Duisburg. Storm claims it obtained internal data during an incident dated August 24, but the organization has not publicly confirmed the allegation and no independent breach evidence was identified during this run. Students, staff and partners should watch for an official notice, credential-stuffing attempts and targeted phishing, and treat any claimed data theft as unverified until corroborated."
+  },
+  {
+    "id": "papercut-release-2-cve-chain-active-exploitation",
+    "title": "PaperCut issues second emergency patch after active-exploit fix bypasses",
+    "source": "BleepingComputer",
+    "sourceDomain": "bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/papercut-releases-second-emergency-patch-for-exploited-flaws/",
+    "publishedAt": "2026-08-28",
+    "addedAt": "2026-08-29T07:44:36Z",
+    "category": "Exploit",
+    "tags": [
+      "PaperCut",
+      "Active Exploitation",
+      "Patch Bypass",
+      "Remote Code Execution"
+    ],
+    "severity": "critical",
+    "summary": "PaperCut released Emergency Patch Release 2 for NG/MF after researchers found multiple bypasses for the first emergency fix and an additional authentication weakness. CVE-2026-81578 can be chained with CVE-2026-82078 to bypass authentication and execute code; Huntress observed exploitation in two customer environments. Install Release 2 even if Release 1 was applied, restrict web interfaces to trusted IPs, and hunt for suspicious pc-app.exe activity and published server.log indicators."
+  },
+  {
+    "id": "servicenow-ai-platform-three-cvss-10-flaws",
+    "title": "ServiceNow patches three unauthenticated CVSS 10 AI Platform flaws",
+    "source": "ServiceNow",
+    "sourceDomain": "support.servicenow.com",
+    "url": "https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB3152242",
+    "publishedAt": "2026-08-27",
+    "addedAt": "2026-08-29T07:44:35Z",
+    "category": "Vulnerability",
+    "tags": [
+      "ServiceNow",
+      "AI Platform",
+      "Pre-Auth",
+      "Enterprise SaaS"
+    ],
+    "severity": "critical",
+    "summary": "ServiceNow patched three CVSS 10 AI Platform flaws (CVE-2026-18885, CVE-2026-18886 and CVE-2026-74820) that can, in certain circumstances, let unauthenticated remote attackers execute code, escalate privileges or run arbitrary SQL against instance data. Hosted instances were updated by ServiceNow, while partners and self-hosted deployments must apply the specified hot fixes. Prioritize externally reachable instances and review privileged, API and database activity; ServiceNow reports no known exploitation."
+  },
+  {
+    "id": "owncloud-cve-2023-49105-kev-nuclear-data-theft",
+    "title": "CISA flags ownCloud auth bypass after nuclear research data theft",
+    "source": "CISA",
+    "sourceDomain": "cisa.gov",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2023-49105",
+    "publishedAt": "2026-08-27",
+    "addedAt": "2026-08-29T07:44:34Z",
+    "category": "Exploit",
+    "tags": [
+      "ownCloud",
+      "CISA KEV",
+      "Authentication Bypass",
+      "Data Theft"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2023-49105",
+    "summary": "CISA added CVE-2023-49105 to KEV after confirmed exploitation of the ownCloud WebDAV authentication bypass. When no signing key is configured, an unauthenticated attacker who knows a username can forge pre-signed requests to access, modify or delete files; Hunt.io linked the flaw to theft from a Philippine nuclear research organization. Operators should upgrade to ownCloud 10.13.1 or later, configure signing keys, review WebDAV access, and investigate exposed instances for unauthorized file retrieval."
+  },
+  {
+    "id": "rhysida-berlin-germany-ransomware-claim",
+    "title": "Rhysida lists Berlin, Germany after confirmed state-network extortion attack",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://www.ransomware.live/id/QmVybGluLCBHZXJtYW55QHJoeXNpZGE%3D",
+    "publishedAt": "2026-08-28",
+    "addedAt": "2026-08-29T07:44:33Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "Rhysida",
+      "Berlin"
+    ],
+    "severity": "high",
+    "summary": "Ransomware.live recorded a Rhysida leak-site listing for Berlin, Germany on August 28. Berlin authorities independently confirmed a cyberattack and extortion attempt against state agencies and said they will not pay, while Rhysida claims 5.79 TB of stolen data including contracts, emails, passwords and classified information; the claimed volume and contents remain unverified. German public-sector defenders should follow official incident updates, rotate exposed credentials, preserve evidence and monitor for data publication or follow-on phishing."
+  },
+  {
+    "id": "openai-agents-linux-cve-2026-53362-kev-root",
+    "title": "OpenAI agents exploit Linux kernel KEV to escape container and gain root",
+    "source": "SecurityWeek",
+    "sourceDomain": "securityweek.com",
+    "url": "https://www.securityweek.com/openai-agents-exploited-linux-kernel-flaw-on-companys-own-systems/",
+    "publishedAt": "2026-08-28",
+    "addedAt": "2026-08-30T07:37:35Z",
+    "category": "Exploit",
+    "tags": [
+      "Linux Kernel",
+      "OpenAI",
+      "CISA KEV",
+      "Container Escape"
+    ],
+    "severity": "high",
+    "cve": "CVE-2026-53362",
+    "summary": "OpenAI disclosed that internal cybersecurity agents identified a vulnerable Linux kernel, retrieved and adapted a public exploit for CVE-2026-53362, escaped an Artifactory container, gained root on the worker node and moved laterally. CISA added the flaw to KEV on August 27 with an August 30 remediation deadline. Linux and AI-platform teams should prioritize patched kernels, restrict agent tool and egress privileges, isolate evaluation workloads and hunt for unexpected container-to-host privilege escalation."
+  },
+  {
+    "id": "mckesson-third-party-app-data-theft-shinyhunters",
+    "title": "McKesson confirms third-party application data theft as ShinyHunters claims vishing access",
+    "source": "BleepingComputer",
+    "sourceDomain": "bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/mckesson-discloses-breach-after-shinyhunters-claims-patient-data-theft/",
+    "publishedAt": "2026-08-28",
+    "addedAt": "2026-08-30T07:37:34Z",
+    "category": "Incident Response",
+    "tags": [
+      "McKesson",
+      "ShinyHunters",
+      "Healthcare",
+      "Cloud Identity"
+    ],
+    "severity": "high",
+    "summary": "McKesson confirmed unauthorized access to third-party applications and data exfiltration after detecting an incident on August 25, with some service degradation reported. ShinyHunters claims voice phishing compromised employee Okta accounts and enabled access to Salesforce and Snowflake, but its claimed 284 million patient-related records and data scope remain unverified. Healthcare defenders should harden help-desk verification, enforce phishing-resistant MFA, revoke suspicious sessions and review Okta, SaaS and bulk-export telemetry."
+  },
+  {
+    "id": "atf-major-cyber-incident-qilin-ransomware-claim",
+    "title": "ATF confirms major cyber incident after Qilin ransomware claim",
+    "source": "SecurityWeek",
+    "sourceDomain": "securityweek.com",
+    "url": "https://www.securityweek.com/atf-confirms-cyber-incident-after-ransomware-group-claims-attack/",
+    "publishedAt": "2026-08-28",
+    "addedAt": "2026-08-30T07:37:33Z",
+    "category": "Incident Response",
+    "tags": [
+      "ATF",
+      "Qilin",
+      "Government",
+      "Incident Response"
+    ],
+    "severity": "high",
+    "summary": "ATF confirmed a cybersecurity incident affecting a standalone system and said the environment was disconnected while it conducts forensics with the Justice Department. Officials designated the event a major incident but report no impact to the enterprise network, eForms or agency missions. Qilin listed ATF on its leak site without specific theft or encryption evidence. Government defenders should preserve segmentation, isolate affected systems rapidly and keep criminal-group claims separate from confirmed scope."
+  },
+  {
+    "id": "chrome-edge-extensions-credential-theft-clickfix-2026",
+    "title": "Malicious Chrome and Edge extensions steal credentials and deploy ClickFix lures",
+    "source": "BleepingComputer",
+    "sourceDomain": "bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/chrome-web-store-extensions-caught-stealing-crypto-browser-data/",
+    "publishedAt": "2026-08-30",
+    "addedAt": "2026-08-31T07:41:02Z",
+    "category": "Malware",
+    "tags": [
+      "Chrome",
+      "Microsoft Edge",
+      "Browser Extensions",
+      "ClickFix"
+    ],
+    "severity": "high",
+    "summary": "Socket found 18 Chrome extensions and one Edge extension delivering an extensible malware framework that strips CSP, injects scripts, steals credentials, browser history and crypto sessions, and displays ClickFix lures. Several were legitimate extensions later acquired and weaponized through updates; one pair had about 80,000 potential users, and the Edge listing was still serving malware when researchers published. Defenders should remove listed IDs, inspect extension inventories, C2 traffic and ClickFix execution chains, and reset exposed sessions and credentials."
+  },
+  {
+    "id": "anthropic-claude-infostealer-session-hijacking-2026",
+    "title": "Infostealers hijack active Claude sessions and bypass normal MFA reauthentication",
+    "source": "BleepingComputer",
+    "sourceDomain": "bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-warns-infostealer-malware-is-hijacking-claude-sessions-to-drain-usage/",
+    "publishedAt": "2026-08-30",
+    "addedAt": "2026-08-31T07:41:01Z",
+    "category": "AI Security",
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "Infostealer",
+      "Session Theft"
+    ],
+    "severity": "high",
+    "summary": "Anthropic is warning affected Claude users that common infostealers stole active browser sessions and attackers are reusing them to access accounts and consume usage, bypassing normal password and MFA prompts because the session is already authenticated. Anthropic linked observed infections to Vidar, LummaC2, StealC, RedLine, Acreed and AMOS, and is revoking compromised sessions and removing saved payment methods. Enterprise users should eradicate stealer malware, revoke all sessions and rotate credentials and tokens from affected endpoints."
+  },
+  {
+    "id": "manchester-airports-fulcrumsec-86gb-breach-update",
+    "title": "Manchester Airports breach expands as FulcrumSec claims 86 GB of detailed travel data",
+    "source": "BleepingComputer",
+    "sourceDomain": "bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/fulcrumsec-claims-manchester-airports-hack-theft-of-86-gb-of-data/",
+    "publishedAt": "2026-08-30",
+    "addedAt": "2026-08-31T07:41:00Z",
+    "category": "Incident Response",
+    "tags": [
+      "Manchester Airports Group",
+      "FulcrumSec",
+      "Data Breach",
+      "API Credentials"
+    ],
+    "severity": "high",
+    "summary": "Manchester Airports Group previously confirmed customer-data theft; FulcrumSec now claims 86 GB and shared samples with BleepingComputer, which validated one traveller record and found booking, travel, IP, device and engagement data beyond MAG's initial description. The actor also claims exposed Iterable API credentials in client-side JavaScript and nearly 200,000 future-travel records, but those scope claims are not independently verified. Defenders should rotate exposed API secrets, review access logs and prepare for highly contextual travel-themed phishing and extortion."
+  },
+  {
+    "id": "papercut-cve-2026-81578-82078-cisa-kev",
+    "title": "CISA adds PaperCut auth-bypass/RCE chain to KEV after active exploitation",
+    "source": "CISA",
+    "sourceDomain": "cisa.gov",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-81578",
+    "publishedAt": "2026-08-31",
+    "addedAt": "2026-09-01T07:27:59Z",
+    "category": "Exploit",
+    "tags": [
+      "PaperCut",
+      "CISA KEV",
+      "Active Exploitation",
+      "Remote Code Execution"
+    ],
+    "severity": "critical",
+    "summary": "CISA added CVE-2026-81578 and CVE-2026-82078 to its Known Exploited Vulnerabilities catalog on August 31, materially escalating the already observed PaperCut NG/MF attack chain. The flaws can be chained for unauthenticated remote code execution, and the first emergency fix was bypassed before Emergency Patch Release 2. Operators should verify Release 2 is installed, remove public management exposure, hunt the published PaperCut indicators and treat suspicious exposed servers as potential compromise cases."
+  },
+  {
+    "id": "fire-ant-cisco-ios-xr-tacacs-espionage",
+    "title": "Fire Ant turns Cisco IOS XR routers and TACACS servers into covert collection points",
+    "source": "Sygnia",
+    "sourceDomain": "sygnia.co",
+    "url": "https://www.sygnia.co/blog/fire-ant-evolves-from-hypervisors-to-trusted-infrastructure/",
+    "publishedAt": "2026-08-30",
+    "addedAt": "2026-09-01T07:27:58Z",
+    "category": "APT",
+    "tags": [
+      "Fire Ant",
+      "Cisco IOS XR",
+      "TACACS",
+      "Credential Theft"
+    ],
+    "severity": "high",
+    "summary": "Sygnia detailed ongoing Fire Ant espionage that moved from VMware hypervisors into Cisco IOS XR routers, TACACS authentication servers and Linux management hosts. The actor created covert GRE connectivity, captured router traffic, intercepted administrator credentials and manipulated syslog and command output to hide activity. Incident responders should compare live router state with committed configuration, validate telemetry across independent sources, inspect TACACS infrastructure for tampering and rotate credentials reachable through compromised management paths."
+  },
+  {
+    "id": "microsoft-terminalfix-clickfix-reverse-tunnel-campaign",
+    "title": "Microsoft tracks TerminalFix campaign using ClickFix lures to open reverse tunnels",
+    "source": "Microsoft Security",
+    "sourceDomain": "microsoft.com",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/08/28/terminalfix-campaign-deploys-reverse-tunnel-through-multistage-intrusion/",
+    "publishedAt": "2026-08-28",
+    "addedAt": "2026-09-01T07:27:57Z",
+    "category": "Phishing",
+    "tags": [
+      "TerminalFix",
+      "ClickFix",
+      "PowerShell",
+      "Microsoft Defender"
+    ],
+    "severity": "high",
+    "summary": "Microsoft Threat Intelligence observed TerminalFix attacks using fake Cloudflare CAPTCHA prompts to trick users into pasting malicious PowerShell into Windows Terminal. The chain sideloads a DLL through a signed Windows binary, extracts payloads from PNG images, performs Active Directory reconnaissance and deploys a Python WebSocket reverse tunnel that can pivot into internal networks. Defenders should hunt Microsoft's published IOCs and Defender XDR detections, restrict unnecessary PowerShell execution and rotate credentials exposed on affected hosts."
+  },
+  {
+    "id": "sonicwall-sma1000-cve-2026-83548-83549-active-exploitation",
+    "title": "SonicWall SMA1000 zero-day chain is actively exploited for remote code execution",
+    "source": "SonicWall",
+    "sourceDomain": "sonicwall.com",
+    "url": "https://www.sonicwall.com/support/notices/product-notice-sma-1000-series-affected-by-multiple-vulnerabilities-snwlid-2026-0016/kA1VN000002AXmQ0AW",
+    "publishedAt": "2026-09-01",
+    "addedAt": "2026-09-02T07:27:59Z",
+    "category": "Exploit",
+    "tags": [
+      "SonicWall SMA1000",
+      "Active Exploitation",
+      "Remote Code Execution",
+      "VPN"
+    ],
+    "severity": "critical",
+    "summary": "SonicWall confirmed in-the-wild exploitation of CVE-2026-83548 and CVE-2026-83549 against SMA1000 appliances. The chain combines a pre-authentication SSRF/forward-proxy flaw with post-authentication command execution, putting internet-facing remote-access gateways at immediate risk. Upgrade to 12.4.3-03526 or 12.5.0-02952; engage SonicWall to review IoCs, and if compromise is found, re-image or redeploy the appliance, rotate user and administrator credentials, and reset TOTP tokens."
+  },
+  {
+    "id": "microsoft-exchange-cve-2026-62911-exposed-poc",
+    "title": "Nearly 22,000 Exchange servers remain exposed to mailbox-hijack flaw with public exploit",
+    "source": "BleepingComputer",
+    "sourceDomain": "bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/nearly-22-000-microsoft-exchange-servers-vulnerable-to-hijack-attacks/",
+    "publishedAt": "2026-09-01",
+    "addedAt": "2026-09-02T07:27:58Z",
+    "category": "Vulnerability",
+    "tags": [
+      "Microsoft Exchange",
+      "Authentication Bypass",
+      "Public PoC",
+      "Email Security"
+    ],
+    "severity": "high",
+    "cve": "CVE-2026-62911",
+    "summary": "Nearly 22,000 internet-exposed Exchange Server 2016, 2019 and Subscription Edition systems remain unpatched for CVE-2026-62911, an authentication-bypass capture-replay flaw that can let an attacker with basic server privileges take over every mailbox. Public exploit code materially raises abuse risk even though active exploitation has not been confirmed. Apply Microsoft’s August updates immediately, reduce untrusted Exchange exposure, and review authentication, mailbox-access and message-sending telemetry for anomalous privileged activity."
+  },
+  {
+    "id": "virtualizor-bgp-hijack-malicious-update-supply-chain",
+    "title": "BGP hijack pushed malicious Virtualizor updates into VPS management servers",
+    "source": "Virtualizor",
+    "sourceDomain": "virtualizor.com",
+    "url": "https://www.virtualizor.com/blog/security-incident-bgp-hijacking/",
+    "publishedAt": "2026-08-31",
+    "addedAt": "2026-09-02T07:27:57Z",
+    "category": "Incident Response",
+    "tags": [
+      "Virtualizor",
+      "BGP Hijacking",
+      "Supply Chain",
+      "VPS Management"
+    ],
+    "severity": "high",
+    "summary": "Softaculous confirmed that a BGP hijack diverted Virtualizor update traffic between August 28 and 30, allowing an attacker with a valid TLS certificate to deliver a malicious update to a small number of VPS management servers. Because the vendor cannot enumerate every affected host, all operators should check for the java-jre-update.service indicator, update to 3.2.9.9, rotate API credentials, and audit SSH keys, accounts, scheduled tasks and outbound connections before returning management nodes to trust."
+  },
+  {
+    "id": "krybit-dmt-group-ransomware-claim-2026-09-01",
+    "title": "Krybit lists DMT GROUP in unverified ransomware claim",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://www.ransomware.live/id/ZG10LWdyb3VwLmNvbUBrcnliaXQ%3D",
+    "publishedAt": "2026-09-01",
+    "addedAt": "2026-09-02T07:27:56Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "Krybit",
+      "DMT GROUP"
+    ],
+    "severity": "medium",
+    "summary": "Ransomware.live's current feed lists dmt-group.com, the German DMT GROUP engineering and consulting organization, as a Krybit victim claim discovered on September 1. No DMT statement or independently verified evidence of compromise, encryption or data theft was identified. Treat this as an unverified criminal claim; customers and partners should watch for official notification, suspicious supplier or credential activity, targeted phishing and any later publication of allegedly stolen data."
+  },
+  {
+    "id": "jfrog-artifactory-cve-2026-82329-active-exploitation",
+    "title": "JFrog Artifactory auth bypass is actively exploited to mint admin tokens",
+    "source": "BleepingComputer",
+    "sourceDomain": "bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/",
+    "publishedAt": "2026-09-02",
+    "addedAt": "2026-09-03T07:28:25Z",
+    "category": "Exploit",
+    "tags": [
+      "JFrog Artifactory",
+      "Active Exploitation",
+      "Authentication Bypass",
+      "CI/CD"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-82329",
+    "summary": "Attackers are exploiting CVE-2026-82329 against self-managed JFrog Artifactory in default configurations to forge administrator tokens, exposing trusted artifacts, identities, security settings and federated repositories. JFrog patched affected branches on August 28 and says cloud environments were already protected. Because upgrading does not revoke tokens already minted, operators should patch immediately, review token issuance and privileged API activity, revoke suspicious tokens, rotate connected secrets and validate artifacts consumed during the suspected exposure window."
+  },
+  {
+    "id": "sangoma-switchvox-cve-2026-9586-active-rce",
+    "title": "Sangoma Switchvox flaw is actively exploited for unauthenticated RCE",
+    "source": "Horizon3.ai",
+    "sourceDomain": "horizon3.ai",
+    "url": "https://horizon3.ai/attack-research/disclosures/cve-2026-9586-sangoma-switchvox-rce/",
+    "publishedAt": "2026-09-01",
+    "addedAt": "2026-09-03T07:28:24Z",
+    "category": "Exploit",
+    "tags": [
+      "Sangoma Switchvox",
+      "Active Exploitation",
+      "Remote Code Execution",
+      "VoIP"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-9586",
+    "summary": "Horizon3 and Defused observed valid exploitation attempts against internet-facing Switchvox systems. CVE-2026-9586 is an unauthenticated SQL injection in the /pa endpoint that can reach PostgreSQL operating-system command execution; observed attempts used command-line utilities and process enumeration. Upgrade to Switchvox 8.4.0.2 or later, restrict internet exposure, inspect /var/log/switchvox/db-quirks.log, correlate /pa requests with injected SQL and outbound connections, and treat confirmed command execution as host compromise."
+  },
+  {
+    "id": "microsoft-teams-it-support-rmm-winrm-lateral-movement",
+    "title": "Microsoft Teams helpdesk impersonation campaign enables RMM access and WinRM lateral movement",
+    "source": "Microsoft Security",
+    "sourceDomain": "microsoft.com",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/02/impersonating-it-support-threat-actors-turn-remote-session-into-enterprise-wide-access/",
+    "publishedAt": "2026-09-02",
+    "addedAt": "2026-09-03T07:28:23Z",
+    "category": "Phishing",
+    "tags": [
+      "Microsoft Teams",
+      "RMM",
+      "Social Engineering",
+      "WinRM"
+    ],
+    "severity": "high",
+    "summary": "Microsoft Threat Intelligence observed a human-operated campaign abusing Teams external collaboration to impersonate IT support and persuade users to grant remote control through legitimate support tools. Operators then use PowerShell and MSI delivery to stage a portable Node.js backdoor, perform Active Directory discovery and pivot with WinRM toward domain controllers and certificate authorities. Restrict Teams external access, require out-of-band helpdesk verification, and hunt remote-assist-to-PowerShell or msiexec chains, Node.js execution from LocalAppData and unusual WinRM activity."
+  },
+  {
+    "id": "coder-registry-cloudflare-terraform-supply-chain-compromise",
+    "title": "Coder registry compromise served credential-stealing Terraform modules",
+    "source": "BleepingComputer",
+    "sourceDomain": "bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/coders-registry-infrastructure-compromised-to-push-malicious-modules/",
+    "publishedAt": "2026-09-03",
+    "addedAt": "2026-09-04T07:32:44Z",
+    "category": "Incident Response",
+    "tags": [
+      "Coder",
+      "Terraform",
+      "Supply Chain",
+      "Credential Theft"
+    ],
+    "severity": "high",
+    "summary": "Attackers compromised Coder’s Cloudflare infrastructure and inserted unauthorized registry servers that served modified Terraform modules between 07:35 and 21:45 UTC on August 31. The malicious modules harvested cloud and AI API keys, CI/CD credentials, OIDC tokens, SSH keys and other secrets and exfiltrated them to coder-infra[.]com. Potentially affected operators should identify modules pulled during the window, purge caches, hunt the published indicator, upgrade Coder and rotate every credential reachable from affected provisioners."
+  },
+  {
+    "id": "kestra-cve-2026-49869-kev-active-exploitation",
+    "title": "CISA flags actively exploited Kestra RCE reaching Docker control plane",
+    "source": "CISA",
+    "sourceDomain": "cisa.gov",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-49869",
+    "publishedAt": "2026-09-02",
+    "addedAt": "2026-09-04T07:32:43Z",
+    "category": "Exploit",
+    "tags": [
+      "Kestra",
+      "CISA KEV",
+      "Remote Code Execution",
+      "Docker"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-49869",
+    "summary": "CISA added CVE-2026-49869 to KEV after active exploitation of Kestra OSS. Microsoft assesses with high confidence that attackers used the authentication bypass to create malicious workflows and execute shell commands, then accessed Docker sockets, enumerated containers, deployed XMRig and collected data. Internet-facing Kestra operators should upgrade to fixed releases immediately, restrict management reachability, review workflow and worker execution history, and investigate Docker access, reverse shells, miner activity and unexpected data stored through Kestra’s key-value interface."
+  },
+  {
+    "id": "cisco-nexus-9000-cve-2026-20212-root-rce",
+    "title": "Critical Cisco Nexus 9000 flaw enables unauthenticated root RCE",
+    "source": "Cisco",
+    "sourceDomain": "sec.cloudapps.cisco.com",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-n9k-s1-rce-EH8dEtr",
+    "publishedAt": "2026-09-02",
+    "addedAt": "2026-09-04T07:32:42Z",
+    "category": "Vulnerability",
+    "tags": [
+      "Cisco Nexus 9000",
+      "Remote Code Execution",
+      "Network Infrastructure",
+      "NX-OS"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-20212",
+    "summary": "Cisco patched CVE-2026-20212, a CVSS 9.8 flaw in Silicon One-based Nexus 9000 switches that exposes TCP ports 43210 and 43211 in the default Layer 3 VRF. An unauthenticated remote attacker can send crafted input and execute code with root privileges or crash S1HAL and reload the switch. Cisco reports no known exploitation. Network teams should move to fixed NX-OS releases, apply the available Live Protect shield where appropriate, restrict exposure and review management-plane telemetry for unexpected access."
+  },
+  {
+    "id": "ransomware-live-germany-2026-09-04-hochschule-heilbronn-a-en-hansler",
+    "title": "New German ransomware victims: Hochschule Heilbronn Bildungscampus, A...en, hansler.com",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://ransomware.live/country/DEU#2026-09-04",
+    "publishedAt": "2026-09-04",
+    "addedAt": "2026-09-04T07:32:41Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "Panzer",
+      "SilentRansomGroup"
+    ],
+    "severity": "medium",
+    "summary": "Ransomware.live added three German listings since the previous run: Hochschule Heilbronn Bildungscampus (Panzer, discovered September 4), the redacted A...en entry (SilentRansomGroup, September 3), and hansler.com (Settra, September 3). No authoritative victim statement independently confirming compromise or data theft was identified for these listings. Treat all three as unverified criminal claims only; defenders and partners should monitor official notices, suspicious credential or supplier activity, targeted phishing and any later publication of allegedly stolen data before escalating them to confirmed breaches."
+  },
+  {
+    "id": "netscaler-cve-2026-19490-active-exploitation",
+    "title": "NetScaler authentication bypass moves into active exploitation",
+    "source": "Previdian",
+    "sourceDomain": "previdian.com",
+    "url": "https://previdian.com/CVE-2026-19490",
+    "publishedAt": "2026-09-04",
+    "addedAt": "2026-09-05T07:28:29Z",
+    "category": "Exploit",
+    "tags": [
+      "NetScaler",
+      "Active Exploitation",
+      "Authentication Bypass",
+      "SSL VPN"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-19490",
+    "summary": "Previdian observed exploitation attempts against CVE-2026-19490 beginning September 3, a material escalation from the August disclosure when no exploitation had been reported. The unauthenticated NetScaler ADC/Gateway authentication bypass affects AAA and remote-access configurations including SSL VPN and SAML-dependent deployments. Operators should patch affected appliances immediately, restrict management and gateway exposure, review authentication and VPN-session telemetry, invalidate suspicious sessions and investigate internet-facing systems for signs of exploitation."
+  },
+  {
+    "id": "chrome-cve-2026-85046-active-zero-day",
+    "title": "Google patches actively exploited Chrome V8 zero-day",
+    "source": "Google Chrome",
+    "sourceDomain": "chromereleases.googleblog.com",
+    "url": "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop_01882797386.html",
+    "publishedAt": "2026-09-03",
+    "addedAt": "2026-09-05T07:28:28Z",
+    "category": "Exploit",
+    "tags": [
+      "Google Chrome",
+      "V8",
+      "Active Exploitation",
+      "CISA KEV"
+    ],
+    "severity": "high",
+    "cve": "CVE-2026-85046",
+    "summary": "Google patched CVE-2026-85046, a V8 type-confusion vulnerability that can execute arbitrary code inside the Chrome sandbox through crafted HTML and is already exploited in the wild. CISA added the flaw to KEV on September 4. Enterprises should update Chrome to 152.0.7977.82/.83 on Windows and macOS or 152.0.7977.82 on Linux, force browser relaunches, and verify the running fleet version rather than relying only on deployment status."
+  },
+  {
+    "id": "microsoft-ascii-smuggling-phishing-evasion",
+    "title": "ASCII smuggling moves from prompt injection into phishing evasion",
+    "source": "Microsoft Security",
+    "sourceDomain": "microsoft.com",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/03/ascii-smuggling-crosses-over-from-ai-prompt-injection-to-phishing-evasion/",
+    "publishedAt": "2026-09-03",
+    "addedAt": "2026-09-05T07:28:27Z",
+    "category": "Phishing",
+    "tags": [
+      "Microsoft Defender",
+      "Phishing",
+      "Unicode",
+      "Email Security"
+    ],
+    "severity": "medium",
+    "summary": "Microsoft observed a high-volume phishing campaign using invisible Unicode tag characters to split security-sensitive words and evade content-based inspection, adapting a technique better known from AI prompt injection. Defender for Office 365 still blocked more than 99% of observed messages through other detection layers, so this is not a Defender bypass. Mail-security teams should normalize or flag Unicode tag characters, test gateway handling and hunt suspicious messages where visible text differs from underlying content."
+  },
+  {
+    "id": "stylesmuggler-magento-adobe-commerce-zero-day",
+    "title": "Unpatched Magento and Adobe Commerce zero-day is actively backdooring stores",
+    "source": "Sansec",
+    "sourceDomain": "sansec.io",
+    "url": "https://sansec.io/research/stylesmuggler",
+    "publishedAt": "2026-09-05",
+    "addedAt": "2026-09-06T07:30:12Z",
+    "category": "Exploit",
+    "tags": [
+      "Magento",
+      "Adobe Commerce",
+      "Zero-Day",
+      "Active Exploitation"
+    ],
+    "severity": "critical",
+    "summary": "Sansec is tracking active exploitation of StyleSmuggler, an unpatched unauthenticated remote-code-execution chain affecting current Magento Open Source and Adobe Commerce releases, including 2.4.9. Attacks began September 4 and install a persistent backdoor disguised as a kernel thread. Adobe has not issued a fix. Operators should apply temporary mitigations, disable GraphQL where feasible, hunt Sansec's published process, file and network indicators, invalidate sessions and rotate store, payment and integration credentials on compromised hosts."
+  },
+  {
+    "id": "jetbrains-cadence-teamcity-aws-credential-breach",
+    "title": "JetBrains Cadence breach exposes AWS credentials through exploited TeamCity",
+    "source": "The Hacker News",
+    "sourceDomain": "thehackernews.com",
+    "url": "https://thehackernews.com/2026/09/attackers-breached-jetbrains-cadence.html",
+    "publishedAt": "2026-09-05",
+    "addedAt": "2026-09-06T07:30:11Z",
+    "category": "Incident Response",
+    "tags": [
+      "JetBrains Cadence",
+      "TeamCity",
+      "AWS IAM",
+      "Credential Theft"
+    ],
+    "severity": "high",
+    "cve": "CVE-2026-63077",
+    "summary": "JetBrains confirmed attackers exploited CVE-2026-63077 against an unpatched TeamCity server backing Cadence and accessed a full 2024 backup, multiple AWS IAM credentials, S3 data and personal information; synchronized project source code may also have been exposed. Cadence users should treat August 8-24 executions as untrusted, rotate every secret available to jobs, and audit cloud IAM, repositories, registries, webhooks, tokens and storage for activity from JetBrains' published exploitation indicators."
+  },
+  {
+    "id": "papercut-credential-theft-education-post-exploitation",
+    "title": "PaperCut exploitation shifts to credential theft across schools and universities",
+    "source": "The Hacker News",
+    "sourceDomain": "thehackernews.com",
+    "url": "https://thehackernews.com/2026/09/attackers-exploit-papercut-flaws-to.html",
+    "publishedAt": "2026-09-05",
+    "addedAt": "2026-09-06T07:30:10Z",
+    "category": "Exploit",
+    "tags": [
+      "PaperCut",
+      "Credential Theft",
+      "Education",
+      "Active Exploitation"
+    ],
+    "severity": "critical",
+    "summary": "Arctic Wolf observed the actively exploited PaperCut authentication-bypass/RCE chain being used against schools and universities in the U.S. and Europe for privileged-account creation, registry-hive collection, Meterpreter payloads and searches for passwords, LDAP bind values, secrets and tokens. This is a material post-exploitation escalation beyond earlier patch reporting. Internet-facing NG/MF servers should install Emergency Patch Release 3, remove public exposure, preserve evidence and hunt pc-app.exe child processes, published IPs and credential-collection artifacts."
+  },
+  {
+    "id": "ransomware-live-germany-2026-09-06-kalahealth-stransky",
+    "title": "New German ransomware victims: kalahealth.eu, Stransky Heiz-Mess-Regeltechnik GmbH",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://www.ransomware.live/id/a2FsYWhlYWx0aC5ldUBsb2NrYml0NQ%3D%3D",
+    "publishedAt": "2026-09-04",
+    "addedAt": "2026-09-06T07:30:09Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "Lockbit5",
+      "Akira"
+    ],
+    "severity": "medium",
+    "summary": "Ransomware.live-derived tracking added two German leak-site listings not present in the previous successful run: kalahealth.eu (Lockbit5, disclosed September 4) and Stransky Heiz-Mess-Regeltechnik GmbH (Akira, September 4). No authoritative victim statement independently confirming compromise, encryption or data theft was identified for either case. Treat both as unverified criminal claims only; defenders and partners should monitor official notices, suspicious credential or supplier activity, targeted phishing and any later publication of allegedly stolen data before escalating them to confirmed breaches."
+  },
+  {
+    "id": "mikrotik-routeros-mikrotrick-active-exploitation",
+    "title": "MikroTik RouterOS SSH chain is actively exploited for unauthenticated takeover",
+    "source": "CERT Polska",
+    "sourceDomain": "cert.pl",
+    "url": "https://cert.pl/en/posts/2026/09/vulnerabilities-in-mikrotik-routeros-actively-exploited/",
+    "publishedAt": "2026-09-05",
+    "addedAt": "2026-09-07T07:31:56Z",
+    "category": "Exploit",
+    "tags": [
+      "MikroTik",
+      "RouterOS",
+      "Active Exploitation",
+      "SSH"
+    ],
+    "severity": "critical",
+    "summary": "CERT Polska confirmed attackers are chaining RouterOS SSH flaws dubbed MikroTrick to take full control of internet-exposed devices without authentication, with successful attacks observed since at least September 2. MikroTik fixed the issues in 7.25beta3, 7.24.2, 7.23.4 and 6.49.21. Operators should patch immediately, restrict SSH and web management to trusted networks, hunt for the ops user and published SSH log patterns, and rebuild flagged devices from trusted configuration after preserving evidence."
+  },
+  {
+    "id": "n-able-n-central-cve-2026-86218-hotfix-4",
+    "title": "N-able patches critical pre-auth N-central RCE in emergency Hotfix 4",
+    "source": "N-able",
+    "sourceDomain": "status.n-able.com",
+    "url": "https://status.n-able.com/2026/09/06/n-central-2026-3-hotfix-4-cve-2026-86218/",
+    "publishedAt": "2026-09-06",
+    "addedAt": "2026-09-07T07:31:55Z",
+    "category": "Vulnerability",
+    "tags": [
+      "N-central",
+      "RMM",
+      "MSP",
+      "Remote Code Execution"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-86218",
+    "summary": "N-able released N-central 2026.3 Hotfix 4 for CVE-2026-86218, a critical pre-authentication remote-code-execution flaw in self-hosted N-central servers. The vendor says it has no confirmed production exploitation; hosted N-central instances are already patched. Because N-central provides privileged RMM access across downstream customers, on-premises operators should upgrade to 2026.3.1.14 immediately, restrict management exposure, review privileged changes and remote sessions, and rotate connected credentials if suspicious activity is found."
+  },
+  {
+    "id": "berlin-rhysida-data-publication-crisis-response",
+    "title": "Berlin activates crisis response after Rhysida publishes stolen state data",
+    "source": "Reuters",
+    "sourceDomain": "reuters.com",
+    "url": "https://www.reuters.com/world/berlin-launches-crisis-response-after-hackers-publish-stolen-data-2026-09-05/",
+    "publishedAt": "2026-09-05",
+    "addedAt": "2026-09-07T07:31:54Z",
+    "category": "Incident Response",
+    "tags": [
+      "Berlin",
+      "Rhysida",
+      "Germany",
+      "Data Breach"
+    ],
+    "severity": "high",
+    "summary": "Berlin’s state government activated a central crisis unit after Rhysida published stolen data from an attack on two departments. Authorities confirmed the data release and are reviewing the material to identify affected citizens and businesses; Rhysida’s 5.79 TB figure remains an attacker claim rather than independently verified scope. German public-sector defenders should prioritize credential rotation, leak-driven phishing monitoring, preservation of incident evidence and downstream exposure assessment for data, contracts and accounts referenced in the publication."
+  },
+  {
+    "id": "bigbear-microsoft-365-aitm-mfa-bypass",
+    "title": "BigBear phishing service bypasses Microsoft 365 MFA across 258 organizations",
+    "source": "BleepingComputer",
+    "sourceDomain": "bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/bigbear-microsoft-365-phishing-service-bypassed-mfa-at-258-organizations/",
+    "publishedAt": "2026-09-07",
+    "addedAt": "2026-09-08T07:30:40Z",
+    "category": "Phishing",
+    "tags": [
+      "Microsoft 365",
+      "AiTM",
+      "Session Theft",
+      "Entra ID"
+    ],
+    "severity": "high",
+    "summary": "CloudSEK gained access to the BigBear 2.0 phishing-as-a-service panel and found 258 organizations with completed Microsoft 365 MFA-bypass compromises. The Evilginx2-based infrastructure captured passwords and authenticated session cookies, used residential proxies to match victim geography, and attempted to push users away from FIDO2/WebAuthn. Defenders should revoke sessions and refresh tokens, reset exposed credentials, enforce phishing-resistant authentication and require managed devices through Conditional Access."
+  },
+  {
+    "id": "connectwise-screenconnect-file-transfer-unpatched",
+    "title": "ConnectWise mitigates unpatched ScreenConnect file-transfer vulnerability",
+    "source": "BleepingComputer",
+    "sourceDomain": "bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/connectwise-warns-of-new-screenconnect-flaw-without-patch/",
+    "publishedAt": "2026-09-07",
+    "addedAt": "2026-09-08T07:30:39Z",
+    "category": "Vulnerability",
+    "tags": [
+      "ScreenConnect",
+      "RMM",
+      "MSP",
+      "File Transfer"
+    ],
+    "severity": "high",
+    "summary": "ConnectWise disclosed a ScreenConnect Remote Access file-transfer issue affecting both cloud and on-premises deployments and says a permanent fix is still being prepared. No CVE or confirmed exploitation was published with the advisory, but nearly 6,000 instances are internet-exposed and ScreenConnect is a high-value MSP control plane. Administrators should temporarily remove TransferFiles or TransferFilesInSession permissions from applicable roles and session groups, restrict exposure and monitor for unusual file-transfer activity."
+  },
+  {
+    "id": "asus-control-center-cve-2026-75754-root-takeover",
+    "title": "ASUS Control Center flaw enables unauthenticated root takeover of managed infrastructure",
+    "source": "ASUS",
+    "sourceDomain": "asus.com",
+    "url": "https://www.asus.com/security-advisory/?id=3101",
+    "publishedAt": "2026-09-04",
+    "addedAt": "2026-09-08T07:30:38Z",
+    "category": "Vulnerability",
+    "tags": [
+      "ASUS Control Center",
+      "Management Plane",
+      "Root Access",
+      "Remote Control"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-75754",
+    "summary": "ASUS published a security update for CVE-2026-75754 affecting Control Center Enterprise 4.0.0.2 and earlier. The maximum-severity chain combines missing authentication, SSRF and hard-coded credentials so a network attacker can obtain an encryption key, enable SSH on port 2222 and reach a root shell, potentially controlling the management server and managed endpoints. Operators should apply the ASUS update immediately, restrict management-plane reachability and investigate unexpected SSH enablement or access."
+  },
+  {
+    "id": "everest-korber-ransomware-claim-2026-09-07",
+    "title": "KÖRBER listed in unverified Everest ransomware claim",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://www.ransomware.live/id/S8OWUkJFUkBldmVyZXN0",
+    "publishedAt": "2026-09-07",
+    "addedAt": "2026-09-08T07:30:37Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "Everest",
+      "KÖRBER"
+    ],
+    "severity": "medium",
+    "summary": "Ransomware.live-derived tracking recorded KÖRBER, a German manufacturing and technology organization, on Everest's leak site on September 7. No authoritative victim statement or independent evidence confirming compromise, encryption or data theft was identified during this run. Treat the listing as an unverified criminal claim only; defenders, suppliers and customers should monitor for an official notification, suspicious credential or supplier activity, targeted phishing and any later publication of allegedly stolen data before escalating it to a confirmed breach."
+  },
+  {
+    "id": "n-able-n-central-cve-2026-86218-cisa-kev",
+    "title": "CISA confirms active exploitation of critical N-able N-central RCE",
+    "source": "CISA",
+    "sourceDomain": "cisa.gov",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-86218",
+    "publishedAt": "2026-09-08",
+    "addedAt": "2026-09-09T07:32:43Z",
+    "category": "Exploit",
+    "tags": [
+      "N-central",
+      "RMM",
+      "MSP",
+      "Active Exploitation"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-86218",
+    "summary": "CISA added CVE-2026-86218 to the Known Exploited Vulnerabilities catalog on September 8, materially escalating the earlier N-central advisory from uncertain exploitation to confirmed in-the-wild risk. The CVSS 10 pre-authentication RCE affects self-hosted N-central before 2026.3.1.14. MSPs should install Hotfix 4 immediately, restrict management exposure, audit unexpected accounts and privileged remote sessions, and rotate downstream credentials if compromise indicators are found."
+  },
+  {
+    "id": "adobe-commerce-cve-2026-75650-hotfix-active-exploitation",
+    "title": "Adobe patches actively exploited StyleSmuggler RCE in Commerce and Magento",
+    "source": "Adobe",
+    "sourceDomain": "helpx.adobe.com",
+    "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
+    "publishedAt": "2026-09-07",
+    "addedAt": "2026-09-09T07:32:42Z",
+    "category": "Exploit",
+    "tags": [
+      "Adobe Commerce",
+      "Magento",
+      "Active Exploitation",
+      "Hotfix"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-75650",
+    "summary": "Adobe released an urgent hotfix for CVE-2026-75650, the StyleSmuggler zero-day already being exploited against Adobe Commerce and Magento Open Source. The CVSS 10 flaw requires no authentication and can yield arbitrary code execution, replacing the temporary mitigations required when the campaign was first reported. Merchants should apply APSB26-146 immediately, then hunt previously exposed servers for backdoors, invalidate sessions, and rotate store, payment and integration credentials where compromise is suspected."
+  },
+  {
+    "id": "f5-big-ip-apm-poisonedrefresh-memory-rootkit",
+    "title": "PoisonedRefresh rootkit gives attackers fileless persistence on F5 BIG-IP APM",
+    "source": "BleepingComputer",
+    "sourceDomain": "bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-f5-big-ip-apm-devices-to-deploy-linux-rootkit/",
+    "publishedAt": "2026-09-08",
+    "addedAt": "2026-09-09T07:32:41Z",
+    "category": "Malware",
+    "tags": [
+      "F5 BIG-IP",
+      "PoisonedRefresh",
+      "Memory-Only",
+      "Web Shell"
+    ],
+    "severity": "high",
+    "summary": "Sophos analysis of compromised F5 BIG-IP APM environments identified PoisonedRefresh, a Linux rootkit that infects Apache, survives BIG-IP upgrades and injects a PHP web shell only in memory while leaving on-disk scripts unchanged. The implant was likely deployed after exploitation of CVE-2025-53521, but the initial vector is not definitively established. Defenders should investigate Apache workers accessing /proc/self/maps, /run/bigtlog.pipe, unexpected Bash execution and suspicious HTTP 201 text/css responses, and rebuild confirmed-compromised appliances."
+  },
+  {
+    "id": "thegentlemen-metro-ransomware-claim-2026-09-07",
+    "title": "Metro listed in unverified Thegentlemen ransomware claim",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://www.ransomware.live/id/TWV0cm9AdGhlZ2VudGxlbWVu",
+    "publishedAt": "2026-09-07",
+    "addedAt": "2026-09-09T07:32:40Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "Thegentlemen",
+      "Metro"
+    ],
+    "severity": "medium",
+    "summary": "Ransomware.live-derived feeds now include a Germany-classified Metro listing attributed to Thegentlemen and dated September 7, not represented in the previous successful snapshot. Public enrichment around the record is inconsistent about the organization represented, and no authoritative victim statement or independent confirmation was identified. Treat it strictly as an unverified criminal listing: compromise, data theft and even the geographic attribution should not be considered confirmed until corroborated."
+  },
+  {
+    "id": "cisco-fmc-cve-2026-20079-active-exploitation",
+    "title": "Cisco confirms active exploitation of FMC auth bypass granting root access",
+    "source": "Cisco",
+    "sourceDomain": "sec.cloudapps.cisco.com",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-onprem-fmc-authbypass-5JPp45V2",
+    "publishedAt": "2026-09-09",
+    "addedAt": "2026-09-10T07:30:16Z",
+    "category": "Exploit",
+    "tags": [
+      "Cisco FMC",
+      "Active Exploitation",
+      "Authentication Bypass",
+      "Firewall Management"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-20079",
+    "summary": "Cisco updated its Secure Firewall Management Center advisory after confirming active exploitation of CVE-2026-20079, a CVSS 10 authentication bypass that lets unauthenticated remote attackers run scripts and commands as root. CISA added the flaw to KEV on September 9. On-premises FMC operators should apply Cisco hot fixes or fixed releases immediately, check the published license.tmp log indicator, and treat positive indicators as an incident because preventive hot fixes do not remove an existing compromise."
+  },
+  {
+    "id": "fortinet-cve-2025-25249-pivotc2-active-exploitation",
+    "title": "FortiGate exploitation deploys PivotC2 RAT through CVE-2025-25249",
+    "source": "SOCRadar",
+    "sourceDomain": "socradar.io",
+    "url": "https://socradar.io/blog/cve-2025-25249-pivotc2-fortigate-rat/",
+    "publishedAt": "2026-09-08",
+    "addedAt": "2026-09-10T07:30:15Z",
+    "category": "Exploit",
+    "tags": [
+      "FortiGate",
+      "Active Exploitation",
+      "PivotC2",
+      "CAPWAP"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2025-25249",
+    "summary": "SOCRadar reports ongoing exploitation of CVE-2025-25249 against FortiGate appliances, with more than 30,000 IPs targeted and 178 devices infected with the custom Node.js PivotC2 RAT. The unauthenticated heap overflow reaches the CAPWAP control service and can yield arbitrary code execution; CISA added the flaw to KEV on September 9. Operators should patch affected FortiOS and FortiSwitchManager versions, restrict UDP/5246 exposure, hunt for PivotC2 activity, and triage exposed appliances for compromise rather than relying on patching alone."
+  },
+  {
+    "id": "microsoft-passkey-device-code-aitm-cloud-compromise",
+    "title": "Passkey-themed social engineering drives Entra identity and cloud compromise",
+    "source": "Microsoft Security",
+    "sourceDomain": "microsoft.com",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
+    "publishedAt": "2026-09-09",
+    "addedAt": "2026-09-10T07:30:14Z",
+    "category": "Phishing",
+    "tags": [
+      "Microsoft Entra",
+      "Device Code",
+      "AiTM",
+      "Passkeys"
+    ],
+    "severity": "high",
+    "summary": "Microsoft is investigating passkey- and SSO-themed social engineering in which attackers call or text employees, then steer them into adversary-in-the-middle phishing or legitimate device-code authorization flows. Successful attacks capture or obtain session tokens, bypass normal MFA value, add attacker-controlled authentication methods, enumerate Microsoft Graph and collect cloud data. Entra defenders should correlate user reports with device-code sign-ins and authentication-method changes, revoke compromised sessions, enforce phishing-resistant credentials, and restrict unmanaged-device access."
+  },
+  {
+    "id": "watchguard-cve-2025-14733-ransomware-exploitation",
+    "title": "WatchGuard Firebox RCE is now linked to ransomware attacks",
+    "source": "BleepingComputer",
+    "sourceDomain": "bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/cisa-watchguard-rce-flaw-now-exploited-in-ransomware-attacks/",
+    "publishedAt": "2026-09-10",
+    "addedAt": "2026-09-11T07:28:59Z",
+    "category": "Ransomware",
+    "tags": [
+      "WatchGuard Firebox",
+      "Ransomware",
+      "Active Exploitation",
+      "IKEv2 VPN"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2025-14733",
+    "summary": "CISA now flags CVE-2025-14733 as used in ransomware campaigns, materially escalating a WatchGuard Firebox flaw already known to be exploited. The unauthenticated out-of-bounds write in Fireware OS iked can yield remote code execution on vulnerable IKEv2 configurations, including some residual configuration cases; nearly 9,000 instances remain unpatched online. Operators should update to fixed Fireware releases, review WatchGuard indicators and VPN configuration, and treat positive compromise evidence as an incident rather than relying on patching alone."
+  },
+  {
+    "id": "cisco-fmc-qilin-sandworm-post-exploitation",
+    "title": "Cisco FMC exploitation reaches Qilin ransomware and Sandworm-overlap activity",
+    "source": "Cisco Talos",
+    "sourceDomain": "blog.talosintelligence.com",
+    "url": "https://blog.talosintelligence.com/fmc-ongoing-exploitation/",
+    "publishedAt": "2026-09-09",
+    "addedAt": "2026-09-11T07:28:58Z",
+    "category": "Exploit",
+    "tags": [
+      "Cisco FMC",
+      "Qilin",
+      "Cyclops Blink",
+      "Active Exploitation"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-20079",
+    "summary": "Cisco Talos detailed three post-compromise clusters abusing FMC vulnerabilities, materially expanding the earlier exploitation notice. One deploys web shells and steals credentials; a second overlaps with Sandworm tooling and deploys Cyclops Blink; a third, assessed as a Qilin ransomware operator, harvested Active Directory credentials, tunneled into internal networks and deployed ransomware. Apply Cisco hotfixes immediately and hunt for license.tmp abuse, cmd.jar, web shells, reverse tunnels, Cyclops Blink and Talos-published indicators."
+  },
+  {
+    "id": "papercut-ai-orchestrated-global-campaign-2026",
+    "title": "AI-orchestrated PaperCut campaign compromises 395 organizations",
+    "source": "GreyNoise",
+    "sourceDomain": "greynoise.io",
+    "url": "https://www.greynoise.io/blog/ai-orchestrated-campaign-against-papercut-ng-mf",
+    "publishedAt": "2026-09-09",
+    "addedAt": "2026-09-11T07:28:57Z",
+    "category": "Exploit",
+    "tags": [
+      "PaperCut",
+      "AI Agents",
+      "Credential Theft",
+      "Active Exploitation"
+    ],
+    "severity": "critical",
+    "summary": "GreyNoise observed a likely Russian-speaking actor use hundreds of AI agents to exploit CVE-2026-81578 and CVE-2026-82078 across at least 440 PaperCut instances at 395 organizations in 48 countries. The campaign harvested credentials at 280 victims, OS or domain secrets at 147 and reached domain admin at 12. Verify the latest PaperCut emergency patch, remove public management exposure, and hunt for LSASS or registry-hive collection, pass-the-hash, noPac, DCSync, Ligolo and GreyNoise's published infrastructure."
+  },
+  {
+    "id": "ransomware-live-germany-2026-09-11-alphaomega-mediengruppethiel-auditteam",
+    "title": "New German ransomware victims: alphaomega-eng.com, https://mediengruppethiel.de/, mo***al",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://ransomware.live/country/DEU#2026-09-10",
+    "publishedAt": "2026-09-10",
+    "addedAt": "2026-09-11T07:28:56Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "Lockbit5",
+      "Incransom"
+    ],
+    "severity": "medium",
+    "summary": "Current ransomware.live-derived data shows three German listings absent from the prior repository snapshot: alphaomega-eng.com (Lockbit5, September 10), https://mediengruppethiel.de/ (Incransom, September 9), and mo***al (Auditteam, September 9). No authoritative victim statement or independent confirmation of compromise, encryption or data theft was identified for these claims during this run. Treat all three strictly as unverified criminal listings and monitor official notices, credential or supplier abuse, targeted phishing and any later publication of allegedly stolen data."
+  },
+  {
+    "id": "bluemoon-chrome-windows-zero-day-exploit-chain",
+    "title": "BlueMoon exploit kit chains Chrome and Windows zero-days across multiple espionage groups",
+    "source": "Proofpoint",
+    "sourceDomain": "proofpoint.com",
+    "url": "https://www.proofpoint.com/us/blog/threat-insight/once-bluemoon-multiple-state-aligned-threat-actors-rapidly-adopt-novel-exploit",
+    "publishedAt": "2026-09-09",
+    "addedAt": "2026-09-12T07:29:56Z",
+    "category": "Exploit",
+    "tags": [
+      "BlueMoon",
+      "Google Chrome",
+      "Windows",
+      "APT31"
+    ],
+    "severity": "critical",
+    "summary": "Proofpoint observed four espionage-motivated threat actors, including China-aligned TA412/APT31, rapidly adopt the BlueMoon exploit kit from August 28. The chain combines Chrome V8 flaws CVE-2026-85046 and CVE-2026-87491 with Windows ALPC CVE-2026-85880 to escape the browser sandbox and elevate execution on supported Windows builds. All three flaws are patched. Defenders should verify current Chrome/Chromium and Windows patch levels and hunt Proofpoint's published process, file and network indicators."
+  },
+  {
+    "id": "checkpoint-vpn-cve-2026-85102-85103-preauth-rce",
+    "title": "Check Point patches two unauthenticated VPN RCE flaws in gateways and management servers",
+    "source": "Check Point",
+    "sourceDomain": "support.checkpoint.com",
+    "url": "https://support.checkpoint.com/results/sk/sk1000117/",
+    "publishedAt": "2026-09-09",
+    "addedAt": "2026-09-12T07:29:55Z",
+    "category": "Vulnerability",
+    "tags": [
+      "Check Point",
+      "VPN",
+      "Remote Code Execution",
+      "Security Gateway"
+    ],
+    "severity": "critical",
+    "summary": "Check Point patched CVE-2026-85102, an improper certificate-validation flaw during VPN negotiation, and CVE-2026-85103, an ASN.1 decoding heap overflow. Both are CVSS 9.8 issues that may allow unauthenticated remote code execution under specific conditions across Security Gateway, Spark Firewall and, for CVE-2026-85103, Security Management Server. Check Point reports no known exploitation. Apply the relevant LivePatch or Jumbo Hotfix and restrict site-to-site VPN exposure to expected peers where patching is delayed."
+  },
+  {
+    "id": "sap-overpass-cve-2026-44756-preauth-kernel-rce",
+    "title": "SAP OVERPASS flaw enables pre-authentication OS command execution across NetWeaver estates",
+    "source": "Onapsis",
+    "sourceDomain": "onapsis.com",
+    "url": "https://onapsis.com/blog/sap-overpass-remediation/",
+    "publishedAt": "2026-09-08",
+    "addedAt": "2026-09-12T07:29:54Z",
+    "category": "Vulnerability",
+    "tags": [
+      "SAP",
+      "NetWeaver",
+      "Remote Code Execution",
+      "ERP"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-44756",
+    "summary": "Onapsis disclosed OVERPASS, a CVSS 10.0 SAP kernel flaw in Extended Passport processing that is reachable before authentication over web, SAP GUI and RFC paths. Successful exploitation can execute operating-system commands with SAP administrative privileges across S/4HANA, ECC, Web Dispatcher and other NetWeaver-based systems. No in-the-wild exploitation was observed at publication. Apply SAP Security Note 3747649's kernel patch urgently, prioritizing internet-facing systems; network restrictions can reduce exposure but do not fully mitigate every attack path."
+  },
+  {
+    "id": "gitlab-cve-2026-85706-active-file-read",
+    "title": "GitLab CVSS 10 file-read flaw is actively probed after disclosure",
+    "source": "watchTowr",
+    "sourceDomain": "watchtowr.com",
+    "url": "https://watchtowr.com/resources/rapid-reaction-gitlab-critical-path-traversal-vulnerability-cve-2026-85706/",
+    "publishedAt": "2026-09-11",
+    "addedAt": "2026-09-13T07:29:58Z",
+    "category": "Exploit",
+    "tags": [
+      "GitLab",
+      "Active Exploitation",
+      "Path Traversal",
+      "CI/CD"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-85706",
+    "summary": "watchTowr observed in-the-wild probing of CVE-2026-85706 within hours of GitLab's patch release. The CVSS 10 path traversal in the repository commits API lets unauthenticated attackers read arbitrary server files, potentially exposing configuration, source and CI/CD secrets. Self-managed operators should upgrade to 19.1.8, 19.2.6 or 19.3.2, hunt POST requests to repository commits endpoints containing file.path, and rotate credentials or tokens that may have been exposed."
+  },
+  {
+    "id": "connectwise-screenconnect-cve-2026-84869-kev",
+    "title": "CISA confirms active exploitation of ScreenConnect client file-execution flaw",
+    "source": "CISA",
+    "sourceDomain": "cisa.gov",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-84869",
+    "publishedAt": "2026-09-11",
+    "addedAt": "2026-09-13T07:29:57Z",
+    "category": "Exploit",
+    "tags": [
+      "ScreenConnect",
+      "RMM",
+      "MSP",
+      "Active Exploitation"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-84869",
+    "summary": "CISA added CVE-2026-84869 to KEV on September 11, materially escalating the earlier ScreenConnect advisory to confirmed in-the-wild exploitation. The client flaw can let a low-privileged participant in an active remote session transfer and execute files without Host authorization; ScreenConnect servers are not affected. Upgrade clients to 26.6.5, inventory recent RMM sessions, hunt unauthorized file-transfer and execution activity, and investigate affected endpoints and credentials for downstream compromise."
+  },
+  {
+    "id": "artifactory-cve-2026-42016-42018-active-chain",
+    "title": "Artifactory attacks chain token flaws to admin access and persistent backdoors",
+    "source": "Wiz Research",
+    "sourceDomain": "wiz.io",
+    "url": "https://www.wiz.io/blog/artifactory-under-attack-in-the-wild-exploitation-of-cve-2026-42016-cve-2026-4201",
+    "publishedAt": "2026-09-10",
+    "addedAt": "2026-09-13T07:29:56Z",
+    "category": "Exploit",
+    "tags": [
+      "JFrog Artifactory",
+      "Active Exploitation",
+      "CI/CD",
+      "Backdoor"
+    ],
+    "severity": "critical",
+    "summary": "Wiz identified multiple actors chaining CVE-2026-42018 and CVE-2026-42016 to expose an anonymous token and escalate it to admin scope, expanding the previously covered CVE-2026-82329 threat. Post-exploitation includes persistent admin users, malicious Groovy plugins, web shells and a Rust C2 backdoor. Patch affected self-hosted Artifactory branches, hunt abnormal token endpoints and minting behavior plus Wiz IOCs, remove attacker accounts, revoke tokens and rotate CI/CD and repository secrets."
+  },
+  {
+    "id": "sogou-cve-2026-51990-grayrabbit-active-exploitation",
+    "title": "UNC3569 exploits Sogou one-click RCE to deploy GrayRabbit backdoor",
+    "source": "Gen Threat Labs",
+    "sourceDomain": "gendigital.com",
+    "url": "https://www.gendigital.com/blog/insights/research/one-click-backdoor-sogou",
+    "publishedAt": "2026-09-10",
+    "addedAt": "2026-09-14T07:32:29Z",
+    "category": "Exploit",
+    "tags": [
+      "Sogou Input Method",
+      "UNC3569",
+      "GrayRabbit",
+      "Active Exploitation"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-51990",
+    "summary": "Gen Threat Labs confirmed UNC3569 actively exploited CVE-2026-51990 in Tencent's Sogou Input Method for Windows to deploy the GrayRabbit backdoor. A crafted sgbiz link chains argument injection, unrestricted webview navigation and an outdated unsandboxed Chromium engine into one-click code execution. Tencent fixed the entry point in version 16.3.0.3498. Enterprises with Chinese-language Windows fleets should verify updates and hunt Sogou child processes, suspicious links and GrayRabbit activity."
+  },
+  {
+    "id": "anthropic-shinyhunters-azure-ad-token-theft-2026",
+    "title": "AI-driven ShinyHunters affiliates dump 2,100 Azure AD token sets across 40+ tenants",
+    "source": "Anthropic",
+    "sourceDomain": "anthropic.com",
+    "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+    "publishedAt": "2026-09-10",
+    "addedAt": "2026-09-14T07:32:28Z",
+    "category": "AI Security",
+    "tags": [
+      "Azure AD",
+      "ShinyHunters",
+      "Cloud Tokens",
+      "AI Agents"
+    ],
+    "severity": "high",
+    "summary": "Anthropic's September threat report documents suspected ShinyHunters affiliates using AI agents across credential harvesting, exploitation and bulk data theft. After breaching a SaaS provider, one affiliate extracted data from roughly 200 downstream customers and dumped more than 2,100 Azure AD token sets spanning over 40 corporate tenants in about 34 hours; AI agents performed nearly all the work. Defenders should prioritize session and token revocation, developer-secret discovery, cross-tenant access monitoring and Anthropic's published IOCs."
+  },
+  {
+    "id": "huntress-ai-platform-trust-clickfix-infostealers",
+    "title": "Attackers weaponize trusted AI platforms for ClickFix and credential-stealing malware",
+    "source": "Huntress Labs",
+    "sourceDomain": "huntress.com",
+    "url": "https://www.huntress.com/blog/ai-attack-surface",
+    "publishedAt": "2026-09-11",
+    "addedAt": "2026-09-14T07:32:27Z",
+    "category": "Malware",
+    "tags": [
+      "ClickFix",
+      "Claude",
+      "ChatGPT",
+      "Credential Theft"
+    ],
+    "severity": "high",
+    "summary": "Huntress documented attackers abusing legitimate AI-platform trust rather than breaking the platforms themselves: malicious Claude Artifacts delivered SectopRAT, a claude.ai/share lure led to MacSync theft of cookies, keychain secrets, SSH and cloud keys, and poisoned ChatGPT/Grok conversations pushed AMOS through ClickFix-style terminal commands. SOC teams should treat shared AI content and clipboard-driven execution as an attack surface, restrict script execution where practical, enforce application allowlisting and monitor scheduled tasks, security exclusions and stealer indicators."
+  },
+  {
+    "id": "cisco-secure-email-cve-2026-76461-active-exploitation",
+    "title": "Cisco Secure Email Gateway flaw is actively exploited for unauthenticated root RCE",
+    "source": "Cisco",
+    "sourceDomain": "sec.cloudapps.cisco.com",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-inj-2bLVGmhX",
+    "publishedAt": "2026-09-14",
+    "addedAt": "2026-09-15T07:29:50Z",
+    "category": "Exploit",
+    "tags": [
+      "Cisco Secure Email",
+      "Active Exploitation",
+      "Mail Gateway",
+      "Remote Code Execution"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-76461",
+    "summary": "Cisco confirmed active exploitation of CVE-2026-76461 against Secure Email Gateway. Crafted email can exploit SQL injection in AsyncOS email parsing and reach arbitrary command execution as root; Cisco says cloud customers with detected malicious activity were contacted. There is no workaround. Upgrade on-premises appliances to a fixed release, inspect mail_logs plus external firewall telemetry for Cisco's indicators, and rebuild or restore suspected compromised appliances while renewing credentials and cryptographic material."
+  },
+  {
+    "id": "gitlab-cve-2026-85706-cisa-kev-confirmed-exploitation",
+    "title": "CISA confirms active exploitation of GitLab CVSS 10 path-traversal flaw",
+    "source": "CISA",
+    "sourceDomain": "cisa.gov",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-85706",
+    "publishedAt": "2026-09-14",
+    "addedAt": "2026-09-15T07:29:49Z",
+    "category": "Exploit",
+    "tags": [
+      "GitLab",
+      "CISA KEV",
+      "Active Exploitation",
+      "CI/CD"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-85706",
+    "summary": "CISA added CVE-2026-85706 to KEV on September 14, materially escalating earlier internet probing to confirmed in-the-wild exploitation. The unauthenticated GitLab repository-commits API path-traversal flaw can expose arbitrary server files, including configuration, source and CI/CD secrets. Self-managed operators should patch immediately, hunt POST requests to repository commits endpoints containing file.path, and rotate tokens, credentials and other secrets that may have been readable from vulnerable servers."
+  },
+  {
+    "id": "vite-cve-2026-39364-cloud-secret-mass-scanning",
+    "title": "Mass scanning exploits Vite file-read flaw to steal AWS and Azure secrets",
+    "source": "F5 Labs",
+    "sourceDomain": "f5.com",
+    "url": "https://www.f5.com/labs/articles/cloud-takeover-mass-scanning-for-exposed-vite-endpoints-cve-2026-39364",
+    "publishedAt": "2026-09-11",
+    "addedAt": "2026-09-15T07:29:48Z",
+    "category": "Exploit",
+    "tags": [
+      "Vite",
+      "AWS",
+      "Microsoft Azure",
+      "Credential Theft"
+    ],
+    "severity": "high",
+    "cve": "CVE-2026-39364",
+    "summary": "F5 observed sustained mass scanning of internet-exposed Vite development servers exploiting CVE-2026-39364, with 807 attack sessions and roughly 32,000 raw events. Attackers systematically request .env files, AWS credentials, Azure tokens, Terraform state and process environment data, including traversal and encoding variants intended to evade intermediaries. Remove Vite dev servers from public exposure, upgrade to fixed versions, hunt /@fs/ requests, and rotate every secret reachable from previously exposed vulnerable hosts."
+  },
+  {
+    "id": "the-gentlemen-medskin-solutions-dr-suwelack-ransomware-claim",
+    "title": "MedSkin Solutions Dr. Suwelack AG listed in unverified The Gentlemen ransomware claim",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://www.ransomware.live/id/TWVkU2tpbiBTb2x1dGlvbnMgRHIuIFN1d2VsYWNrIEFHQHRoZWdlbnRsZW1lbg%3D%3D",
+    "publishedAt": "2026-09-14",
+    "addedAt": "2026-09-15T07:29:47Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "The Gentlemen",
+      "MedSkin Solutions"
+    ],
+    "severity": "medium",
+    "summary": "Ransomware.live-derived tracking lists MedSkin Solutions Dr. Suwelack AG, headquartered in Billerbeck, Germany, as a The Gentlemen victim claim dated September 14. No authoritative statement from MedSkin, a regulator, CERT or police source independently confirming compromise, encryption or data theft was identified during this run. Treat the listing strictly as an unverified criminal claim and monitor official notifications, suspicious credential or supplier activity, targeted phishing and any later publication of allegedly stolen data."
+  },
+  {
+    "id": "vmware-vcenter-cve-2026-59310-ransomware-escalation",
+    "title": "VMware vCenter RCE is now exploited by ransomware gangs",
+    "source": "CISA",
+    "sourceDomain": "cisa.gov",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-59310",
+    "publishedAt": "2026-09-14",
+    "addedAt": "2026-09-16T07:31:38Z",
+    "category": "Ransomware",
+    "tags": [
+      "VMware vCenter",
+      "Ransomware",
+      "Active Exploitation",
+      "ESXi"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-59310",
+    "summary": "CISA updated its KEV entry for CVE-2026-59310 to flag ransomware use, materially escalating the vCenter flaw previously covered for reverse-SSH persistence. The unauthenticated Syslog directory-traversal vulnerability can reach code execution and root on vCenter, giving attackers a control-plane path toward ESXi estates; Babuk-derived encryption has been reported after compromise. Operators should verify fixed builds, remove public management exposure, hunt cron modifications, reverse SSH, web shells and new SSO administrators, and treat suspicious vCenter systems as incidents rather than patch-only cases."
+  },
+  {
+    "id": "marimo-cve-2026-39987-aws-bastion-pivot",
+    "title": "Marimo RCE attackers pivot from notebooks into AWS bastion hosts",
+    "source": "Sysdig",
+    "sourceDomain": "sysdig.com",
+    "url": "https://www.sysdig.com/blog/machine-speed-hold-the-ai-hand-rolled-marimo-cve-2026-39987-exploit",
+    "publishedAt": "2026-09-11",
+    "addedAt": "2026-09-16T07:31:37Z",
+    "category": "Exploit",
+    "tags": [
+      "marimo",
+      "AWS",
+      "Credential Theft",
+      "Active Exploitation"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-39987",
+    "summary": "Sysdig observed a human operator exploit CVE-2026-39987 through marimo's unauthenticated terminal WebSocket, harvest AWS credentials, retrieve a private key from Secrets Manager and reach an SSH bastion in eight seconds after reconnecting. The case shows notebook RCE immediately becoming cloud credential compromise and lateral movement. Upgrade to marimo 0.23.0 or later, remove internet exposure to /terminal/ws, rotate reachable cloud credentials and secrets, and hunt WebSocket terminal sessions, Secrets Manager calls and unusual bastion authentication."
+  },
+  {
+    "id": "delinea-secret-server-cve-2026-15640-saml-auth-bypass",
+    "title": "Delinea Secret Server SAML flaw enables privileged-user impersonation",
+    "source": "Delinea",
+    "sourceDomain": "delinea.com",
+    "url": "https://delinea.com/security-advisories",
+    "publishedAt": "2026-09-15",
+    "addedAt": "2026-09-16T07:31:36Z",
+    "category": "Vulnerability",
+    "tags": [
+      "Delinea Secret Server",
+      "SAML",
+      "Authentication Bypass",
+      "PAM"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-15640",
+    "summary": "Delinea disclosed CVE-2026-15640, a CVSS 9.5 flaw in Secret Server on-prem 10.5.0 through 12.1.3. Under certain conditions, an attacker with a valid SAML IdP response can manipulate authentication to impersonate another Secret Server user, putting privileged credentials and downstream administrative access at risk. No active exploitation has been reported. Upgrade to 12.2.7 or later, review SAML authentication and privileged-session logs, and rotate high-value secrets if suspicious impersonation activity is identified."
+  },
+  {
+    "id": "ransomware-live-germany-2026-09-16-neumerkel-meterex",
+    "title": "New German ransomware victims: neumerkel-gmbh.de, meterex.com",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://ransomware.live/country/DEU#2026-09-15",
+    "publishedAt": "2026-09-15",
+    "addedAt": "2026-09-16T07:31:35Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "SafePay",
+      "neumerkel-gmbh.de"
+    ],
+    "severity": "medium",
+    "summary": "Ransomware.live-derived tracking shows two German SafePay listings absent from the previous successful snapshot: neumerkel-gmbh.de (listed September 15) and meterex.com (September 15). No authoritative statement from either organization, a regulator, CERT or police source independently confirming compromise, encryption or data theft was identified during this run. Treat both strictly as unverified criminal claims; monitor official notifications, suspicious credential or supplier activity, targeted phishing and any later publication of allegedly stolen data before upgrading either case to a confirmed breach."
+  },
+  {
+    "id": "cisco-ise-cve-2026-76460-active-exploitation",
+    "title": "Cisco ISE zero-day is actively exploited for unauthenticated root takeover",
+    "source": "Cisco",
+    "sourceDomain": "sec.cloudapps.cisco.com",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ISE-ABP-VNSW7Tn5",
+    "publishedAt": "2026-09-16",
+    "addedAt": "2026-09-17T07:30:46Z",
+    "category": "Exploit",
+    "tags": [
+      "Cisco ISE",
+      "Active Exploitation",
+      "Authentication Bypass",
+      "NAC"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-76460",
+    "summary": "Cisco confirms active exploitation of CVE-2026-76460, a CVSS 10 API authentication bypass affecting ISE and ISE-PIC regardless of configuration. Crafted unauthenticated requests can bypass the web management interface, and successful exploitation may reach command execution as root. There is no workaround. Upgrade to a fixed patch immediately, restrict management traffic with infrastructure ACLs, inspect ISE Kong access logs and external firewall telemetry, and re-image nodes with credible exploitation evidence."
+  },
+  {
+    "id": "wso2-api-manager-cve-2026-5430-active-exploitation",
+    "title": "WSO2 API Manager JWT bypass is actively exploited with forged admin tokens",
+    "source": "The Hacker News",
+    "sourceDomain": "thehackernews.com",
+    "url": "https://thehackernews.com/2026/09/active-exploitation-attempts-target.html",
+    "publishedAt": "2026-09-16",
+    "addedAt": "2026-09-17T07:30:45Z",
+    "category": "Exploit",
+    "tags": [
+      "WSO2 API Manager",
+      "JWT",
+      "Authentication Bypass",
+      "Active Exploitation"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-5430",
+    "summary": "watchTowr observed active exploitation attempts against CVE-2026-5430, with forged JWTs carrying administrator privileges hitting WSO2 honeypots from September 13. The signature-verification flaw can let unauthenticated attackers take over accounts across API Manager 4.1-4.6 and related control-plane, traffic-manager and gateway products, putting backend APIs, consumer keys and secrets at risk. Apply WSO2's fixed update levels immediately, review privileged API-management activity and suspicious JWTs, and rotate credentials exposed through a compromised gateway."
+  },
+  {
+    "id": "cisco-fmc-cve-2026-20242-preauth-root-rce",
+    "title": "Critical Cisco FMC flaw enables unauthenticated root RCE",
+    "source": "Cisco",
+    "sourceDomain": "sec.cloudapps.cisco.com",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-javarce-y2NypXwk",
+    "publishedAt": "2026-09-16",
+    "addedAt": "2026-09-17T07:30:44Z",
+    "category": "Vulnerability",
+    "tags": [
+      "Cisco FMC",
+      "Remote Code Execution",
+      "Firewall Management",
+      "Pre-Auth"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-20242",
+    "summary": "Cisco patched CVE-2026-20242, a CVSS 9.8 Java deserialization flaw in Secure Firewall Management Center's External Database Access feature. An unauthenticated remote attacker from a host configured in the external database access list can send a crafted serialized Java byte stream and execute arbitrary commands as root. Cisco reports no known exploitation and no workaround. Upgrade affected FMC releases immediately, minimize eligible database hosts, and review management-plane and system telemetry for unexpected root-level command execution."
+  },
+  {
+    "id": "brevo-cloudflare-clickfix-supply-chain",
+    "title": "Brevo supply-chain compromise turns embedded scripts into ClickFix delivery",
+    "source": "BleepingComputer",
+    "sourceDomain": "bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/brevo-supply-chain-attack-injected-clickfix-scripts-on-customer-sites/",
+    "publishedAt": "2026-09-17",
+    "addedAt": "2026-09-18T07:31:06Z",
+    "category": "Incident Response",
+    "tags": [
+      "Brevo",
+      "ClickFix",
+      "Cloudflare",
+      "Supply Chain"
+    ],
+    "severity": "high",
+    "summary": "Brevo confirmed attackers abused a stolen long-lived Cloudflare API key to create a malicious Worker that modified content at the CDN edge for about 5.5 hours on September 14. Brevo pages and JavaScript embedded on customer sites served fake Cloudflare ClickFix prompts, while logged-in WordPress administrators were targeted with a malicious plugin backdoor. Customers should review embedded Brevo exposure, investigate endpoints that executed the pasted command, and audit WordPress for unauthorized plugins."
+  },
+  {
+    "id": "unbound-cve-2026-81642-dnssec-rce",
+    "title": "Critical Unbound DNSSEC flaw can enable remote code execution",
+    "source": "NLnet Labs",
+    "sourceDomain": "nlnetlabs.nl",
+    "url": "https://www.nlnetlabs.nl/downloads/unbound/CVE-2026-81642.txt",
+    "publishedAt": "2026-09-16",
+    "addedAt": "2026-09-18T07:31:05Z",
+    "category": "Vulnerability",
+    "tags": [
+      "Unbound",
+      "DNSSEC",
+      "Remote Code Execution",
+      "DNS"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-81642",
+    "summary": "NLnet Labs disclosed CVE-2026-81642 in Unbound through 1.26.0. A malicious DNS zone can return a crafted DNSKEY whose compression pointer causes a heap buffer overflow in the DNSSEC validator; attacker-controlled data makes remote code execution possible, with denial of service also expected. No active exploitation has been reported. Recursive DNS operators should upgrade to 1.26.1 or apply the vendor patch and prioritize resolvers reachable by untrusted clients."
+  },
+  {
+    "id": "cisco-nexus-dashboard-critical-hardening-2026-09",
+    "title": "Cisco fixes multiple critical Nexus Dashboard flaws with no workarounds",
+    "source": "Cisco",
+    "sourceDomain": "sec.cloudapps.cisco.com",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-hardening-ndw1-psFvnrg",
+    "publishedAt": "2026-09-16",
+    "addedAt": "2026-09-18T07:31:04Z",
+    "category": "Vulnerability",
+    "tags": [
+      "Cisco Nexus Dashboard",
+      "Network Management",
+      "Command Injection",
+      "Authentication"
+    ],
+    "severity": "critical",
+    "summary": "Cisco's September 16 hardening release fixes six Nexus Dashboard CVEs with a maximum CVSS score of 9.9, covering improper access control, path traversal, missing authentication, command injection, SQL injection and credential-protection weaknesses. The issues affect Nexus Dashboard regardless of configuration; Cisco reports no known malicious use and there are no workarounds. Upgrade to 4.3.1.175 or migrate older deployments, restrict management-plane reachability, and review privileged activity around the patch window."
+  },
+  {
+    "id": "panzer-universitt-hamburg-ransomware-claim-2026-09-18",
+    "title": "Universitt Hamburg listed in unverified Panzer ransomware claim",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://www.ransomware.live/id/VW5pdmVyc2l0dCBIYW1idXJnQHBhbnplcg%3D%3D",
+    "publishedAt": "2026-09-18",
+    "addedAt": "2026-09-18T07:31:03Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "Panzer",
+      "Universitt Hamburg"
+    ],
+    "severity": "medium",
+    "summary": "Ransomware.live-derived tracking added Universitt Hamburg as a Panzer leak-site listing on September 18 after the previous successful run. Enrichment identifies the organization as Universität Hamburg, but no current statement from the university, a regulator, CERT or police source independently confirming compromise, encryption or data theft was identified. Treat the listing strictly as an unverified criminal claim; monitor official UHH notices, suspicious credential activity, targeted phishing and any later publication of allegedly stolen data before escalating it to a confirmed breach."
+  },
+  {
+    "id": "orkes-conductor-cve-2026-58138-active-exploitation",
+    "title": "Orkes Conductor pre-auth RCE is actively exploited at scale",
+    "source": "SecurityWeek",
+    "sourceDomain": "securityweek.com",
+    "url": "https://www.securityweek.com/critical-orkes-conductor-vulnerability-exploited-in-attacks/",
+    "publishedAt": "2026-09-18",
+    "addedAt": "2026-09-19T07:29:40Z",
+    "category": "Exploit",
+    "tags": [
+      "Orkes Conductor",
+      "Active Exploitation",
+      "Remote Code Execution",
+      "AI Agents"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-58138",
+    "summary": "Empirical Security and Fortinet telemetry confirms active exploitation of CVE-2026-58138, a CVSS 9.8 pre-authentication RCE in Orkes Conductor before 3.30.2. Malicious inline JavaScript or Python workflow expressions can escape the GraalVM evaluator and execute OS commands as the Conductor process, often root. Fortinet blocked roughly 1,300 attempts on September 8-9. Upgrade to 3.30.2 or later, remove public workflow API exposure, and hunt unexpected workflow submissions and child processes."
+  },
+  {
+    "id": "checkpoint-cve-2026-91843-management-root-rce",
+    "title": "Critical Check Point management flaw enables unauthenticated root RCE",
+    "source": "SecurityWeek",
+    "sourceDomain": "securityweek.com",
+    "url": "https://www.securityweek.com/check-point-kaspersky-tanium-patch-product-vulnerabilities/",
+    "publishedAt": "2026-09-18",
+    "addedAt": "2026-09-19T07:29:39Z",
+    "category": "Vulnerability",
+    "tags": [
+      "Check Point",
+      "Security Management",
+      "Remote Code Execution",
+      "Pre-Auth"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-91843",
+    "summary": "Check Point patched CVE-2026-91843, a CVSS 9.8 stack overflow in the Security Management Server login path that can give an unauthenticated remote attacker arbitrary code execution as root; Log Servers and Multi-Domain deployments are also affected. No exploitation is currently known. Apply LivePatch or hotfixes immediately, restrict Trusted Clients to explicit management subnets, and review exposed management systems for anomalous login requests or post-compromise activity."
+  },
+  {
+    "id": "plugin4shell-ai-coding-agents-zero-click-rce",
+    "title": "Plugin4Shell bypasses plugin pinning for zero-click RCE in major coding agents",
+    "source": "AIR Security",
+    "sourceDomain": "air.security",
+    "url": "https://www.air.security/blog-posts/plugin4shell",
+    "publishedAt": "2026-09-17",
+    "addedAt": "2026-09-19T07:29:38Z",
+    "category": "AI Security",
+    "tags": [
+      "AI Coding Agents",
+      "Supply Chain",
+      "Remote Code Execution",
+      "Plugins"
+    ],
+    "severity": "high",
+    "summary": "AIR disclosed Plugin4Shell, a zero-click plugin supply-chain RCE affecting Claude Code, Codex, GitHub Copilot and Gemini CLI. A malicious or hijacked plugin repository can defeat SHA pinning so auto-update installs attacker-controlled code with the agent's developer permissions. Claude Code 2.1.179 and Codex 0.146.0 are fixed; AIR says Copilot remained unpatched at disclosure and deprecated Gemini CLI will not be fixed. Update or migrate, disable risky plugins, and audit agent hosts for secret exposure."
+  },
+  {
+    "id": "ransomware-live-germany-2026-09-19-hygear-mpa-pharma",
+    "title": "New German ransomware victims: hygear.com, MPA Pharma",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://ransomware.live/country/DEU#2026-09-18",
+    "publishedAt": "2026-09-18",
+    "addedAt": "2026-09-19T07:29:37Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "Lockbit5",
+      "Rhysida"
+    ],
+    "severity": "medium",
+    "summary": "Ransomware.live-derived tracking shows two new DEU-classified listings after the previous successful snapshot: hygear.com (Lockbit5, September 18) and MPA Pharma (Rhysida, September 18). HyGear's public contact information places its main office in Arnhem, Netherlands, so the source's Germany classification may be inaccurate. MPA Pharma was already listed by Metaencryptor in August; Rhysida's new listing is a separate unverified threat-actor claim, not confirmation of a second breach. No authoritative victim confirmation was identified; treat both listings as unverified criminal claims."
+  },
+  {
+    "id": "waterplum-contagious-interview-joint-advisory",
+    "title": "Joint advisory exposes North Korean WaterPlum targeting IT professionals",
+    "source": "Japan National Police Agency",
+    "sourceDomain": "npa.go.jp",
+    "url": "https://www.npa.go.jp/news/release/2026/20260918001.html",
+    "publishedAt": "2026-09-18",
+    "addedAt": "2026-09-20T07:30:17Z",
+    "category": "APT",
+    "tags": [
+      "WaterPlum",
+      "Contagious Interview",
+      "North Korea",
+      "Developer Security"
+    ],
+    "severity": "high",
+    "summary": "Japanese, U.S., Australian and German authorities jointly warned about North Korea-linked WaterPlum, also tracked through the Contagious Interview cluster, using fake recruiters and malicious coding tasks to compromise developers and IT professionals. The campaign targets credentials, developer access and cryptocurrency assets. Defenders should isolate endpoints that executed recruiter-supplied projects, rotate GitHub, cloud and browser credentials, review package-install and script execution, and investigate unusual recruitment-origin files and processes."
+  },
+  {
+    "id": "settra-ransomware-meshagent-byovd-recovery-sabotage",
+    "title": "Settra ransomware uses MeshAgent RMM and BYOVD before recovery sabotage",
+    "source": "Huntress",
+    "sourceDomain": "huntress.com",
+    "url": "https://www.huntress.com/blog/new-settra-ransomware-variant",
+    "publishedAt": "2026-09-17",
+    "addedAt": "2026-09-20T07:30:16Z",
+    "category": "Ransomware",
+    "tags": [
+      "Settra",
+      "MeshAgent",
+      "BYOVD",
+      "RMM"
+    ],
+    "severity": "high",
+    "summary": "Huntress detailed two Settra ransomware intrusions, including a September manufacturing case, that used the legitimate MeshAgent RMM tool for persistence before encryption. The operators cleared Windows event logs, disabled Windows Recovery Environment and attempted to remove recovery partitions; the newer case also showed BYOVD activity. Huntress did not confirm initial access. Defenders should alert on unapproved MeshAgent installs, victim-domain _win64.exe payloads, recovery-setting changes and vulnerable-driver loading."
+  },
+  {
+    "id": "crowdsec-tanstack-supply-chain-private-github-repos",
+    "title": "TanStack supply-chain compromise exposed 170 private CrowdSec GitHub repositories",
+    "source": "CrowdSec",
+    "sourceDomain": "crowdsec.net",
+    "url": "https://www.crowdsec.net/blog/tanstack-supply-chain-attack-analysis",
+    "publishedAt": "2026-09-18",
+    "addedAt": "2026-09-20T07:30:15Z",
+    "category": "Incident Response",
+    "tags": [
+      "CrowdSec",
+      "TanStack",
+      "GitHub",
+      "Supply Chain"
+    ],
+    "severity": "high",
+    "cve": "CVE-2026-45321",
+    "summary": "CrowdSec traced the May theft of roughly 170 private GitHub repositories to an OAuth token taken from a departing developer through the TanStack npm supply-chain compromise. The repositories were cloned in about nine minutes; CrowdSec says no code, infrastructure or database changes occurred, while exposed credentials were reviewed and rotated. Organizations that used affected TanStack packages should rotate developer and CI secrets, audit OAuth token scope and enforce immediate offboarding of repository access."
+  },
+  {
+    "id": "rhysida-kreishandwerkerschaft-borken-ransomware-claim",
+    "title": "Kreishandwerkerschaft Borken listed in unverified Rhysida ransomware claim",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://www.ransomware.live/id/S3JlaXNoYW5kd2Vya2Vyc2NoYWZ0IEJvcmtlbkByaHlzaWRh",
+    "publishedAt": "2026-09-19",
+    "addedAt": "2026-09-20T07:30:14Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "Rhysida",
+      "Kreishandwerkerschaft Borken"
+    ],
+    "severity": "medium",
+    "summary": "Ransomware.live-derived tracking added Kreishandwerkerschaft Borken in Germany as a Rhysida leak-site listing on September 19 after the previous successful run. No statement from the organization, a regulator, CERT or police source independently confirming compromise, encryption or data theft was identified. Treat the listing strictly as an unverified criminal claim; monitor official notices, suspicious credential and partner activity, targeted phishing and any later publication of allegedly stolen data before escalating it to a confirmed breach."
+  },
+  {
+    "id": "checkmarx-indexed-btree-runtime-npm-malware",
+    "title": "Malicious npm packages hide runtime malware across millions of downloads",
+    "source": "Checkmarx Zero",
+    "sourceDomain": "checkmarx.com",
+    "url": "https://checkmarx.com/zero-post/npm-btree-malware-campaign-affects-millions-of-downloads-no-need-for-install-script/",
+    "publishedAt": "2026-09-17",
+    "addedAt": "2026-09-21T07:30:39Z",
+    "category": "Malware",
+    "tags": [
+      "npm",
+      "Supply Chain",
+      "Developer Security",
+      "Ethereum C2"
+    ],
+    "severity": "high",
+    "summary": "Checkmarx uncovered an ongoing npm campaign led by indexed-btree and nine related packages that accumulated millions of weekly downloads while hiding the loader inside normal BTree runtime methods rather than install scripts. Execution fingerprints hosts, exfiltrates data through Slack and Telegram and retrieves encrypted second-stage instructions from an Ethereum Sepolia smart contract. Developers should remove the listed packages, rotate secrets available to affected applications, workstations and CI runners, and rebuild exposed environments from known-clean dependency sets."
+  },
+  {
+    "id": "openai-codex-sandbox-escapes-host-command-execution",
+    "title": "OpenAI Codex sandbox escapes enable host command execution without approval",
+    "source": "BleepingComputer",
+    "sourceDomain": "bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/researchers-escape-openai-codex-sandbox-to-run-commands-on-host/",
+    "publishedAt": "2026-09-20",
+    "addedAt": "2026-09-21T07:30:38Z",
+    "category": "AI Security",
+    "tags": [
+      "OpenAI Codex",
+      "Sandbox Escape",
+      "Developer Security",
+      "Remote Code Execution"
+    ],
+    "severity": "high",
+    "summary": "Accomplish AI researchers disclosed two patched Codex sandbox escapes. Heapjack lets a malicious repository recover a trust secret from a shared V8 heap and execute unsandboxed host commands even from Codex Desktop's read-only mode; Overpatch lets Codex CLI expand write permission beyond the workspace through apply_patch. Update Codex Desktop to build 26.818.21641 or later and Codex CLI to 0.149.0 or later, and treat untrusted repositories as executable content around agent tooling."
+  },
+  {
+    "id": "gyazo-image-upload-rce-236m-records-breach",
+    "title": "Gyazo image-upload RCE exposes data for 23.62 million users",
+    "source": "Helpfeel",
+    "sourceDomain": "corp.helpfeel.com",
+    "url": "https://corp.helpfeel.com/en/news/news-20260916",
+    "publishedAt": "2026-09-16",
+    "addedAt": "2026-09-21T07:30:37Z",
+    "category": "Incident Response",
+    "tags": [
+      "Gyazo",
+      "Remote Code Execution",
+      "Data Breach",
+      "Session Exposure"
+    ],
+    "severity": "high",
+    "summary": "Helpfeel confirmed an attacker exploited a vulnerability in Gyazo's image-upload server to execute arbitrary commands, access the database and expose approximately 23.62 million user records plus image metadata. Data may include email addresses, password hashes, session IDs, device IDs and integration tokens; the attacker also obtained a list of private image files. Gyazo blocked the access path and fixed the flaw. Users and enterprises should reset passwords, invalidate sessions and tokens, and monitor phishing or unauthorized image access."
+  },
+  {
+    "id": "qilin-kmls-ransomware-claim-2026-09-20",
+    "title": "KMLS listed in unverified Qilin ransomware claim",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://www.ransomware.live/id/S01MU0BxaWxpbg%3D%3D",
+    "publishedAt": "2026-09-20",
+    "addedAt": "2026-09-21T07:30:36Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "Qilin",
+      "KMLS"
+    ],
+    "severity": "medium",
+    "summary": "Ransomware.live-derived tracking added KMLS, a Hamburg-based German building-services company, as a Qilin leak-site listing on September 20 after the previous successful run. KMLS's public website confirms the organization is KMLS Services GmbH in Hamburg, but no company statement, regulator, CERT or police source independently confirming compromise, encryption or data theft was identified. Treat the listing strictly as an unverified criminal claim; monitor official notices, suspicious credential or supplier activity, targeted phishing and any later data publication."
+  },
+  {
+    "id": "zyxel-gs1900-cve-2026-7273-active-exploitation",
+    "title": "CISA confirms active exploitation of Zyxel GS1900 switch RCE",
+    "source": "CISA",
+    "sourceDomain": "cisa.gov",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/09/21/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "publishedAt": "2026-09-21",
+    "addedAt": "2026-09-22T07:28:03Z",
+    "category": "Exploit",
+    "tags": [
+      "Zyxel GS1900",
+      "Active Exploitation",
+      "Network Infrastructure",
+      "Remote Code Execution"
+    ],
+    "severity": "high",
+    "cve": "CVE-2026-7273",
+    "summary": "CISA added CVE-2026-7273 to KEV after confirming active exploitation of Zyxel GS1900 switches. The stack-based overflow in the web CGI can let an unauthenticated attacker on an adjacent/LAN network execute operating-system commands, turning access-layer infrastructure into a foothold. Operators should apply Zyxel's current remediation guidance immediately, isolate switch management to trusted administrative networks, review configuration and management logs for unexpected changes, and investigate reachable devices for prior compromise."
+  },
+  {
+    "id": "lastpass-rapuncel-edr-killer-github-malware",
+    "title": "Fake GitHub installers deploy Rapuncel stealer and kernel EDR killer",
+    "source": "LastPass",
+    "sourceDomain": "blog.lastpass.com",
+    "url": "https://blog.lastpass.com/posts/lastpass-delphos-report-rapuncel-infostealer",
+    "publishedAt": "2026-09-17",
+    "addedAt": "2026-09-22T07:28:02Z",
+    "category": "Malware",
+    "tags": [
+      "Rapuncel",
+      "EDR Bypass",
+      "Credential Theft",
+      "GitHub"
+    ],
+    "severity": "high",
+    "summary": "LastPass and Delphos uncovered an ongoing fake-software campaign using SEO-optimized GitHub repositories to impersonate at least 40 brands. The payload installs Rapuncel plus a Microsoft-attested kernel driver designed to terminate 145 antivirus and EDR processes before stealing browser passwords, wallet data, session material and Windows credentials. LastPass itself was not breached. Defenders should block the published infrastructure, hunt the driver and loader hashes, restrict software installation sources, and rotate credentials from affected endpoints."
+  },
+  {
+    "id": "bigcommerce-ribon-app-credential-compromise",
+    "title": "Compromised Ribon app credentials inject scripts into BigCommerce storefronts",
+    "source": "BleepingComputer",
+    "sourceDomain": "bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/bigcommerce-alerts-merchants-of-data-breach-linked-to-ribon-apps/",
+    "publishedAt": "2026-09-21",
+    "addedAt": "2026-09-22T07:28:01Z",
+    "category": "Incident Response",
+    "tags": [
+      "BigCommerce",
+      "Third-Party App",
+      "Credential Theft",
+      "Supply Chain"
+    ],
+    "severity": "high",
+    "summary": "BigCommerce says credentials for the third-party Ribon and Ribon 1.5 apps were compromised and used from September 13–17 to inject malicious scripts into a small number of merchant storefronts and access shopper data. BigCommerce says its core platform was not breached and passwords or payment cards were not exposed. Merchants should confirm Ribon removal, rotate integration credentials, review storefront code and API logs, and assess customer notification and phishing risk from exposed contact and shipping data."
+  },
+  {
+    "id": "microsoft-eviltokens-ai-device-code-phishing-disruption",
+    "title": "EvilTokens AI phishing service compromised 12,000 Microsoft inboxes before disruption",
+    "source": "Microsoft Security",
+    "sourceDomain": "microsoft.com",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
+    "publishedAt": "2026-09-22",
+    "addedAt": "2026-09-23T07:32:33Z",
+    "category": "Phishing",
+    "tags": [
+      "Microsoft 365",
+      "Device Code",
+      "EvilTokens",
+      "AI"
+    ],
+    "severity": "high",
+    "summary": "Microsoft says EvilTokens compromised more than 12,000 inboxes across over 10,000 organizations by industrializing device-code phishing, then using AI to tailor lures, analyze mailboxes, identify financial targets and map organizations through Microsoft Graph. The service supported token refresh, malicious inbox rules and device registration for persistence; Microsoft and partners disrupted its infrastructure on September 22. Entra defenders should block device-code flow where unnecessary, require phishing-resistant authentication, revoke sessions and tokens, remove attacker-added devices and rules, and hunt Microsoft's published indicators."
+  },
+  {
+    "id": "checkpoint-cve-2026-93616-active-zero-day",
+    "title": "Check Point management zero-day was exploited before emergency patch",
+    "source": "Check Point",
+    "sourceDomain": "blog.checkpoint.com",
+    "url": "https://blog.checkpoint.com/security/security-advisory-action-required-active-exploitation-of-cve-2026-85102-and-a-management-pre-authentication-vulnerability-cve-2026-93616/",
+    "publishedAt": "2026-09-22",
+    "addedAt": "2026-09-23T07:32:32Z",
+    "category": "Exploit",
+    "tags": [
+      "Check Point",
+      "Security Management",
+      "Zero-Day",
+      "Active Exploitation"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-93616",
+    "summary": "Check Point disclosed CVE-2026-93616 after finding a handful of targeted attacks on July 23, when the flaw was still a zero-day. The pre-authentication path traversal in Security Management's web service can execute arbitrary-path scripts and load Java classes, compromising the control plane that manages policies and logs; fixes arrived September 22. Apply the appropriate Jumbo or security hotfix immediately, restrict TCP/19009 to trusted management sources, hunt from July 23 using Check Point's indicators, and treat positive evidence as a management-plane compromise."
+  },
+  {
+    "id": "closedquorum-autonomous-ai-c2-implant",
+    "title": "CLOSEDQUORUM delegates post-compromise decisions to commercial LLMs",
+    "source": "Cisco Talos",
+    "sourceDomain": "blog.talosintelligence.com",
+    "url": "https://blog.talosintelligence.com/the-closed-quorum-inside-the-first-reported-autonomous-ai-c2-implant/",
+    "publishedAt": "2026-09-22",
+    "addedAt": "2026-09-23T07:32:31Z",
+    "category": "AI Security",
+    "tags": [
+      "CLOSEDQUORUM",
+      "AI Malware",
+      "Command and Control",
+      "CAIRN"
+    ],
+    "severity": "medium",
+    "summary": "Cisco Talos documented CLOSEDQUORUM, a Windows implant that delegates its next post-compromise action to a vote among DeepSeek, Qwen, Mistral and Gemini rather than waiting for a human C2 operator. Talos has not confirmed in-the-wild deployment, so this is an emerging technique rather than an active campaign, but the binary contains credential theft, process injection and persistence capabilities. SOC and malware teams should add LLM/API artifacts to triage, use Talos's CAIRN/YARA material, and monitor model-provider traffic from unexpected binaries."
+  },
+  {
+    "id": "ransomware-live-germany-2026-09-23-fresenius-gaedke",
+    "title": "New German ransomware victims: Fresenius Medical Care, Gaedke & Partner Steuerberatung",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://ransomware.live/country/DEU#2026-09-22",
+    "publishedAt": "2026-09-22",
+    "addedAt": "2026-09-23T07:32:30Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "ShinyHunters",
+      "Anubis"
+    ],
+    "severity": "medium",
+    "summary": "Ransomware.live-derived tracking added two DEU-classified listings after the previous successful run: Fresenius Medical Care (ShinyHunters, September 22) and Gaedke & Partner Steuerberatung (Anubis, September 22). Fresenius independently confirmed unauthorized access to a limited number of internal systems with no impact to medical devices, patient care, manufacturing or business continuity, but did not confirm ShinyHunters or data theft. No authoritative confirmation was found for Gaedke; its public profile is Austrian, so the Germany classification may be inaccurate. Treat both threat-actor attributions and theft claims as unverified."
+  },
+  {
+    "id": "f5-big-ip-apm-cve-2026-94127-active-zero-day",
+    "title": "F5 BIG-IP APM zero-day is actively exploited for unauthenticated RCE",
+    "source": "F5",
+    "sourceDomain": "my.f5.com",
+    "url": "https://my.f5.com/manage/s/article/K000162605",
+    "publishedAt": "2026-09-22",
+    "addedAt": "2026-09-24T07:28:55Z",
+    "category": "Exploit",
+    "tags": [
+      "F5 BIG-IP",
+      "Active Exploitation",
+      "OAuth",
+      "Edge Security"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-94127",
+    "summary": "F5 confirmed active exploitation of CVE-2026-94127, a critical heap-based buffer overflow in BIG-IP APM that can yield unauthenticated remote code execution when a virtual server has both an APM access policy and an OAuth profile acting as an Authorization Server. Appliance mode is also affected. Operators should preserve forensic evidence, identify exposed configurations, apply the vendor hotfix immediately and use F5's published indicators to determine whether affected edge systems require incident response rather than patching alone."
+  }
+]
