@@ -599,5 +599,77 @@
     ],
     "severity": "medium",
     "summary": "A suspected ShinyHunters member was detained in Jordan and is cooperating with the FBI, according to Reuters sources, providing investigators access to communications that may help identify other operators. The development follows recent arrests and disruption around a group tied to high-profile identity, SaaS, and data-theft campaigns. Defenders should not treat the detention as campaign closure: preserve ShinyHunters-related indicators, review recent vishing and cloud-token activity, and expect possible infrastructure or affiliate migration."
+  },
+  {
+    "id": "south-korea-financial-sector-ai-assisted-breaches-2026-10-05",
+    "title": "South Korea probes seven financial-sector breaches amid suspected AI-assisted attacks",
+    "source": "The Korea Times",
+    "sourceDomain": "koreatimes.co.kr",
+    "url": "https://www.koreatimes.co.kr/business/banking-finance/20261005/ai-powered-attacks-on-banks-expose-technological-lag-in-koreas-financial-cyber-defenses",
+    "publishedAt": "2026-10-05",
+    "addedAt": "2026-10-05T18:43:49Z",
+    "category": "AI Security",
+    "tags": [
+      "South Korea",
+      "Financial Sector",
+      "AI Security",
+      "ARTEX AI"
+    ],
+    "severity": "high",
+    "summary": "South Korean authorities are investigating a cluster of breaches across seven banks and financial firms affecting more than 67,000 people. Investigators reportedly found traces associated with the ARTEX AI autonomous penetration-testing system on infrastructure believed to have been used in the attacks, but the tool’s role remains under investigation. Financial organizations were told to inspect all externally accessible systems, authentication controls and exposed data, while defenders should preserve evidence before attributing activity to AI automation."
+  },
+  {
+    "id": "denmark-cpr-registry-8-8-million-records-2026-10-05",
+    "title": "Denmark says attackers accessed CPR data on about 8.8 million registered people",
+    "source": "Danish CPR Administration",
+    "sourceDomain": "cpr.dk",
+    "url": "https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger",
+    "publishedAt": "2026-10-05",
+    "addedAt": "2026-10-05T18:43:48Z",
+    "category": "Incident Response",
+    "tags": [
+      "Denmark",
+      "Data Breach",
+      "Third-Party Access",
+      "Identity Data"
+    ],
+    "severity": "high",
+    "summary": "Denmark’s Central Population Register disclosed unauthorized access to names, addresses, CPR numbers and related data for roughly 8.8 million registered people. The attackers abused a private company’s legitimate lookup access, while the Danish data-protection authority says large-scale automated queries were used to identify valid CPR numbers. Access has been revoked and police are investigating. The incident highlights third-party entitlement governance, rate limiting, behavioral analytics and bulk-query detection as controls for high-value identity registries."
+  },
+  {
+    "id": "google-oss-vrp-pauses-product-reports-ai-spam-2026-10-05",
+    "title": "Google pauses OSS vulnerability submissions after surge of invalid AI-generated reports",
+    "source": "BleepingComputer",
+    "sourceDomain": "bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/google/google-halts-open-source-bug-bounty-program-amid-ai-spam-surge/",
+    "publishedAt": "2026-10-05",
+    "addedAt": "2026-10-05T18:43:47Z",
+    "category": "AI Security",
+    "tags": [
+      "Google",
+      "Bug Bounty",
+      "AI Security",
+      "Open Source"
+    ],
+    "severity": "medium",
+    "summary": "Google has temporarily stopped accepting product-vulnerability submissions through its Open Source Software VRP after a surge of automated reports that it says are overwhelmingly invalid. Supply-chain reports and already-open cases remain unaffected. The move is a concrete signal that AI-assisted vulnerability discovery is creating triage-capacity and evidence-quality problems at scale; security research programs should require reproducible impact, stronger automated validation and explicit routing for machine-generated findings before human review."
+  },
+  {
+    "id": "ransomware-live-germany-2026-10-05-bender-tribunenbau",
+    "title": "Bender Tribunenbau listed in unverified Lamashtu ransomware claim",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://ransomware.live/country/DEU#2026-10-05-bender-tribunenbau-lamashtu",
+    "publishedAt": "2026-10-05",
+    "addedAt": "2026-10-05T18:43:46Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "Ransomware",
+      "Lamashtu",
+      "Bender Tribunenbau"
+    ],
+    "severity": "medium",
+    "summary": "Ransomware.live-derived tracking newly lists Bender Tribunenbau in Germany under the Lamashtu group on October 5. Independent public tracking reproduces the ransomware.live listing, and Bender’s official site confirms the organization is a German manufacturer, but no victim statement, regulator, CERT, police source or reputable independent report currently confirms compromise, encryption or data theft. Treat this strictly as an unverified criminal claim and monitor for authoritative incident disclosure."
   }
 ]
