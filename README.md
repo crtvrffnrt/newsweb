@@ -4,7 +4,7 @@ Cloudflare Worker for `news.patrick-binder.de`. It renders a curated, terminal-s
 
 ## Architecture
 
-- `src/data/news.json` is the sole news store. `publishedAt` controls feed sorting; `addedAt` controls the one-time highlight for the latest three added entries.
+- `src/data/news/chunk-XXXX.json` contains the news store in fixed 100-record chunks. `src/data/news/index.js` aggregates the preallocated chunks for rendering and search. `publishedAt` controls feed sorting; `addedAt` controls the one-time highlight for the latest three added entries.
 - `src/template.js` renders sorted, de-duplicated semantic HTML. `/kali_terminal` streams the existing interactive terminal same-origin so its two tabs can be framed despite the upstream frame policy.
 - `src/styles.js` and `src/client.js` keep presentation and delayed-summary interaction separate from the Worker handler.
 - `scripts/validate-news.js` rejects malformed entries, duplicates, invalid dates/URLs, and unsupported categories.
@@ -38,4 +38,10 @@ The news document uses `Cache-Control: no-store`, so a deployment containing new
 
 ## Automated news updates
 
-A future scheduled agent must update **only** `src/data/news.json`. For each of its three new articles, it must use stable fields `id`, `title`, `source`, `sourceDomain`, `url`, `publishedAt`, `addedAt`, `category`, `tags`, and `summary` (optionally `severity` and `cve`). `publishedAt` is the original publication date; `addedAt` is the ISO timestamp when the record enters this file. For consolidated `ransomware.live` Germany entries that use the country page, append a stable date fragment such as `https://ransomware.live/country/DEU#YYYY-MM-DD` so every stored canonical URL remains unique. Before writing, it must deduplicate against existing `id` and canonical `url`; IDs must be normalized lowercase slugs. Historical entries must never be deleted or rewritten. Append the new entries, run `npm run validate:news` and `npm test`, inspect the local result, and commit only after those checks succeed.
+The scheduled news agent updates exactly one preallocated `src/data/news/chunk-XXXX.json` file per successful run. Each chunk is capped at 100 records. It appends to the highest populated chunk when the additions fit; otherwise it writes the complete daily batch to the next empty chunk. It must never edit or reorder existing records. The GitHub Contents API update uses the fetched blob SHA and commits directly to `main` with `Add daily security news for YYYY-MM-DD`.
+
+Duplicate research is intentionally bounded to the most recent 10 days to keep connector reads small. IDs remain globally unique; canonical/story duplicate checks for new research use only that 10-day window. The repository validator checks all chunk structure and required fields, and the GitHub Action additionally verifies that scheduled daily commits modify exactly one chunk and only append 1–4 records.
+
+For consolidated `ransomware.live` Germany entries that use the country page, keep a stable unique fragment such as `https://ransomware.live/country/DEU#YYYY-MM-DD`. Search and rendering still operate over the complete aggregated archive through `src/data/news/index.js`.
+
+A push to `main` triggers the repository validation workflow and the existing Cloudflare Workers Git build integration. GitHub Actions does not store or require a Cloudflare API token for this repository; Cloudflare performs the production build/deploy from the same `main` push.
