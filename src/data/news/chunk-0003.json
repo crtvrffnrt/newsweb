@@ -1,24 +1,5 @@
 [
   {
-    "id": "n-able-n-central-cve-2026-86218-hotfix-4",
-    "title": "N-able patches critical pre-auth N-central RCE in emergency Hotfix 4",
-    "source": "N-able",
-    "sourceDomain": "status.n-able.com",
-    "url": "https://status.n-able.com/2026/09/06/n-central-2026-3-hotfix-4-cve-2026-86218/",
-    "publishedAt": "2026-09-06",
-    "addedAt": "2026-09-07T07:31:55Z",
-    "category": "Vulnerability",
-    "tags": [
-      "N-central",
-      "RMM",
-      "MSP",
-      "Remote Code Execution"
-    ],
-    "severity": "critical",
-    "cve": "CVE-2026-86218",
-    "summary": "N-able released N-central 2026.3 Hotfix 4 for CVE-2026-86218, a critical pre-authentication remote-code-execution flaw in self-hosted N-central servers. The vendor says it has no confirmed production exploitation; hosted N-central instances are already patched. Because N-central provides privileged RMM access across downstream customers, on-premises operators should upgrade to 2026.3.1.14 immediately, restrict management exposure, review privileged changes and remote sessions, and rotate connected credentials if suspicious activity is found."
-  },
-  {
     "id": "mikrotik-routeros-mikrotrick-active-exploitation",
     "title": "MikroTik RouterOS SSH chain is actively exploited for unauthenticated takeover",
     "source": "CERT Polska",
@@ -1834,5 +1815,24 @@
     "severity": "critical",
     "cve": "CVE-2026-21589",
     "summary": "Atlassian disclosed CVE-2026-21589, a critical unauthenticated arbitrary-file-access flaw affecting self-managed Bitbucket, Confluence, Jira Service Management, Jira Software, Bamboo, Crowd, Crucible, and Fisheye Data Center products. Exploitation requires knowing the target file path, but sensitive application files may be exposed. Atlassian recommends immediate upgrades to fixed releases or restricting affected instances from external network access until remediation is complete."
+  },
+  {
+    "id": "zimbra-cve-2026-73570-italy-multiple-compromises-2026-10-06",
+    "title": "Italian CSIRT reports multiple Zimbra compromises tied to actively exploited CVE-2026-73570",
+    "source": "CSIRT Toscana",
+    "sourceDomain": "csirt.regione.toscana.it",
+    "url": "https://csirt.regione.toscana.it/zimbra-zcs-rilevato-sfruttamento-di-vulnerabilita-in-versioni-non-aggiornate-bl01-261005-csirt-ita/",
+    "publishedAt": "2026-10-05",
+    "addedAt": "2026-10-06T21:42:01Z",
+    "category": "Exploit",
+    "tags": [
+      "Zimbra",
+      "Active Exploitation",
+      "Email Security",
+      "Ransomware"
+    ],
+    "severity": "high",
+    "cve": "CVE-2026-73570",
+    "summary": "Italy’s CSIRT reporting describes multiple compromises of internet-exposed Zimbra Collaboration systems, largely linked to CVE-2026-73570. Observed outcomes include remote command execution, web-shell persistence, ransomware encryption, cryptomining, LDAP and credential-hash theft, forced mailbox credential resets, and use of compromised servers for scanning and brute force. Operators should ensure ZCS 10.1.20 or later, investigate exposed legacy systems, and treat evidence of exploitation as an incident requiring credential and persistence review."
   }
 ]
