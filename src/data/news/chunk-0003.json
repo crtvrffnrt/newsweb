@@ -1,41 +1,5 @@
 [
   {
-    "id": "stylesmuggler-magento-adobe-commerce-zero-day",
-    "title": "Unpatched Magento and Adobe Commerce zero-day is actively backdooring stores",
-    "source": "Sansec",
-    "sourceDomain": "sansec.io",
-    "url": "https://sansec.io/research/stylesmuggler",
-    "publishedAt": "2026-09-05",
-    "addedAt": "2026-09-06T07:30:12Z",
-    "category": "Exploit",
-    "tags": [
-      "Magento",
-      "Adobe Commerce",
-      "Zero-Day",
-      "Active Exploitation"
-    ],
-    "severity": "critical",
-    "summary": "Sansec is tracking active exploitation of StyleSmuggler, an unpatched unauthenticated remote-code-execution chain affecting current Magento Open Source and Adobe Commerce releases, including 2.4.9. Attacks began September 4 and install a persistent backdoor disguised as a kernel thread. Adobe has not issued a fix. Operators should apply temporary mitigations, disable GraphQL where feasible, hunt Sansec's published process, file and network indicators, invalidate sessions and rotate store, payment and integration credentials on compromised hosts."
-  },
-  {
-    "id": "berlin-rhysida-data-publication-crisis-response",
-    "title": "Berlin activates crisis response after Rhysida publishes stolen state data",
-    "source": "Reuters",
-    "sourceDomain": "reuters.com",
-    "url": "https://www.reuters.com/world/berlin-launches-crisis-response-after-hackers-publish-stolen-data-2026-09-05/",
-    "publishedAt": "2026-09-05",
-    "addedAt": "2026-09-07T07:31:54Z",
-    "category": "Incident Response",
-    "tags": [
-      "Berlin",
-      "Rhysida",
-      "Germany",
-      "Data Breach"
-    ],
-    "severity": "high",
-    "summary": "Berlin’s state government activated a central crisis unit after Rhysida published stolen data from an attack on two departments. Authorities confirmed the data release and are reviewing the material to identify affected citizens and businesses; Rhysida’s 5.79 TB figure remains an attacker claim rather than independently verified scope. German public-sector defenders should prioritize credential rotation, leak-driven phishing monitoring, preservation of incident evidence and downstream exposure assessment for data, contracts and accounts referenced in the publication."
-  },
-  {
     "id": "n-able-n-central-cve-2026-86218-hotfix-4",
     "title": "N-able patches critical pre-auth N-central RCE in emergency Hotfix 4",
     "source": "N-able",
@@ -1833,5 +1797,42 @@
     ],
     "severity": "high",
     "summary": "South Korean authorities are investigating a cluster of breaches across seven banks and financial firms affecting more than 67,000 people. Investigators reportedly found traces associated with the ARTEX AI autonomous penetration-testing system on infrastructure believed to have been used in the attacks, but the tool’s role remains under investigation. Financial organizations were told to inspect all externally accessible systems, authentication controls and exposed data, while defenders should preserve evidence before attributing activity to AI automation."
+  },
+  {
+    "id": "storm-2945-captivecrunch-renewed-entra-device-code-2026-10-06",
+    "title": "Midnight Blizzard resumes CaptiveCrunch attacks against hospitality Wi-Fi and Entra identities",
+    "source": "Microsoft Security Blog",
+    "sourceDomain": "microsoft.com",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/",
+    "publishedAt": "2026-07-31",
+    "addedAt": "2026-10-06T21:30:01Z",
+    "category": "APT",
+    "tags": [
+      "Microsoft Entra ID",
+      "Midnight Blizzard",
+      "Device Code",
+      "Hospitality"
+    ],
+    "severity": "high",
+    "summary": "Microsoft updated its CaptiveCrunch investigation after observing Storm-2945 resume attacks on September 29. The Midnight Blizzard sub-cluster manipulates hospitality captive-portal traffic, redirects travelers to attacker infrastructure, abuses Microsoft Entra device-code authentication, and can deliver the CornFlake RAT. Microsoft added current infrastructure indicators and Defender XDR hunting guidance, making this a material operational update for identity, endpoint, and travel-security teams."
+  },
+  {
+    "id": "atlassian-data-center-cve-2026-21589-file-access-2026-10-06",
+    "title": "Critical Atlassian Data Center flaw exposes files across eight self-managed products",
+    "source": "Atlassian",
+    "sourceDomain": "confluence.atlassian.com",
+    "url": "https://confluence.atlassian.com/security/cve-2026-21589-arbitrary-file-access-vulnerability-impacts-multiple-products-1870495748.html",
+    "publishedAt": "2026-10-05",
+    "addedAt": "2026-10-06T21:30:02Z",
+    "category": "Vulnerability",
+    "tags": [
+      "Atlassian",
+      "Data Center",
+      "Pre-Auth",
+      "File Disclosure"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-21589",
+    "summary": "Atlassian disclosed CVE-2026-21589, a critical unauthenticated arbitrary-file-access flaw affecting self-managed Bitbucket, Confluence, Jira Service Management, Jira Software, Bamboo, Crowd, Crucible, and Fisheye Data Center products. Exploitation requires knowing the target file path, but sensitive application files may be exposed. Atlassian recommends immediate upgrades to fixed releases or restricting affected instances from external network access until remediation is complete."
   }
 ]
