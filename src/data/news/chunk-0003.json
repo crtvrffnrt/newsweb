@@ -1,60 +1,5 @@
 [
   {
-    "id": "mikrotik-routeros-mikrotrick-active-exploitation",
-    "title": "MikroTik RouterOS SSH chain is actively exploited for unauthenticated takeover",
-    "source": "CERT Polska",
-    "sourceDomain": "cert.pl",
-    "url": "https://cert.pl/en/posts/2026/09/vulnerabilities-in-mikrotik-routeros-actively-exploited/",
-    "publishedAt": "2026-09-05",
-    "addedAt": "2026-09-07T07:31:56Z",
-    "category": "Exploit",
-    "tags": [
-      "MikroTik",
-      "RouterOS",
-      "Active Exploitation",
-      "SSH"
-    ],
-    "severity": "critical",
-    "summary": "CERT Polska confirmed attackers are chaining RouterOS SSH flaws dubbed MikroTrick to take full control of internet-exposed devices without authentication, with successful attacks observed since at least September 2. MikroTik fixed the issues in 7.25beta3, 7.24.2, 7.23.4 and 6.49.21. Operators should patch immediately, restrict SSH and web management to trusted networks, hunt for the ops user and published SSH log patterns, and rebuild flagged devices from trusted configuration after preserving evidence."
-  },
-  {
-    "id": "everest-korber-ransomware-claim-2026-09-07",
-    "title": "KÖRBER listed in unverified Everest ransomware claim",
-    "source": "ransomware.live",
-    "sourceDomain": "ransomware.live",
-    "url": "https://www.ransomware.live/id/S8OWUkJFUkBldmVyZXN0",
-    "publishedAt": "2026-09-07",
-    "addedAt": "2026-09-08T07:30:37Z",
-    "category": "Ransomware",
-    "tags": [
-      "Germany",
-      "Ransomware",
-      "Everest",
-      "KÖRBER"
-    ],
-    "severity": "medium",
-    "summary": "Ransomware.live-derived tracking recorded KÖRBER, a German manufacturing and technology organization, on Everest's leak site on September 7. No authoritative victim statement or independent evidence confirming compromise, encryption or data theft was identified during this run. Treat the listing as an unverified criminal claim only; defenders, suppliers and customers should monitor for an official notification, suspicious credential or supplier activity, targeted phishing and any later publication of allegedly stolen data before escalating it to a confirmed breach."
-  },
-  {
-    "id": "asus-control-center-cve-2026-75754-root-takeover",
-    "title": "ASUS Control Center flaw enables unauthenticated root takeover of managed infrastructure",
-    "source": "ASUS",
-    "sourceDomain": "asus.com",
-    "url": "https://www.asus.com/security-advisory/?id=3101",
-    "publishedAt": "2026-09-04",
-    "addedAt": "2026-09-08T07:30:38Z",
-    "category": "Vulnerability",
-    "tags": [
-      "ASUS Control Center",
-      "Management Plane",
-      "Root Access",
-      "Remote Control"
-    ],
-    "severity": "critical",
-    "cve": "CVE-2026-75754",
-    "summary": "ASUS published a security update for CVE-2026-75754 affecting Control Center Enterprise 4.0.0.2 and earlier. The maximum-severity chain combines missing authentication, SSRF and hard-coded credentials so a network attacker can obtain an encryption key, enable SSH on port 2222 and reach a root shell, potentially controlling the management server and managed endpoints. Operators should apply the ASUS update immediately, restrict management-plane reachability and investigate unexpected SSH enablement or access."
-  },
-  {
     "id": "connectwise-screenconnect-file-transfer-unpatched",
     "title": "ConnectWise mitigates unpatched ScreenConnect file-transfer vulnerability",
     "source": "BleepingComputer",
@@ -1834,5 +1779,60 @@
     "severity": "high",
     "cve": "CVE-2026-73570",
     "summary": "Italy’s CSIRT reporting describes multiple compromises of internet-exposed Zimbra Collaboration systems, largely linked to CVE-2026-73570. Observed outcomes include remote command execution, web-shell persistence, ransomware encryption, cryptomining, LDAP and credential-hash theft, forced mailbox credential resets, and use of compromised servers for scanning and brute force. Operators should ensure ZCS 10.1.20 or later, investigate exposed legacy systems, and treat evidence of exploitation as an incident requiring credential and persistence review."
+  },
+  {
+    "id": "fortibleed-fbi-usss-fortigate-lockouts-2026-10-08",
+    "title": "FBI and USSS warn FortiBleed actors are locking out FortiGate administrators",
+    "source": "FBI and USSS",
+    "sourceDomain": "ic3.gov",
+    "url": "https://www.ic3.gov/CSA/2026/261006.pdf",
+    "publishedAt": "2026-10-06",
+    "addedAt": "2026-10-08T07:50:09.058Z",
+    "category": "Exploit",
+    "tags": [
+      "FortiGate",
+      "SSL VPN",
+      "Credential Theft",
+      "Ransomware"
+    ],
+    "severity": "high",
+    "summary": "A joint FBI and Secret Service advisory says the FortiBleed credential-compromise campaign remains active against internet-facing FortiGate firewalls and SSL VPN gateways. Attackers reuse leaked credentials, create administrator accounts, and sometimes change or delete legitimate accounts, locking out operators. The agencies link access brokers in this chain to ransomware affiliates. Restrict external management, terminate sessions, rotate administrative and VPN credentials, enforce phishing-resistant MFA, and review new accounts and configuration changes."
+  },
+  {
+    "id": "google-cctld-registry-hijacks-unauthorized-certificates-2026-10-08",
+    "title": "Google reports ccTLD registry hijacks and unauthorized HTTPS certificates",
+    "source": "Google Chrome Security",
+    "sourceDomain": "blog.google",
+    "url": "https://blog.google/security/chromes-response-to-recent-cctld-registry-hijacks/",
+    "publishedAt": "2026-10-06",
+    "addedAt": "2026-10-08T07:50:10.058Z",
+    "category": "Incident Response",
+    "tags": [
+      "DNS Hijacking",
+      "TLS Certificates",
+      "ccTLD",
+      "Certificate Transparency"
+    ],
+    "severity": "high",
+    "summary": "Google reports that compromised third-party registries for .gh, .sl, and .as allowed attackers to alter authoritative DNS and obtain unauthorized HTTPS certificates for Google and other organizations' domains. Google says its own systems were not compromised; Chrome blocked identified certificates and issuers revoked them. Domain owners should inspect Certificate Transparency logs for affected namespaces and regional domains, verify DNS control, and maintain restrictive CAA policies. Browser blocking may not cover every affected domain or client."
+  },
+  {
+    "id": "sonicwall-sma1000-cve-2026-102255-critical-ssrf-2026-10-08",
+    "title": "SonicWall fixes critical unauthenticated SSRF in SMA1000 gateways",
+    "source": "SonicWall",
+    "sourceDomain": "sonicwall.com",
+    "url": "https://www.sonicwall.com/support/notices/product-notice-sma-1000-series-affected-by-multiple-vulnerabilities-snwlid-2026-0017/kA1VN000002QP3G0AW",
+    "publishedAt": "2026-10-05",
+    "addedAt": "2026-10-08T07:50:11.058Z",
+    "category": "Vulnerability",
+    "tags": [
+      "SonicWall",
+      "SMA1000",
+      "SSRF",
+      "Remote Access"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-102255",
+    "summary": "SonicWall disclosed a CVSS 10.0 server-side request forgery flaw in the SMA1000 series, alongside three other vulnerabilities. Affected SMA 6210, 7210, and 8200v appliances running 12.4.3-03526 or older, or 12.5.0-02952 or older, require hotfixes 12.4.3-03670 or 12.5.0-03082 respectively. SonicWall says it has no evidence of exploitation in the wild. Operators should inventory exposed remote-access gateways, upgrade, and review the advisory's affected-version matrix rather than assuming prior September patches cover this issue."
   }
 ]
