@@ -1,77 +1,5 @@
 [
   {
-    "id": "connectwise-screenconnect-file-transfer-unpatched",
-    "title": "ConnectWise mitigates unpatched ScreenConnect file-transfer vulnerability",
-    "source": "BleepingComputer",
-    "sourceDomain": "bleepingcomputer.com",
-    "url": "https://www.bleepingcomputer.com/news/security/connectwise-warns-of-new-screenconnect-flaw-without-patch/",
-    "publishedAt": "2026-09-07",
-    "addedAt": "2026-09-08T07:30:39Z",
-    "category": "Vulnerability",
-    "tags": [
-      "ScreenConnect",
-      "RMM",
-      "MSP",
-      "File Transfer"
-    ],
-    "severity": "high",
-    "summary": "ConnectWise disclosed a ScreenConnect Remote Access file-transfer issue affecting both cloud and on-premises deployments and says a permanent fix is still being prepared. No CVE or confirmed exploitation was published with the advisory, but nearly 6,000 instances are internet-exposed and ScreenConnect is a high-value MSP control plane. Administrators should temporarily remove TransferFiles or TransferFilesInSession permissions from applicable roles and session groups, restrict exposure and monitor for unusual file-transfer activity."
-  },
-  {
-    "id": "bigbear-microsoft-365-aitm-mfa-bypass",
-    "title": "BigBear phishing service bypasses Microsoft 365 MFA across 258 organizations",
-    "source": "BleepingComputer",
-    "sourceDomain": "bleepingcomputer.com",
-    "url": "https://www.bleepingcomputer.com/news/security/bigbear-microsoft-365-phishing-service-bypassed-mfa-at-258-organizations/",
-    "publishedAt": "2026-09-07",
-    "addedAt": "2026-09-08T07:30:40Z",
-    "category": "Phishing",
-    "tags": [
-      "Microsoft 365",
-      "AiTM",
-      "Session Theft",
-      "Entra ID"
-    ],
-    "severity": "high",
-    "summary": "CloudSEK gained access to the BigBear 2.0 phishing-as-a-service panel and found 258 organizations with completed Microsoft 365 MFA-bypass compromises. The Evilginx2-based infrastructure captured passwords and authenticated session cookies, used residential proxies to match victim geography, and attempted to push users away from FIDO2/WebAuthn. Defenders should revoke sessions and refresh tokens, reset exposed credentials, enforce phishing-resistant authentication and require managed devices through Conditional Access."
-  },
-  {
-    "id": "thegentlemen-metro-ransomware-claim-2026-09-07",
-    "title": "Metro listed in unverified Thegentlemen ransomware claim",
-    "source": "ransomware.live",
-    "sourceDomain": "ransomware.live",
-    "url": "https://www.ransomware.live/id/TWV0cm9AdGhlZ2VudGxlbWVu",
-    "publishedAt": "2026-09-07",
-    "addedAt": "2026-09-09T07:32:40Z",
-    "category": "Ransomware",
-    "tags": [
-      "Germany",
-      "Ransomware",
-      "Thegentlemen",
-      "Metro"
-    ],
-    "severity": "medium",
-    "summary": "Ransomware.live-derived feeds now include a Germany-classified Metro listing attributed to Thegentlemen and dated September 7, not represented in the previous successful snapshot. Public enrichment around the record is inconsistent about the organization represented, and no authoritative victim statement or independent confirmation was identified. Treat it strictly as an unverified criminal listing: compromise, data theft and even the geographic attribution should not be considered confirmed until corroborated."
-  },
-  {
-    "id": "f5-big-ip-apm-poisonedrefresh-memory-rootkit",
-    "title": "PoisonedRefresh rootkit gives attackers fileless persistence on F5 BIG-IP APM",
-    "source": "BleepingComputer",
-    "sourceDomain": "bleepingcomputer.com",
-    "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-f5-big-ip-apm-devices-to-deploy-linux-rootkit/",
-    "publishedAt": "2026-09-08",
-    "addedAt": "2026-09-09T07:32:41Z",
-    "category": "Malware",
-    "tags": [
-      "F5 BIG-IP",
-      "PoisonedRefresh",
-      "Memory-Only",
-      "Web Shell"
-    ],
-    "severity": "high",
-    "summary": "Sophos analysis of compromised F5 BIG-IP APM environments identified PoisonedRefresh, a Linux rootkit that infects Apache, survives BIG-IP upgrades and injects a PHP web shell only in memory while leaving on-disk scripts unchanged. The implant was likely deployed after exploitation of CVE-2025-53521, but the initial vector is not definitively established. Defenders should investigate Apache workers accessing /proc/self/maps, /run/bigtlog.pipe, unexpected Bash execution and suspicious HTTP 201 text/css responses, and rebuild confirmed-compromised appliances."
-  },
-  {
     "id": "adobe-commerce-cve-2026-75650-hotfix-active-exploitation",
     "title": "Adobe patches actively exploited StyleSmuggler RCE in Commerce and Magento",
     "source": "Adobe",
@@ -1834,5 +1762,77 @@
     "severity": "critical",
     "cve": "CVE-2026-102255",
     "summary": "SonicWall disclosed a CVSS 10.0 server-side request forgery flaw in the SMA1000 series, alongside three other vulnerabilities. Affected SMA 6210, 7210, and 8200v appliances running 12.4.3-03526 or older, or 12.5.0-02952 or older, require hotfixes 12.4.3-03670 or 12.5.0-03082 respectively. SonicWall says it has no evidence of exploitation in the wild. Operators should inventory exposed remote-access gateways, upgrade, and review the advisory's affected-version matrix rather than assuming prior September patches cover this issue."
+  },
+  {
+    "id": "idcf-cloud-ransomware-east-japan-495-customers-2026-10-09",
+    "title": "Ransomware outage at IDCF Cloud affects 495 customer organizations",
+    "source": "IDC Frontier",
+    "sourceDomain": "idcf.jp",
+    "url": "https://www.idcf.jp/news/topics/20261008001",
+    "publishedAt": "2026-10-08",
+    "addedAt": "2026-10-09T10:21:42.233Z",
+    "category": "Ransomware",
+    "tags": [
+      "Cloud Infrastructure",
+      "Japan",
+      "Ransomware",
+      "Business Continuity"
+    ],
+    "severity": "high",
+    "summary": "IDC Frontier says unauthorized access involving ransomware disrupted four zones of its IDCF Cloud East Japan Region 1 beginning October 7, affecting 495 companies and municipalities. Virtual servers stopped and could not restart. The provider says customer data in the affected zones may be difficult to retrieve or restore and directs customers to rebuild in another environment using their own backups. The entry path and full impact remain under investigation; dependent organizations should verify backup independence and recovery plans."
+  },
+  {
+    "id": "cisco-nexus-ngoam-root-rce-2026-10-09",
+    "title": "Cisco fixes unauthenticated root-code execution flaws in Nexus NX-OS NGOAM",
+    "source": "Cisco",
+    "sourceDomain": "cisco.com",
+    "url": "https://www.cisco.com/c/en/us/support/docs/csa/cisco-sa-ngoam-rce-LWKQ4BU.html",
+    "publishedAt": "2026-10-07",
+    "addedAt": "2026-10-09T10:21:43.233Z",
+    "category": "Vulnerability",
+    "tags": [
+      "Cisco Nexus",
+      "NX-OS",
+      "NGOAM",
+      "Remote Code Execution"
+    ],
+    "severity": "critical",
+    "summary": "Cisco disclosed three critical flaws in the NGOAM feature of standalone NX-OS on affected Nexus 3000 and 9000 switches. Crafted traffic to a switch IP interface can enable unauthenticated root-code execution or denial of service when relevant features are enabled. Exposure differs by CVE: one requires NGOAM alone, while others also require SRv6 or a configured NV overlay. Cisco released fixes, reports no known malicious use, and says disabling unneeded NGOAM removes the attack vector."
+  },
+  {
+    "id": "flax-typhoon-microscan-fishhub-domain-seizures-2026-10-09",
+    "title": "DOJ and FBI seize Flax Typhoon scanning and phishing infrastructure",
+    "source": "U.S. Department of Justice",
+    "sourceDomain": "justice.gov",
+    "url": "https://www.justice.gov/opa/pr/justice-department-and-fbi-seize-vulnerability-scanning-and-spear-phishing-tools-operated",
+    "publishedAt": "2026-10-08",
+    "addedAt": "2026-10-09T10:21:44.233Z",
+    "category": "APT",
+    "tags": [
+      "Flax Typhoon",
+      "Critical Infrastructure",
+      "Spear Phishing",
+      "IoT Botnet"
+    ],
+    "severity": "high",
+    "summary": "The U.S. Justice Department and FBI announced court-authorized domain seizures targeting Microscan and FishHub, tools attributed in court filings to China-based Integrity Technology Group and Flax Typhoon actors. Microscan used an IoT botnet for vulnerability reconnaissance against critical infrastructure, including airports and energy firms; FishHub supported spear-phishing and follow-on malware deployment. Defenders should review the accompanying FBI advisory and indicators for historic exposure, while recognizing the seizures disrupt infrastructure rather than prove all victim access has ended."
+  },
+  {
+    "id": "ransomware-live-university-rostock-panzer-claim-2026-10-09",
+    "title": "University of Rostock appears in unverified Panzer ransomware claim",
+    "source": "ransomware.live",
+    "sourceDomain": "ransomware.live",
+    "url": "https://www.ransomware.live/id/VW5pdmVyc2l0eSBvZiBSb3N0b2NrQFBhbnplcg%3D%3D",
+    "publishedAt": "2026-10-07",
+    "addedAt": "2026-10-09T10:21:45.233Z",
+    "category": "Ransomware",
+    "tags": [
+      "Germany",
+      "University of Rostock",
+      "Panzer",
+      "Unverified Claim"
+    ],
+    "severity": "medium",
+    "summary": "Ransomware.live-derived tracking listed the University of Rostock in Germany under the Panzer group on October 7. This is a criminal leak-site claim, not independent confirmation of a compromise, encryption, or data theft. The source page could not be opened directly during this run, but its individual link and mirrored listing were observed. Operators and partners should monitor for an authoritative statement and relevant supplier or identity alerts before treating the claim as a confirmed incident."
   }
 ]
