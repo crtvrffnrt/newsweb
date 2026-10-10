@@ -1,61 +1,5 @@
 [
   {
-    "id": "adobe-commerce-cve-2026-75650-hotfix-active-exploitation",
-    "title": "Adobe patches actively exploited StyleSmuggler RCE in Commerce and Magento",
-    "source": "Adobe",
-    "sourceDomain": "helpx.adobe.com",
-    "url": "https://helpx.adobe.com/security/products/magento/apsb26-146.html",
-    "publishedAt": "2026-09-07",
-    "addedAt": "2026-09-09T07:32:42Z",
-    "category": "Exploit",
-    "tags": [
-      "Adobe Commerce",
-      "Magento",
-      "Active Exploitation",
-      "Hotfix"
-    ],
-    "severity": "critical",
-    "cve": "CVE-2026-75650",
-    "summary": "Adobe released an urgent hotfix for CVE-2026-75650, the StyleSmuggler zero-day already being exploited against Adobe Commerce and Magento Open Source. The CVSS 10 flaw requires no authentication and can yield arbitrary code execution, replacing the temporary mitigations required when the campaign was first reported. Merchants should apply APSB26-146 immediately, then hunt previously exposed servers for backdoors, invalidate sessions, and rotate store, payment and integration credentials where compromise is suspected."
-  },
-  {
-    "id": "n-able-n-central-cve-2026-86218-cisa-kev",
-    "title": "CISA confirms active exploitation of critical N-able N-central RCE",
-    "source": "CISA",
-    "sourceDomain": "cisa.gov",
-    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-86218",
-    "publishedAt": "2026-09-08",
-    "addedAt": "2026-09-09T07:32:43Z",
-    "category": "Exploit",
-    "tags": [
-      "N-central",
-      "RMM",
-      "MSP",
-      "Active Exploitation"
-    ],
-    "severity": "critical",
-    "cve": "CVE-2026-86218",
-    "summary": "CISA added CVE-2026-86218 to the Known Exploited Vulnerabilities catalog on September 8, materially escalating the earlier N-central advisory from uncertain exploitation to confirmed in-the-wild risk. The CVSS 10 pre-authentication RCE affects self-hosted N-central before 2026.3.1.14. MSPs should install Hotfix 4 immediately, restrict management exposure, audit unexpected accounts and privileged remote sessions, and rotate downstream credentials if compromise indicators are found."
-  },
-  {
-    "id": "microsoft-passkey-device-code-aitm-cloud-compromise",
-    "title": "Passkey-themed social engineering drives Entra identity and cloud compromise",
-    "source": "Microsoft Security",
-    "sourceDomain": "microsoft.com",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
-    "publishedAt": "2026-09-09",
-    "addedAt": "2026-09-10T07:30:14Z",
-    "category": "Phishing",
-    "tags": [
-      "Microsoft Entra",
-      "Device Code",
-      "AiTM",
-      "Passkeys"
-    ],
-    "severity": "high",
-    "summary": "Microsoft is investigating passkey- and SSO-themed social engineering in which attackers call or text employees, then steer them into adversary-in-the-middle phishing or legitimate device-code authorization flows. Successful attacks capture or obtain session tokens, bypass normal MFA value, add attacker-controlled authentication methods, enumerate Microsoft Graph and collect cloud data. Entra defenders should correlate user reports with device-code sign-ins and authentication-method changes, revoke compromised sessions, enforce phishing-resistant credentials, and restrict unmanaged-device access."
-  },
-  {
     "id": "fortinet-cve-2025-25249-pivotc2-active-exploitation",
     "title": "FortiGate exploitation deploys PivotC2 RAT through CVE-2025-25249",
     "source": "SOCRadar",
@@ -1834,5 +1778,60 @@
     ],
     "severity": "medium",
     "summary": "Ransomware.live-derived tracking listed the University of Rostock in Germany under the Panzer group on October 7. This is a criminal leak-site claim, not independent confirmation of a compromise, encryption, or data theft. The source page could not be opened directly during this run, but its individual link and mirrored listing were observed. Operators and partners should monitor for an authoritative statement and relevant supplier or identity alerts before treating the claim as a confirmed incident."
+  },
+  {
+    "id": "ahsaycbs-cve-2026-105133-105134-active-exploitation",
+    "title": "Attackers exploit AhsayCBS backup management flaws; latest build remains vulnerable",
+    "source": "Huntress",
+    "sourceDomain": "www.huntress.com",
+    "url": "https://www.huntress.com/blog/ahsaycbs-flaws-exploit",
+    "publishedAt": "2026-10-08",
+    "addedAt": "2026-10-10T13:38:30.506Z",
+    "category": "Exploit",
+    "tags": [
+      "AhsayCBS",
+      "MSP",
+      "Backup",
+      "Active Exploitation"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-105134",
+    "summary": "Huntress observed attackers chaining CVE-2026-105133 and CVE-2026-105134 against internet-facing AhsayCBS backup servers from October 7, obtaining code execution and deploying JSP webshells and disguised XMRig miners at five organizations. Its October 8 update says the latest 10.3.4 release is also affected, reversing earlier guidance that it was safe. Until a fix is available, restrict management access to trusted networks and investigate suspicious child processes from AhsayCBS services."
+  },
+  {
+    "id": "citrix-netscaler-cve-2026-107406-saml-rce",
+    "title": "Citrix patches critical NetScaler SAML remote-code execution flaw",
+    "source": "Citrix",
+    "sourceDomain": "support.citrix.com",
+    "url": "https://support.citrix.com/external/article/CTX697191/citrix-netscaler-adc-and-citrix-netscale.html",
+    "publishedAt": "2026-10-08",
+    "addedAt": "2026-10-10T13:38:31.506Z",
+    "category": "CVE",
+    "tags": [
+      "Citrix NetScaler",
+      "SAML",
+      "Remote Code Execution"
+    ],
+    "severity": "critical",
+    "cve": "CVE-2026-107406",
+    "summary": "Citrix disclosed CVE-2026-107406, a memory overflow that can cause remote code execution or denial of service in customer-managed NetScaler ADC and Gateway appliances configured as SAML identity providers or service providers, depending on build. The October 8 bulletin recommends 14.1-73.46, 13.1-64.29, and corresponding FIPS builds. Inventory exposed appliances, confirm SAML role and affected build ranges, then prioritize the new updates; Citrix has not reported exploitation of this flaw."
+  },
+  {
+    "id": "sonicwall-sma1000-cve-2026-102255-exploitation-attempts",
+    "title": "Researchers observe exploitation attempts against SonicWall SMA1000 SSRF",
+    "source": "BleepingComputer",
+    "sourceDomain": "www.bleepingcomputer.com",
+    "url": "https://www.bleepingcomputer.com/news/security/max-severity-sonicwall-sma1000-flaw-now-exploited-in-attacks/",
+    "publishedAt": "2026-10-09",
+    "addedAt": "2026-10-10T13:38:32.506Z",
+    "category": "Exploit",
+    "tags": [
+      "SonicWall SMA1000",
+      "SSRF",
+      "Exploitation Attempts"
+    ],
+    "severity": "high",
+    "cve": "CVE-2026-102255",
+    "summary": "Material update to the October 6 SMA1000 patch advisory: on October 9, a researcher reported honeypot requests consistent with attempts to exploit CVE-2026-102255 through the WorkPlace interface toward an internal CouchDB service. Successful compromise has not been established, and SonicWall had not confirmed active exploitation in its advisory. Operators should apply the released hotfix, restrict management exposure, and review WorkPlace and appliance logs for suspicious requests."
   }
 ]
