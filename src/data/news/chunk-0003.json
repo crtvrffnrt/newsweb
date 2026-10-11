@@ -1,43 +1,5 @@
 [
   {
-    "id": "fortinet-cve-2025-25249-pivotc2-active-exploitation",
-    "title": "FortiGate exploitation deploys PivotC2 RAT through CVE-2025-25249",
-    "source": "SOCRadar",
-    "sourceDomain": "socradar.io",
-    "url": "https://socradar.io/blog/cve-2025-25249-pivotc2-fortigate-rat/",
-    "publishedAt": "2026-09-08",
-    "addedAt": "2026-09-10T07:30:15Z",
-    "category": "Exploit",
-    "tags": [
-      "FortiGate",
-      "Active Exploitation",
-      "PivotC2",
-      "CAPWAP"
-    ],
-    "severity": "critical",
-    "cve": "CVE-2025-25249",
-    "summary": "SOCRadar reports ongoing exploitation of CVE-2025-25249 against FortiGate appliances, with more than 30,000 IPs targeted and 178 devices infected with the custom Node.js PivotC2 RAT. The unauthenticated heap overflow reaches the CAPWAP control service and can yield arbitrary code execution; CISA added the flaw to KEV on September 9. Operators should patch affected FortiOS and FortiSwitchManager versions, restrict UDP/5246 exposure, hunt for PivotC2 activity, and triage exposed appliances for compromise rather than relying on patching alone."
-  },
-  {
-    "id": "cisco-fmc-cve-2026-20079-active-exploitation",
-    "title": "Cisco confirms active exploitation of FMC auth bypass granting root access",
-    "source": "Cisco",
-    "sourceDomain": "sec.cloudapps.cisco.com",
-    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-onprem-fmc-authbypass-5JPp45V2",
-    "publishedAt": "2026-09-09",
-    "addedAt": "2026-09-10T07:30:16Z",
-    "category": "Exploit",
-    "tags": [
-      "Cisco FMC",
-      "Active Exploitation",
-      "Authentication Bypass",
-      "Firewall Management"
-    ],
-    "severity": "critical",
-    "cve": "CVE-2026-20079",
-    "summary": "Cisco updated its Secure Firewall Management Center advisory after confirming active exploitation of CVE-2026-20079, a CVSS 10 authentication bypass that lets unauthenticated remote attackers run scripts and commands as root. CISA added the flaw to KEV on September 9. On-premises FMC operators should apply Cisco hot fixes or fixed releases immediately, check the published license.tmp log indicator, and treat positive indicators as an incident because preventive hot fixes do not remove an existing compromise."
-  },
-  {
     "id": "ransomware-live-germany-2026-09-11-alphaomega-mediengruppethiel-auditteam",
     "title": "New German ransomware victims: alphaomega-eng.com, https://mediengruppethiel.de/, mo***al",
     "source": "ransomware.live",
@@ -1833,5 +1795,39 @@
     "severity": "high",
     "cve": "CVE-2026-102255",
     "summary": "Material update to the October 6 SMA1000 patch advisory: on October 9, a researcher reported honeypot requests consistent with attempts to exploit CVE-2026-102255 through the WorkPlace interface toward an internal CouchDB service. Successful compromise has not been established, and SonicWall had not confirmed active exploitation in its advisory. Operators should apply the released hotfix, restrict management exposure, and review WorkPlace and appliance logs for suspicious requests."
+  },
+  {
+    "id": "ghostaction-github-workflow-cloud-credential-theft-2026-10-09",
+    "title": "GhostAction wave plants credential-stealing workflows across GitHub",
+    "source": "Socket",
+    "sourceDomain": "socket.dev",
+    "url": "https://socket.dev/blog/ghostaction-cloud-credentials",
+    "publishedAt": "2026-10-09",
+    "addedAt": "2026-10-11T06:31:25.209Z",
+    "category": "Incident Response",
+    "tags": [
+      "GitHub Actions",
+      "Supply Chain",
+      "Cloud Credentials"
+    ],
+    "severity": "high",
+    "summary": "Socket found an October 8 GhostAction burst in which compromised maintainer accounts added a malicious security-audit.yml workflow to 346 GitHub repositories, including an Uber-owned project. The workflow can exfiltrate Actions secrets and searches both current files and full Git history for cloud and AI credentials. Successful workflow runs were observed. Review unexpected workflow additions and runs, remove the payload, and rotate exposed credentials after scoping affected repositories."
+  },
+  {
+    "id": "tensorlake-npm-0-5-144-credential-stealer-2026-10-08",
+    "title": "Compromised Tensorlake npm release steals developer credentials",
+    "source": "Socket",
+    "sourceDomain": "socket.dev",
+    "url": "https://socket.dev/blog/tensorlake-compromise",
+    "publishedAt": "2026-10-08",
+    "addedAt": "2026-10-11T06:31:26.209Z",
+    "category": "AI Security",
+    "tags": [
+      "Tensorlake",
+      "npm",
+      "Credential Theft"
+    ],
+    "severity": "high",
+    "summary": "Socket identified malicious code in tensorlake npm version 0.5.144, published October 8. Its preinstall hook can run before the AI agent SDK is imported, collecting credentials from developer machines and build environments, establishing persistence, and enabling remote code execution. Check lockfiles and build logs for this exact version. Where installation scripts ran, investigate affected hosts and publishing accounts, remove persistence, and rotate potentially exposed credentials in a controlled sequence."
   }
 ]
